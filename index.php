@@ -104,6 +104,7 @@
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
 		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random choice</a></li>
 		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from list</a></li>
+                <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
 	    </ul>
 	  </li>
           <li class="dropdown">
@@ -193,7 +194,7 @@
 			     </div>
                              <div id="codePanelBackground" class="panel-body" style="background-color: rgb(255, 255, 255);">
                                 <form action="#" method="post" enctype="multipart/form-data" id="codeform">
-                                    <textarea id="code" name="file" style="display: none;"></textarea>
+                                    <textarea id="code" name="file" style="display: none;">ggg</textarea>
                                 </form>
                               </div>
                            </div>

@@ -1,0 +1,2902 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exercises>
+<exercise>
+<id>1.1</id>
+<text>
+Print a box like the one below.
+
+*******************
+*******************
+*******************
+*******************
+</text>
+</exercise>
+<exercise>
+<id>1.2</id>
+<text>
+Print a box like the one below.
+
+*******************
+*                 *
+*                 *
+*******************
+</text>
+</exercise>
+<exercise>
+<id>1.3</id>
+<text>
+Print a triangle like the one below.
+
+*
+**
+***
+****
+</text>
+</exercise>
+<exercise>
+<id>1.4</id>
+<text>
+Write a program that computes and prints the result 
+of the following expression. It is roughly .1017.
+
+512-282
+-------
+47·48+5
+</text>
+</exercise>
+<exercise>
+<id>1.5</id>
+<text>
+Ask the user to enter a number. Print out the square 
+of the number, but use the sep optional argument to 
+print it out in a full sentence that ends in a period. 
+Sample output is shown below.
+
+Enter a number: 5
+The square of 5 is 25.
+</text>
+</exercise>
+<exercise>
+<id>1.6</id>
+<text>
+Ask the user to enter a number x. Use the sep optional 
+argument to print out x, 2x, 3x, 4x, and 5x, each 
+separated by three dashes, like below.
+
+Enter a number: 7
+7---14---21---28---35
+</text>
+</exercise>
+<exercise>
+<id>1.7</id>
+<text>
+Write a program that asks the user for a weight in 
+kilograms and converts it to pounds. 
+There are 2.2 pounds in a kilogram.
+</text>
+</exercise>
+<exercise>
+<id>1.8</id>
+<text>
+Write a program that asks the user to enter three 
+numbers (use three separate input statements). 
+Create variables called total and average that hold 
+the sum and average of the three numbers and print out 
+the values of total and average.
+</text>
+</exercise>
+<exercise>
+<id>1.9</id><text>
+A lot of cell phones have tip calculators. Write one. 
+Ask the user for the price of the meal and the percent 
+tip they want to leave. Then print both the tip amount 
+and the total bill with the tip included.
+</text>
+</exercise>
+<exercise>
+<id>2.1</id>
+<text>
+Write a program that prints your name 100 times.
+</text>
+</exercise>
+<exercise>
+<id>2.2</id>
+<text>
+Write a program to fill the screen horizontally and 
+vertically with your name. [Hint: add the option end=' ' 
+into the print function to fill the screen horizontally.]
+</text>
+</exercise>
+<exercise>
+<id>2.3</id>
+<text>
+Write a program that outputs 100 lines, numbered 1 to 100, 
+each with your name on it. The output should look like the 
+output below.
+
+1 Your name
+2 Your name
+3 Your name
+4 Your name
+...
+100 Your name
+</text>
+</exercise>
+<exercise>
+<id>2.4</id>
+<text>
+Write a program that prints out a list of the integers from 
+1 to 20 and their squares. The output should look like this:
+
+1 --- 1
+2 --- 4
+3 --- 9
+...
+20 --- 400
+</text>
+</exercise>
+<exercise>
+<id>2.5</id>
+<text>
+Write a program that uses a for loop to print the numbers 
+8, 11, 14, 17, 20, …, 83, 86, 89.
+</text>
+</exercise>
+<exercise>
+<id>2.6</id>
+<text>
+Write a program that uses a for loop to print the numbers 
+100, 98, 96, …, 4, 2.
+</text>
+</exercise>
+<exercise>
+<id>2.7</id>
+<text>
+Write a program that uses exactly four for loops to print 
+the sequence of letters below.
+
+AAAAAAAAAABBBBBBBCDCDCDCDEFFFFFFG
+</text>
+</exercise>
+<exercise>
+<id>2.8</id>
+<text>
+Write a program that asks the user for their name and how 
+many times to print it. The program should print out the 
+user's name the specified number of times.
+</text>
+</exercise>
+<exercise>
+<id>2.9</id>
+<text>
+The Fibonacci numbers are the sequence below, where the first 
+two numbers are 1, and each number thereafter is the sum of 
+the two preceding numbers. Write a program that asks the user 
+how many Fibonacci numbers to print and then prints that many.
+
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, …
+</text>
+</exercise>
+<exercise>
+<id>2.10</id>
+<text>
+Use a for loop to print a box like the one below. Allow the 
+user to specify how wide and how high the box should be. 
+[Hint: print('*' * 10) prints ten asterisks.]
+
+*******************
+*******************
+*******************
+*******************
+</text>
+</exercise>
+<exercise>
+<id>2.11</id>
+<text>
+Use a for loop to print a box like the one below. Allow the 
+user to specify how wide and how high the box should be.
+
+*******************
+*                 *
+*                 *
+*******************
+</text>
+</exercise>
+<exercise>
+<id>2.12</id>
+<text>
+Use a for loop to print a triangle like the one below. 
+Allow the user to specify how high the triangle should be.
+
+*
+**
+***
+****
+</text>
+</exercise>
+<exercise>
+<id>2.13</id>
+<text>
+Use a for loop to print an upside down triangle like the one 
+below. Allow the user to specify how high the triangle should be.
+
+****
+***
+**
+*
+</text>
+</exercise>
+<exercise>
+<id>2.14</id>
+<text>
+Use for loops to print a diamond like the one below. 
+Allow the user to specify how high the diamond should be.
+
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+</text>
+</exercise>
+<exercise>
+<id>2.15</id>
+<text>
+Write a program that prints a giant letter A like the one below. 
+Allow the user to specify how large the letter should be.
+
+    *
+   * *
+  *****
+ *     *
+*       *
+</text>
+</exercise>
+<exercise>
+<id>3.1</id>
+<text>
+Write a program that generates and prints 50 random integers, 
+each between 3 and 6.
+</text>
+</exercise>
+<exercise>
+<id>3.2</id>
+<text>
+Write a program that generates a random number, x, 
+between 1 and 50, a random number y between 2 and 5, 
+and computes xy.
+</text>
+</exercise>
+<exercise>
+<id>3.3</id>
+<text>
+Write a program that generates a random number between 
+1 and 10 and prints your name that many times.
+</text>
+</exercise>
+<exercise>
+<id>3.4</id>
+<text>
+Write a program that generates a random decimal number 
+between 1 and 10 with two decimal places of accuracy. 
+Examples are 1.23, 3.45, 9.80, and 5.00.
+</text>
+</exercise>
+<exercise>
+<id>3.5</id>
+<text>
+Write a program that generates 50 random numbers such that 
+the first number is between 1 and 2, the second is 
+between 1 and 3, the third is between 1 and 4, …, 
+and the last is between 1 and 51.
+</text>
+</exercise>
+<exercise>
+<id>3.6</id>
+<text>
+Write a program that asks the user to enter two numbers, 
+x and y, and computes |x-y|/(x+y).
+</text>
+</exercise>
+<exercise>
+<id>3.7</id>
+<text>
+Write a program that asks the user to enter an angle 
+between -180° and 180°. Using an expression with the modulo 
+operator, convert the angle to its equivalent between 0° and 360°.
+</text>
+</exercise>
+<exercise>
+<id>3.8</id>
+<text>
+Write a program that asks the user for a number of seconds and 
+prints out how many minutes and seconds that is. For instance, 
+200 seconds is 3 minutes and 20 seconds. [Hint: Use the // operator 
+to get minutes and the % operator to get seconds.]
+</text>
+</exercise>
+<exercise>
+<id>3.9</id>
+<text>
+Write a program that asks the user for an hour between 1 and 12 
+and for how many hours in the future they want to go. Print out 
+what the hour will be that many hours into the future. 
+An example is shown below.
+
+Enter hour: 8
+How many hours ahead? 5
+New hour: 1 o'clock
+</text>
+</exercise>
+<exercise>
+<id>3.10</id>
+<text>
+a) One way to find out the last digit of a number is to mod the 
+number by 10. Write a program that asks the user to enter a power. 
+Then find the last digit of 2 raised to that power.
+
+b) One way to find out the last two digits of a number is to mod 
+the number by 100. Write a program that asks the user to enter a power. 
+Then find the last two digits of 2 raised to that power.
+
+c) Write a program that asks the user to enter a power and how many 
+digits they want. Find the last that many digits of 2 raised to the 
+power the user entered.
+</text>
+</exercise>
+<exercise>
+<id>3.11</id>
+<text>
+Write a program that asks the user to enter a weight in kilograms. 
+The program should convert it to pounds, printing the answer rounded 
+to the nearest tenth of a pound.
+</text>
+</exercise>
+<exercise>
+<id>3.12</id>
+<text>
+Write a program that asks the user for a number and prints out the 
+factorial of that number.
+</text>
+</exercise>
+<exercise>
+<id>3.13</id>
+<text>
+Write a program that asks the user for a number and then prints 
+out the sine, cosine, and tangent of that number.
+</text>
+</exercise>
+<exercise>
+<id>3.14</id>
+<text>
+Write a program that asks the user to enter an angle in degrees 
+and prints out the sine of that angle.
+</text>
+</exercise>
+<exercise>
+<id>3.15</id>
+<text>
+Write a program that prints out the sine and cosine of the angles 
+ranging from 0 to 345° in 15° increments. Each result should be 
+rounded to 4 decimal places. Sample output is shown below:
+
+0 --- 0.0 1.0
+15 --- 0.2588 0.9659
+30 --- 0.5 0.866
+...
+345 --- -0.2588 0.9659
+</text>
+</exercise>
+<exercise>
+<id>3.16</id>
+<text>
+Below is described how to find the date of Easter in any year. 
+Despite its intimidating appear- ance, this is not a hard problem. 
+Note that bxc is the floor function, which for positive numbers 
+just drops the decimal part of the number. For instance ⌊3.14⌋ = 3. 
+The floor function is part of the math module.
+C = century (1900s → C=19)
+Y = year (all four digits)
+m = (15+C-⌊C/4⌋ - ⌊(8C+13)/25⌋) mod 30
+n = (4+C-⌊C/4⌋) mod 7
+a = Y mod 4
+b = Y mod 7
+c = Y mod 19
+d = (19c + m) mod 30
+e = (2a+4b+6d+n) mod 7
+
+Easter is either March (22 + d + e) or April (d + e - 9). 
+There is an exception if d=29 and e=6. In this case, Easter falls 
+one week earlier on April 19. There is another exception 
+if d=28, e=6, and m=2,5,10,13,16,21,24, or 39. In this case, 
+Easter falls one week earlier on April 18. Write a program that 
+asks the user to enter a year and prints out the date of Easter 
+in that year. 
+(See Tattersall, Elementary Number Theory in Nine Chapters, 
+2nd ed., page 167)
+</text>
+</exercise>
+<exercise>
+<id>3.17</id>
+<text>
+A year is a leap year if it is divisible by 4, except that years 
+divisible by 100 are not leap years unless they are also divisible 
+by 400. Ask the user to enter a year, and, using the // operator, 
+determine how many leap years there have been between 1600 and that year.
+</text>
+</exercise>
+<exercise>
+<id>3.18</id>
+<text>
+Write a program that given an amount of change less than $1.00 
+will print out exactly how many quarters, dimes, nickels, and 
+pennies will be needed to efficiently make that change. 
+[Hint: the // operator may be useful.]
+</text>
+</exercise>
+<exercise>
+<id>3.19</id>
+<text>
+Write a program that draws “modular rectangles” like the ones below. 
+The user specifies the width and height of the rectangle, and the 
+entries start at 0 and increase typewriter fashion from left to 
+right and top to bottom, but are all done mod 10. 
+Below are examples of a 3 × 5 rectangle and a 4 × 8.
+
+0 1 2 3 4
+5 6 7 8 9
+0 1 2 3 4
+
+0 1 2 3 4 5 6 7
+8 9 0 1 2 3 4 5
+6 7 8 9 0 1 2 3
+4 5 6 7 8 9 0 1
+</text>
+</exercise>
+<exercise>
+<id>4.1</id>
+<text>
+Write a program that asks the user to enter a length in centimeters. 
+If the user enters a negative length, the program should tell the 
+user that the entry is invalid. Otherwise, the program should convert 
+the length to inches and print out the result. 
+There are 2.54 centimeters in an inch.
+</text>
+</exercise>
+<exercise>
+<id>4.2</id>
+<text>
+Ask the user for a temperature. Then ask them what units, Celsius 
+or Fahrenheit, the temperature is in. Your program should convert 
+the temperature to the other unit. 
+The conversions are F=9/5*C+32 and C=5/9*(F-32).
+</text>
+</exercise>
+<exercise>
+<id>4.3</id>
+<text>
+Ask the user to enter a temperature in Celsius. The program should 
+print a message based on the temperature:
+If the temperature is less than -273.15, print that the temperature 
+is invalid because it is below absolute zero.
+If it is exactly -273.15, print that the temperature is absolute 0.
+If the temperature is between -273.15 and 0, print that the 
+temperature is below freezing.
+If it is 0, print that the temperature is at the freezing point.
+If it is between 0 and 100, print that the temperature is in the 
+normal range.
+If it is 100, print that the temperature is at the boiling point.
+If it is above 100, print that the temperature is above the 
+boiling point.
+</text>
+</exercise>
+<exercise>
+<id>4.4</id>
+<text>
+Write a program that asks the user how many credits they have taken. 
+If they have taken 23 or less, print that the student is a freshman. 
+If they have taken between 24 and 53, print that they are a sophomore. 
+The range for juniors is 54 to 83, and for seniors it is 84 and over.
+</text>
+</exercise>
+<exercise>
+<id>4.5</id>
+<text>
+Generate a random number between 1 and 10. Ask the user to guess the 
+number and print a message based on whether they get it right or not.
+</text>
+</exercise>
+<exercise>
+<id>4.6</id>
+<text>
+A store charges $12 per item if you buy less than 10 items. If you buy 
+between 10 and 99 items, the cost is $10 per item. If you buy 100 or 
+more items, the cost is $7 per item. Write a program that asks the user 
+how many items they are buying and prints the total cost.
+</text>
+</exercise>
+<exercise>
+<id>4.7</id>
+<text>
+Write a program that asks the user for two numbers and prints Close if 
+the numbers are within .001 of each other and Not close otherwise.
+</text>
+</exercise>
+<exercise>
+<id>4.8</id>
+<text>
+A year is a leap year if it is divisible by 4, except that years 
+divisible by 100 are not leap years unless they are also divisible by 400. 
+Write a program that asks the user for a year and prints out whether 
+it is a leap year or not.
+</text>
+</exercise>
+<exercise>
+<id>4.9</id>
+<text>
+Write a program that asks the user to enter a number and prints out all 
+the divisors of that number. [Hint: the % operator is used to tell if 
+a number is divisible by something. See this_section.]
+</text>
+</exercise>
+<exercise>
+<id>4.10</id>
+<text>
+Write a multiplication game program for kids. The program should give 
+the player ten randomly generated multiplication questions to do. 
+After each, the program should tell them whether they got it right 
+or wrong and what the correct answer is.
+
+Question 1: 3 x 4 = 12
+Right!
+Question 2: 8 x 6 = 44
+Wrong.  The answer is 48.
+...
+...
+Question 10: 7 x 7 = 49
+Right.
+</text>
+</exercise>
+<exercise>
+<id>4.11</id>
+<text>
+Write a program that asks the user for an hour between 1 and 12, 
+asks them to enter am or pm, and asks them how many hours into 
+the future they want to go. Print out what the hour will be that 
+many hours into the future, printing am or pm as appropriate. 
+An example is shown below.
+
+Enter hour: 8
+am (1) or pm (2)? 1
+How many hours ahead? 5
+New hour: 1 pm
+</text>
+</exercise>
+<exercise>
+<id>4.12</id>
+<text>
+A jar of Halloween candy contains an unknown amount of candy and 
+if you can guess exactly how much candy is in the bowl, then you 
+win all the candy. You ask the person in charge the following: 
+If the candy is divided evenly among 5 people, how many pieces 
+would be left over? The answer is 2 pieces. You then ask about 
+dividing the candy evenly among 6 people, and the amount left over 
+is 3 pieces. Finally, you ask about dividing the candy evenly 
+among 7 people, and the amount left over is 2 pieces. By looking 
+at the bowl, you can tell that there are less than 200 pieces. 
+Write a program to determine how many pieces are in the bowl.
+</text>
+</exercise>
+<exercise>
+<id>4.13</id>
+<text>
+Write a program that lets the user play Rock-Paper-Scissors 
+against the computer. There should be five rounds, and after those 
+five rounds, your program should print out who won and lost or 
+that there is a tie.
+</text>
+</exercise>
+<exercise>
+<id>5.1</id>
+<text>
+Write a program that counts how many of the squares of the numbers 
+from 1 to 100 end in a 1.
+</text>
+</exercise>
+<exercise>
+<id>5.2</id>
+<text>
+Write a program that counts how many of the squares of the numbers 
+from 1 to 100 end in a 4 and how many end in a 9.
+</text>
+</exercise>
+<exercise>
+<id>5.3</id>
+<text>
+Write a program that asks the user to enter a value n, and then 
+computes (1+1/2+1/3+…+1/n)-ln(n). 
+The ln function is log in the math module.
+</text>
+</exercise>
+<exercise>
+<id>5.4</id>
+<text>
+Write a program to compute the sum 1-2+3-4+…+1999-2000.
+</text>
+</exercise>
+<exercise>
+<id>5.5</id>
+<text>
+Write a program that asks the user to enter a number and prints 
+the sum of the divisors of that number. The sum of the divisors 
+of a number is an important function in number theory.
+</text>
+</exercise>
+<exercise>
+<id>5.6</id>
+<text>
+A number is called a perfect number if it is equal to the sum of 
+all of its divisors, not including the number itself. For instance, 
+6 is a perfect number because the divisors of 6 are 1, 2, 3, 6 and 
+6=1+2+3. As another example, 28 is a perfect number because its 
+divisors are 1, 2, 4, 7, 14, 28 and 28=1+2+4+7+14. However, 15 is 
+not a perfect number because its divisors are 1, 3, 5, 15 and 15≠1+3+5. 
+Write a program that finds all four of the perfect numbers that are 
+less than 10000.
+</text>
+</exercise>
+<exercise>
+<id>5.7</id>
+<text>
+An integer is called squarefree if it is not divisible by any perfect 
+squares other than 1. For instance, 42 is squarefree because its 
+divisors are 1, 2, 3, 6, 7, 21, and 42, and none of those numbers 
+(except 1) is a perfect square. On the other hand, 45 is not squarefree 
+because it is divisible by 9, which is a perfect square. Write a program 
+that asks the user for an integer and tells them if it is squarefree or not.
+</text>
+</exercise>
+<exercise>
+<id>5.8</id>
+<text>
+Write a program that swaps the values of three variables x, y, and z, so 
+that x gets the value of y, y gets the value of z, and z gets the value of x.
+</text>
+</exercise>
+<exercise>
+<id>5.9</id>
+<text>
+Write a program to count how many integers from 1 to 1000 are not perfect 
+squares, perfect cubes, or perfect fifth powers.
+</text>
+</exercise>
+<exercise>
+<id>5.10</id>
+<text>
+Ask the user to enter 10 test scores. Write a program to do the following:
+a) Print out the highest and lowest scores.
+b) Print out the average of the scores.
+c) Print out the second largest score.
+d) If any of the scores is greater than 100, then after all the scores 
+have been entered, print a message warning the user that a value 
+over 100 has been entered.
+e) Drop the two lowest scores and print out the average of the rest of them.
+</text>
+</exercise>
+<exercise>
+<id>5.11</id>
+<text>
+Write a program that computes the factorial of a number. The factorial, n!, 
+of a number n is the product of all the integers between 1 and n, including n. 
+For instance, 5!=1·2·3·4·5=120. [Hint: Try using a multiplicative equivalent 
+of the summing technique.]
+</text>
+</exercise>
+<exercise>
+<id>5.12</id>
+<text>
+Write a program that asks the user to guess a random number between 1 and 10. 
+If they guess right, they get 10 points added to their score, and they 
+lose 1 point for an incorrect guess. Give the user five numbers to guess and 
+print their score after all the guessing is done.
+</text>
+</exercise>
+<exercise>
+<id>5.13</id>
+<text>
+In the last chapter there was an exercise that asked you to create a 
+multiplication game for kids. Improve your program from that exercise to 
+keep track of the number of right and wrong answers. At the end of the 
+program, print a message that varies depending on how many questions 
+the player got right.
+</text>
+</exercise>
+<exercise>
+<id>5.14</id>
+<text>
+This exercise is about the well-known Monty Hall problem. In the problem, 
+you are a contestant on a game show. The host, Monty Hall, shows you three 
+doors. Behind one of those doors is a prize, and behind the other two doors 
+are goats. You pick a door. Monty Hall, who knows behind which door the prize 
+lies, then opens up one of the doors that doesn't contain the prize. 
+There are now two doors left, and Monty gives you the opportunity to change 
+your choice. Should you keep the same door, change doors, or does it not matter?
+
+a) Write a program that simulates playing this game 10000 times and calculates 
+what percentage of the time you would win if you switch and what percentage 
+of the time you would win by not switching.
+
+b)Try the above but with four doors instead of three. There is still only 
+one prize, and Monty still opens up one door and then gives you the 
+opportunity to switch.
+</text>
+</exercise>
+<exercise>
+<id>6.1</id>
+<text>
+Write a program that asks the user to enter a string. The program should then 
+print the following:
+a) The total number of characters in the string
+b) The string repeated 10 times
+c) The first character of the string (remember that string indices start at 0)
+d) The first three characters of the string
+e) The last three characters of the string
+f) The string backwards
+g) The seventh character of the string if the string is long enough and a 
+message otherwise
+h) The string with its first and last characters removed
+i) The string in all caps
+j) The string with every a replaced with an e
+k) The string with every letter replaced by a space
+</text>
+</exercise>
+<exercise>
+<id>6.2</id>
+<text>
+A simple way to estimate the number of words in a string is to count the 
+number of spaces in the string. Write a program that asks the user for a 
+string and returns an estimate of how many words are in the string.
+</text>
+</exercise>
+<exercise>
+<id>6.3</id>
+<text>
+People often forget closing parentheses when entering formulas. Write a 
+program that asks the user to enter a formula and prints out whether 
+the formula has the same number of opening and closing parentheses.
+</text>
+</exercise>
+<exercise>
+<id>6.4</id>
+<text>
+Write a program that asks the user to enter a word and prints out whether 
+that word contains any vowels.
+</text>
+</exercise>
+<exercise>
+<id>6.5</id>
+<text>
+Write a program that asks the user to enter a string. The program should 
+create a new string called new_string from the user's string such that 
+the second character is changed to an asterisk and three exclamation points 
+are attached to the end of the string. Finally, print new_string. 
+Typical output is shown below:
+
+Enter your string: Qbert
+Q*ert!!!
+</text>
+</exercise>
+<exercise>
+<id>6.6</id>
+<text>
+Write a program that asks the user to enter a string s and then converts s 
+to lowercase, removes all the periods and commas from s, and prints the 
+resulting string.
+</text>
+</exercise>
+<exercise>
+<id>6.7</id>
+<text>
+Write a program that asks the user to enter a word and determines whether 
+the word is a palindrome or not. A palindrome is a word that reads the 
+same backwards as forwards.
+</text>
+</exercise>
+<exercise>
+<id>6.8</id>
+<text>
+At a certain school, student email addresses end with @student.college.edu, 
+while professor email addresses end with @prof.college.edu. Write a program 
+that first asks the user how many email addresses they will be entering, 
+and then has the user enter those addresses. After all the email addresses 
+are entered, the program should print out a message indicating either that 
+all the addresses are student addresses or that there were some professor 
+addresses entered.
+</text>
+</exercise>
+<exercise>
+<id>6.9</id>
+<text>
+Ask the user for a number and then print the following, where the pattern 
+ends at the number that the user enters.
+
+1
+ 2
+  3
+   4
+</text>
+</exercise>
+<exercise>
+<id>6.10</id>
+<text>
+Write a program that asks the user to enter a string, then prints out each 
+letter of the string doubled and on a separate line. For instance, 
+if the user entered HEY, the output would be
+
+HH
+EE
+YY
+</text>
+</exercise>
+<exercise>
+<id>6.11</id>
+<text>
+Write a program that asks the user to enter a word that contains the 
+letter a. The program should then print the following two lines: 
+On the first line should be the part of the string up to and including 
+the the first a, and on the second line should be the rest of the string. 
+Sample output is shown below:
+
+Enter a word: buffalo
+buffa
+lo
+</text>
+</exercise>
+<exercise>
+<id>6.12</id>
+<text>
+Write a program that asks the user to enter a word and then capitalizes 
+every other letter of that word. So if the user enters rhinoceros, 
+the program should print rHiNoCeRoS.
+</text>
+</exercise>
+<exercise>
+<id>6.13</id>
+<text>
+Write a program that asks the user to enter two strings of the same length. 
+The program should then check to see if the strings are of the same length. 
+If they are not, the program should print an appropriate message and exit. 
+If they are of the same length, the program should alternate the characters 
+of the two strings. For example, if the user enters abcde and ABCDE the 
+program should print out AaBbCcDdEe.
+</text>
+</exercise>
+<exercise>
+<id>6.14</id>
+<text>
+Write a program that asks the user to enter their name in lowercase and 
+then capitalizes the first letter of each word of their name.
+</text>
+</exercise>
+<exercise>
+<id>6.15</id>
+<text>
+When I was a kid, we used to play this game called Mad Libs. The way it 
+worked was a friend would ask me for some words and then insert those 
+words into a story at specific places and read the story. The story 
+would often turn out to be pretty funny with the words I had given 
+since I had no idea what the story was about. The words were usually 
+from a specific category, like a place, an animal, etc. For this problem 
+you will write a Mad Libs program. First, you should make up a story and 
+leave out some words of the story. Your program should ask the user to enter 
+some words and tell them what types of words to enter. Then print the full 
+story along with the inserted words. Here is a small example, but you should 
+use your own (longer) example:
+
+Enter a college class: CALCULUS
+Enter an adjective: HAPPY
+Enter an activity: PLAY BASKETBALL
+
+CALCULUS class was really HAPPY today.  We learned how to
+PLAY BASKETBALL today in class.  I can't wait for
+tomorrow's class!
+</text>
+</exercise>
+<exercise>
+<id>6.16</id>
+<text>
+Companies often try to personalize their offers to make them more attractive. 
+One simple way to do this is just to insert the person's name at various 
+places in the offer. Of course, companies don't manually type in every 
+person's name; everything is computer-generated. Write a program that asks 
+the user for their name and then generates an offer like the one below. 
+For simplicity's sake, you may assume that the person's first and last names 
+are one word each.
+
+Enter name: George Washington
+
+Dear George Washington,
+
+I am pleased to offer you our new Platinum Plus Rewards
+card at a special introductory APR of 47.99%.  George,
+an offer like this does not come along every day, so I
+urge you to call now toll-free at 1-800-314-1592. We
+cannot offer such a low rate for long, George, so call
+right away.
+</text>
+</exercise>
+<exercise>
+<id>6.17</id>
+<text>
+Write a program that generates the 26-line block of letters partially shown 
+below. Use a loop containing one or two print statements.
+
+abcdefghijklmnopqrstuvwxyz
+bcdefghijklmnopqrstuvwxyza
+cdefghijklmnopqrstuvwxyzab
+...
+yzabcdefghijklmnopqrstuvwx
+zabcdefghijklmnopqrstuvwxy
+</text>
+</exercise>
+<exercise>
+<id>6.18</id>
+<text>
+The goal of this exercise is to see if you can mimic the behavior of the 
+in operator and the count and index methods using only variables, 
+for loops, and if statements.
+a) Without using the in operator, write a program that asks the user for 
+a string and a letter and prints out whether or not the letter appears 
+in the string.
+b) Without using the count method, write a program that asks the user 
+for a string and a letter and counts how many occurrences there are of 
+the letter in the string.
+c) Without using the index method, write a program that asks the user 
+for a string and a letter and prints out the index of the first 
+occurrence of the letter in the string. If the letter is not in the 
+string, the program should say so.
+</text>
+</exercise>
+<exercise>
+<id>6.19</id>
+<text>
+Write a program that asks the user for a large integer and inserts commas 
+into it according to the standard American convention for commas in large 
+numbers. For instance, if the user enters 1000000, the output should 
+be 1,000,000.
+</text>
+</exercise>
+<exercise>
+<id>6.20</id>
+<text>
+Write a program that converts a time from one time zone to another. 
+The user enters the time in the usual American way, such as 3:48pm or 
+11:26am. The first time zone the user enters is that of the original 
+time and the second is the desired time zone. The possible time zones 
+are Eastern, Central, Mountain, or Pacific.
+
+Time: 11:48pm
+Starting zone: Pacific
+Ending zone: Eastern
+2:48am
+</text>
+</exercise>
+<exercise>
+<id>6.21</id>
+<text>
+An anagram of a word is a word that is created by rearranging the letters 
+of the original. For instance, two anagrams of idle are deli and lied. 
+Finding anagrams that are real words is beyond our reach until the chapter 
+on text files. Instead, write a program that asks the user for a string 
+and returns a random anagram of the string—in other words, a random 
+rearrangement of the letters of that string.
+</text>
+</exercise>
+<exercise>
+<id>6.22</id>
+<text>
+A simple way of encrypting a message is to rearrange its characters. 
+One way to rearrange the characters is to pick out the characters at even 
+indices, put them first in the encrypted string, and follow them by the 
+odd characters. For example, the string message would be encrypted as 
+msaeesg because the even characters are m, s, a, e (at indices 0, 2, 4, and 6) 
+and the odd characters are e, s, g (at indices 1, 3, and 5).
+a) Write a program that asks the user for a string and uses this method to 
+encrypt the string.
+b) Write a program that decrypts a string that was encrypted with this method.
+</text>
+</exercise>
+<exercise>
+<id>6.23</id>
+<text>
+A more general version of the above technique is the rail fence cipher, 
+where instead of breaking things into evens and odds, they are broken 
+up by threes, fours or something larger. For instance, in the case of threes, 
+the string secret message would be broken into three groups. The first group 
+is sr sg, the characters at indices 0, 3, 6, 9 and 12. The second group is eemse, 
+the characters at indices 1, 4, 7, 10, and 13. The last group is ctea, the 
+characters at indices 2, 5, 8, and 11. The encrypted message is sr sgeemsectea.
+a) Write a program the asks the user for a string and uses the rail fence 
+cipher in the threes case to encrypt the string.
+b) Write a decryption program for the threes case.
+c) Write a program that asks the user for a string, and an integer determining 
+whether to break things up by threes, fours, or whatever. Encrypt the string 
+using the rail-fence cipher.
+d) Write a decryption program for the general case.
+</text>
+</exercise>
+<exercise>
+<id>6.24</id>
+<text>
+In calculus, the derivative of x4 is 4x3. The derivative of x5 is 5x4. 
+The derivative of x6 is 6x5. This pattern continues. Write a program that asks 
+the user for input like x3 or x25 and prints the derivative. For example, 
+if the user enters x3, the program should print out 3x2.
+</text>
+</exercise>
+<exercise>
+<id>6.25</id>
+<text>
+In algebraic expressions, the symbol for multiplication is often left out, 
+as in 3x+4y or 3(x+5). Computers prefer those expressions to include the 
+multiplication symbol, like 3*x+4*y or 3*(x+5). Write a program that asks 
+the user for an algebraic expression and then inserts multiplication symbols 
+where appropriate.
+</text>
+</exercise>
+<exercise>
+<id>7.1</id>
+<text>
+Write a program that asks the user to enter a list of integers. Do the following:
+a) Print the total number of items in the list.
+b) Print the last item in the list.
+c) Print the list in reverse order.
+d) Print Yes if the list contains a 5 and No otherwise.
+e) Print the number of fives in the list.
+f) Remove the first and last items from the list, sort the remaining items, 
+and print the result.
+g) Print how many integers in the list are less than 5.
+</text>
+</exercise>
+<exercise>
+<id>7.2</id>
+<text>
+Write a program that generates a list of 20 random numbers between 1 and 100.
+a) Print the list.
+b) Print the average of the elements in the list.
+c) Print the largest and smallest values in the list.
+d) Print the second largest and second smallest entries in the list
+e) Print how many even numbers are in the list.
+</text>
+</exercise>
+<exercise>
+<id>7.3</id>
+<text>
+Start with the list [8,9,10]. Do the following:
+a) Set the second entry (index 1) to 17
+b) Add 4, 5, and 6 to the end of the list
+c) Remove the first entry from the list
+d) Sort the list
+e) Double the list
+f) Insert 25 at index 3
+The final list should equal [4,5,6,25,10,17,4,5,6,10,17]
+</text>
+</exercise>
+<exercise>
+<id>7.4</id>
+<text>
+Ask the user to enter a list containing numbers between 1 and 12. 
+Then replace all of the entries in the list that are greater than 10 with 10.
+</text>
+</exercise>
+<exercise>
+<id>7.5</id>
+<text>
+Ask the user to enter a list of strings. Create a new list that consists 
+of those strings with their first characters removed.
+</text>
+</exercise>
+<exercise>
+<id>7.6</id>
+<text>
+Create the following lists using a for loop.
+a) A list consisting of the integers 0 through 49
+b) A list containing the squares of the integers 1 through 50.
+c) The list ['a', 'bb', 'ccc', 'dddd', … ] that ends with 26 copies of the letter z.
+</text>
+</exercise>
+<exercise>
+<id>7.7</id>
+<text>
+Write a program that takes any two lists L and M of the same size and adds their 
+elements together to form a new list N whose elements are sums of the corresponding 
+elements in L and M. For instance, if L=[3,1,4] and M=[1,5,9], 
+then N should equal [4,6,13].
+</text>
+</exercise>
+<exercise>
+<id>7.8</id>
+<text>
+Write a program that asks the user for an integer and creates a list that consists 
+of the factors of that integer.
+</text>
+</exercise>
+<exercise>
+<id>7.9</id>
+<text>
+When playing games where you have to roll two dice, it is nice to know the odds of 
+each roll. For instance, the odds of rolling a 12 are about 3%, and the odds of 
+rolling a 7 are about 17%. You can compute these mathematically, but if you don't 
+know the math, you can write a program to do it. To do this, your program should 
+simulate rolling two dice about 10,000 times and compute and print out the percentage 
+of rolls that come out to be 2, 3, 4, …, 12.
+</text>
+</exercise>
+<exercise>
+<id>7.10</id>
+<text>
+Write a program that rotates the elements of a list so that the element at the 
+first index moves to the second index, the element in the second index moves to 
+the third index, etc., and the element in the last index moves to the first index.
+</text>
+</exercise>
+<exercise>
+<id>7.11</id>
+<text>
+Using a for loop, create the list below, which consists of ones separated by 
+increasingly many zeroes. The last two ones in the list should be separated by ten zeroes.
+    [1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,....]
+</text>
+</exercise>
+<exercise>
+<id>7.12</id>
+<text>    
+Write a program that generates 100 random integers that are either 0 or 1. 
+Then find the longest run of zeros, the largest number of zeros in a row. 
+For instance, the longest run of zeros in [1,0,1,1,0,0,0,0,1,0,0] is 4.
+</text>
+</exercise>
+<exercise>
+<id>7.13</id>
+<text>
+Write a program that removes any repeated items from a list so that each item 
+appears at most once. For instance, the list [1,1,2,3,4,3,0,0] would become [1,2,3,4,0].
+</text>
+</exercise>
+<exercise>
+<id>7.14</id>
+<text>
+Write a program that asks the user to enter a length in feet. 
+The program should then give the user the option to convert from feet into 
+inches, yards, miles, millimeters, centimeters, meters, or kilometers. 
+Say if the user enters a 1, then the program converts to inches, 
+if they enter a 2, then the program converts to yards, etc. While this can 
+be done with if statements, it is much shorter with lists and it is also 
+easier to add new conversions if you use lists.
+</text>
+</exercise>
+<exercise>
+<id>7.15</id>
+<text>
+There is a provably unbreakable cipher called a one-time pad. 
+The way it works is you shift each character of the message by a random 
+amount between 1 and 26 characters, wrapping around the alphabet if necessary. 
+For instance, if the current character is y and the shift is 5, then the new 
+character is d. Each character gets its own shift, so there needs to be as 
+many random shifts as there are characters in the message. As an example, 
+suppose the user enters secret. The program should generate a random shift 
+between 1 and 26 for each character. Suppose the randomly generated shifts 
+are 1, 3, 2, 10, 8, and 2. The encrypted message would be thebmv.
+
+a) Write a program that asks the user for a message and encrypts the message 
+using the one-time pad. First convert the string to lowercase. Any spaces and 
+punctuation in the string should be left unchanged. For example, Secret!!! 
+becomes thebmv!!! using the shifts above.
+
+b) Write a program to decrypt a string encrypted as above.
+
+The reason it is called a one-time-pad is that the list of random shifts should 
+only be used once. It becomes easily breakable if the same random shifts are used 
+for more than one message. Moreover, it is only provably unbreakable if the random 
+numbers are truly random, and the numbers generated by randint are not truly random. 
+For this problem, just use randint.
+</text>
+</exercise>
+<exercise>
+<id>8.1</id>
+<text>
+Write a program that asks the user to enter some text and then counts how many 
+articles are in the text. Articles are the words 'a', 'an', and 'the'.
+</text>
+</exercise>
+<exercise>
+<id>8.2</id>
+<text>
+Write a program that allows the user to enter five numbers (read as strings). 
+Create a string that consists of the user's numbers separated by plus signs. 
+For instance, if the user enters 2, 5, 11, 33, and 55, then the string should 
+be '2+5+11+33+55'.
+</text>
+</exercise>
+<exercise>
+<id>8.3</id>
+<text>
+a) Ask the user to enter a sentence and print out the third word of the sentence.
+b) Ask the user to enter a sentence and print out every third word of the sentence.
+</text>
+</exercise>
+<exercise>
+<id>8.4</id>
+<text>
+a) Write a program that asks the user to enter a sentence and then randomly 
+rearranges the words of the sentence. Don't worry about getting punctuation 
+or capitalization correct.
+
+b) Do the above problem, but now make sure that the sentence starts with a 
+capital, that the original first word is not capitalized if it comes in the 
+middle of the sentence, and that the period is in the right place.
+</text>
+</exercise>
+<exercise>
+<id>8.5</id>
+<text>
+Write a simple quote-of-the-day program. The program should contain a list of 
+quotes, and when the user runs the program, a randomly selected quote should be printed.
+</text>
+</exercise>
+<exercise>
+<id>8.6</id>
+<text>
+Write a simple lottery drawing program. The lottery drawing should consist of 
+six different numbers between 1 and 48.
+</text>
+</exercise>
+<exercise>
+<id>8.7</id>
+<text>
+Write a program that estimates the average number of drawings it takes before 
+the user's numbers are picked in a lottery that consists of correctly picking 
+six different numbers that are between 1 and 10. To do this, run a loop 1000 
+times that randomly generates a set of user numbers and simulates drawings 
+until the user's numbers are drawn. Find the average number of drawings needed 
+over the 1000 times the loop runs.
+</text>
+</exercise>
+<exercise>
+<id>8.8</id>
+<text>
+Write a program that simulates drawing names out of a hat. In this drawing, 
+the number of hat entries each person gets may vary. Allow the user to input 
+a list of names and a list of how many entries each person has in the drawing, 
+and print out who wins the drawing.
+</text>
+</exercise>
+<exercise>
+<id>8.9</id>
+<text>
+Write a simple quiz game that has a list of ten questions and a list of answers 
+to those questions. The game should give the player four randomly selected 
+questions to answer. It should ask the questions one-by-one, and tell the player 
+whether they got the question right or wrong. At the end it should print out how 
+many out of four they got right.
+</text>
+</exercise>
+<exercise>
+<id>8.10</id>
+<text>
+Write a censoring program. Allow the user to enter some text and your program 
+should print out the text with all the curse words starred out. The number of 
+stars should match the length of the curse word. For the purposes of this program, 
+just use the“curse” words darn, dang, freakin, heck, and shoot. Sample output is below:
+
+Enter some text: Oh shoot, I thought I had the dang problem
+figured out. Darn it. Oh well, it was a heck of a freakin
+try.
+
+Oh *****, I thought I had the **** problem figured out.
+**** it. Oh well, it was a **** of a ****** try.
+</text>
+</exercise>
+<exercise>
+<id>8.11</id>
+<text>
+This section described how to use the shuffle method to create a random 
+anagram of a string. Use the choice method to create a random anagram of a string.
+</text>
+</exercise>
+<exercise>
+<id>8.12</id>
+<text>
+Write a program that gets a string from the user containing a potential 
+telephone number. The program should print Valid if it decides the phone 
+number is a real phone number, and Invalid otherwise. A phone number is 
+considered valid as long as it is written in the form abc-def-hijk or 
+1-abc-def-hijk. The dashes must be included, the phone number should contain 
+only numbers and dashes, and the number of digits in each group must be correct. 
+Test your program with the output shown below.
+
+Enter a phone number: 1-301-447-5820
+Valid
+Enter a phone number: 301-447-5820
+Valid
+Enter a phone number: 301-4477-5820
+Invalid
+Enter a phone number: 3X1-447-5820
+Invalid
+Enter a phone number: 3014475820
+Invalid
+</text>
+</exercise>
+<exercise>
+<id>8.13</id>
+<text>
+Let L be a list of strings. Write list comprehensions that create new lists 
+from L for each of the following.
+a) A list that consists of the strings of s with their first characters removed
+b) A list of the lengths of the strings of s
+c) A list that consists of only those strings of s that are at least three 
+characters long
+</text>
+</exercise>
+<exercise>
+<id>8.14</id>
+<text>
+Use a list comprehension to produce a list that consists of all palindromic 
+numbers between 100 and 1000.
+</text>
+</exercise>
+<exercise>
+<id>8.15</id>
+<text>
+Use a list comprehension to create the list below, which consists of ones 
+separated by increasingly many zeroes. The last two ones in the list should 
+be separated by ten zeroes.
+
+[1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,....]
+</text>
+</exercise>
+<exercise>
+<id>8.16</id>
+<text>
+Let L=[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]. Use a list comprehension 
+to produce a list of the gaps between consecutive entries in L. Then find the 
+maximum gap size and the percentage of gaps that have size 2.
+</text>
+</exercise>
+<exercise>
+<id>8.17</id>
+<text>
+Write a program that finds the average of all of the entries in a 4 × 4 
+list of integers.
+</text>
+</exercise>
+<exercise>
+<id>8.18</id>
+<text>
+Write a program that creates a 10 × 10 list of random integers between 1 and 100. 
+Then do the following:
+a) Print the list.
+b) Find the largest value in the third row.
+c) Find the smallest value in the sixth column.
+</text>
+</exercise>
+<exercise>
+<id>8.19</id>
+<text>
+Write a program that creates and prints an 8 × 8 list whose entries alternate 
+between 1 and 2 in a checkerboard pattern, starting with 1 in the upper left corner.
+</text>
+</exercise>
+<exercise>
+<id>8.20</id>
+<text>
+Write a program that checks to see if a 4 × 4 list is a magic square. In a magic 
+square, every row, column, and the two diagonals add up to the same value.
+</text>
+</exercise>
+<exercise>
+<id>8.21</id>
+<text>
+Write a program that asks the user to enter a length. The program should ask 
+them what unit the length is in and what unit they would like to convert it to. 
+The possible units are inches, yards, miles, millimeters, centimeters, meters, 
+and kilometers. While this can be done with 25 if statements, it is shorter and 
+easier to add on to if you use a two-dimensional list of conversions, so please
+use lists for this problem.
+</text>
+</exercise>
+<exercise>
+<id>8.22</id>
+<text>
+The following is useful as part of a program to play Battleship. Suppose you 
+have a 5 × 5 list that consists of zeroes and ones. Ask the user to enter a 
+row and a column. If the entry in the list at that row and column is a one, 
+the program should print Hit and otherwise it should print Miss.
+</text>
+</exercise>
+<exercise>
+<id>8.23</id>
+<text>
+This exercise is useful in creating a Memory game. Randomly generate a 6 × 6 
+list of assorted characters such that there are exactly two of each character. 
+An example is shown below.
+
+@ 5 # A A !
+5 0 b @ $ z
+$ N x ! N z
+0 - + # b :
+- : + c c x
+</text>
+</exercise>
+<exercise>
+<id>8.24</id>
+<text>
+The following is useful in implementing computer players in a number of 
+different games. Write a program that creates a 5 × 5 list consisting of 
+zeroes and ones. Your program should then pick a random location in the 
+list that contains a zero and change it to a one. If all the entries are one, 
+the program should say so. [Hint: one way to do this is to create a new list 
+whose items are the coordinates of all the ones in the list and use the 
+choice method to randomly select one. Use a two-element list to represent 
+a set of coordinates.]
+</text>
+</exercise>
+<exercise>
+<id>8.25</id>
+<text>
+Here is an old puzzle question you can solve with a computer program. 
+There is only one five-digit number n that is such that every one of the 
+following ten numbers shares exactly one digit in common in the same 
+position as n. Find n.
+01265, 12171, 23257, 34548, 45970, 56236, 67324, 78084, 89872, 99414
+</text>
+</exercise>
+<exercise>
+<id>8.26</id>
+<text>
+We usually refer to the entries of a two-dimensional list by their row 
+and column, like below on the left. Another way is shown below on the right.
+
+(0,0) (0,1) (0,2)    0  1  2
+(1,0) (1,1) (1,2)    3  4  5
+(2,0) (2,1) (2,2)    6  7  8
+
+a) Write some code that translates from the left representation to the 
+right one. The // and % operators will be useful. Be sure your code works 
+for arrays of any size.
+b) Write some code that translates from the right representation to the left one.
+</text>
+</exercise>
+<exercise>
+<id>9.1</id>
+<text>
+The code below prints the numbers from 1 to 50. Rewrite the code using a while 
+loop to accomplish the same thing.
+
+for i in range(1,51):
+    print(i)
+</text>
+</exercise>
+<exercise>
+<id>9.2</id>
+<text>
+a) Write a program that uses a while loop (not a for loop) to read through a string 
+and print the characters of the string one-by-one on separate lines.
+b) Modify the program above to print out every second character of the string.
+</text>
+</exercise>
+<exercise>
+<id>9.3</id>
+<text>
+A good program will make sure that the data its users enter is valid. Write a program 
+that asks the user for a weight and converts it from kilograms to pounds. 
+Whenever the user enters a weight below 0, the program should tell them that their 
+entry is invalid and then ask them again to enter a weight. 
+[Hint: Use a while loop, not an if statement].
+</text>
+</exercise>
+<exercise>
+<id>9.4</id>
+<text>
+Write a program that asks the user to enter a password. If the user enters the 
+right password, the program should tell them they are logged in to the system. 
+Otherwise, the program should ask them to reenter the password. The user should 
+only get five tries to enter the password, after which point the program should 
+tell them that they are kicked off of the system.
+</text>
+</exercise>
+<exercise>
+<id>9.5</id>
+<text>
+Write a program that allows the user to enter any number of test scores. 
+The user indicates they are done by entering in a negative number. 
+Print how many of the scores are A's (90 or above). Also print out the average.
+</text>
+</exercise>
+<exercise>
+<id>9.6</id>
+<text>
+Modify the higher/lower program so that when there is only one guess left, 
+it says 1 guess, not 1 guesses.
+</text>
+</exercise>
+<exercise>
+<id>9.7</id>
+<text>
+Recall that, given a string s, s.index('x') returns the index of the first x 
+in s and an error if there is no x.
+a) Write a program that asks the user for a string and a letter. Using a while 
+loop, the program should print the index of the first occurrence of that letter 
+and a message if the string does not contain the letter.
+b) Write the above program using a for/break loop instead of a while loop.
+</text>
+</exercise>
+<exercise>
+<id>9.8</id>
+<text>
+The GCD (greatest common divisor) of two numbers is the largest number that 
+both are divisible by. For instance, gcd(18,42) is 6 because the largest 
+number that both 18 and 42 are divisible by is 6. Write a program that 
+asks the user for two numbers and computes their gcd. 
+
+Shown below is a way to compute the GCD, called Euclid's Algorithm.
+- First compute the remainder of dividing the larger number by the smaller number
+- Next, replace the larger number with the smaller number and the smaller number 
+with the remainder.
+- Repeat this process until the smaller number is 0. The GCD is the last value 
+of the larger number.
+</text>
+</exercise>
+<exercise>
+<id>9.9</id>
+<text>
+A 4000-year old method to compute the square root of 5 is as follows:
+Start with an initial guess, say 1. Then compute
+
+(1+5/1)/2=3.
+
+Next, take that 3 and replace the 1's in the previous formula with 3's . 
+This gives:
+
+(3+5/3)/2=7/3 ≈ 2.33.
+
+Next replace the 3 in the previous formula with 7/3. This gives
+
+(7/3+5/(7/3))/2=47/21 ≈ 2.24.
+
+If you keep doing this process of computing the formula, getting a result, 
+and plugging it back in, the values will eventually get closer and closer 
+to √5. This method works for numbers other than 5. Write a program that asks 
+the user for a number and uses this method to estimate the square root of the 
+number correct to within 10-10. The estimate will be correct to within 10-10 
+when the absolute value of the difference between consecutive values is 
+less than 10-10.
+</text>
+</exercise>
+<exercise>
+<id>9.10</id>
+<text>
+Write a program that has a list of ten words, some of which have repeated 
+letters and some which don't. Write a program that picks a random word 
+from the list that does not have any repeated letters.
+</text>
+</exercise>
+<exercise>
+<id>9.11</id>
+<text>
+Write a program that starts with an 5 × 5 list of zeroes and randomly 
+changes exactly ten of those zeroes to ones.
+</text>
+</exercise>
+<exercise>
+<id>9.12</id>
+<text>
+Write a program in which you have a list that contains seven integers 
+that can be 0 or 1. Find the first nonzero entry in the list and change 
+it to a 1. If there are no nonzero entries, print a message saying so.
+</text>
+</exercise>
+<exercise>
+<id>9.13</id>
+<text>
+This exercise asked you to write a program that lets the user play 
+Rock-Paper-Scissors against the computer. In that program there were 
+exactly five rounds. Rewrite the program so that it is a best 3 out of 5. 
+That is, the first player to win three times is the winner.
+</text>
+</exercise>
+<exercise>
+<id>9.14</id>
+<text>
+Write a program to play the following simple game. The player starts 
+with $100. On each turn a coin is flipped and the player has to guess 
+heads or tails. The player wins $9 for each correct guess and loses $10 
+for each incorrect guess. The game ends either when the player runs 
+out of money or gets to $200.
+</text>
+</exercise>
+<exercise>
+<id>9.15</id>
+<text>
+Write a program to play the following game. There is a list of several 
+country names and the program randomly picks one. The player then has 
+to guess letters in the word one at a time. Before each guess the country 
+name is displayed with correctly guessed letters filled in and the rest 
+of the letters represented with dashes. For instance, if the country 
+is Canada and the player has correctly guessed a, d, and n, the program
+ would display -ana-da. The program should continue until the player 
+either guesses all of the letters of the word or gets five letters wrong.
+</text>
+</exercise>
+<exercise>
+<id>9.16</id>
+<text>
+Write a text-based version of the game Memory. The game should generate 
+a 5 × 5 board (see this exercise). Initially the program should display 
+the board as a 5 × 5 grid of asterisks. The user then enters the coordinates 
+of a cell. The program should display the grid with the character at 
+those coordinates now displayed. The user then enters coordinates of 
+another cell. The program should now display the grid with the previous 
+character and the new character displayed. If the two characters match, 
+then they should permanently replace the asterisks in those locations. 
+Otherwise, when the user enters the next set of coordinates, those 
+characters should be replaced by asterisks. The game continues this 
+way until the player matches everything or runs out of turns. You can 
+decide how many turns they player gets.
+</text>
+</exercise>
+<exercise>
+<id>9.17</id>
+<text>
+Ask the user to enter the numerator and denominator of a fraction, and the 
+digit they want to know. For instance, if the user enters a numerator of 1 
+and a denominator of 7 and wants to know the 4th digit, your program should 
+print out 8, because 1/7=.142856… and 8 is the 4th digit. One way to do this 
+is to mimic the long division process you may have learned in grade school. 
+It can be done in about five lines using the // operator at one point 
+in the program.
+</text>
+</exercise>
+<exercise>
+<id>9.18</id>
+<text>
+Randomly generate a 6 × 6 list that has exactly 12 ones placed in random 
+locations in the list. The rest of the entries should be zeroes.
+</text>
+</exercise>
+<exercise>
+<id>9.19</id>
+<text>
+Randomly generate a 9 × 9 list where the entries are integers between 1 and 9 
+with no repeat entries in any row or in any column.
+</text>
+</exercise>
+<exercise>
+<id>10.1</id>
+<text>
+Write a program that uses list and range to create the list [3, 6, 9, … , 99].
+</text>
+</exercise>
+<exercise>
+<id>10.2</id>
+<text>
+Write a program that asks the user for a weight in kilograms. 
+The program should convert the weight to kilograms, formatting the 
+result to one decimal place.
+</text>
+</exercise>
+<exercise>
+<id>10.3</id>
+<text>
+Write a program that asks the user to enter a word. Rearrange all the 
+letters of the word in alphabetical order and print out the resulting 
+word. For example, abracadabra should become aaaaabbcdrr.
+</text>
+</exercise>
+<exercise>
+<id>10.4</id>
+<text>
+Write a program that takes a list of ten prices and ten products, 
+applies an 11% discount to each of the prices displays the output 
+like below, right-justified and nicely formatted.
+
+Apples    $  2.45
+Oranges   $ 18.02
+...
+Pears     $120.03
+</text>
+</exercise>
+<exercise>
+<id>10.5</id>
+<text>
+Use the following two lists and the format method to create a list 
+of card names in the format card value of suit name 
+(for example, 'Two of Clubs').
+
+suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades']
+values = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven',
+          'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
+</text>
+</exercise>
+<exercise>
+<id>10.6</id>
+<text>
+Write a program that uses a boolean flag variable in determining 
+whether two lists have any items in common.
+</text>
+</exercise>
+<exercise>
+<id>10.7</id>
+<text>
+Write a program that creates the list [1, 11, 111, 1111, ..., 111...1], 
+where the entries have an ever increasing number of ones, with the last 
+entry having 100 ones.
+</text>
+</exercise>
+<exercise>
+<id>10.8</id>
+<text>
+Write a program to find all numbers between 1 and 1000 that are 
+divisible by 7 and end in a 6.
+</text>
+</exercise>
+<exercise>
+<id>10.9</id>
+<text>
+Write a program to determine how many of the numbers between 
+1 and 10000 contain the digit 3.
+</text>
+</exercise>
+<exercise>
+<id>10.10</id>
+<text>
+Adding certain numbers to their reversals sometimes produces a 
+palindromic number. For instance, 241 + 142 = 383. Sometimes, we have 
+to repeat the process. For instance, 84 + 48 = 132 and 132 + 231 = 363. 
+Write a program that finds both two-digit numbers for which this process 
+must be repeated more than 20 times to obtain a palindromic number.
+</text>
+</exercise>
+<exercise>
+<id>10.11</id>
+<text>
+Write a program that finds all pairs of six-digit palindromic numbers 
+that are less than 20 apart. One such pair is 199991 and 200002.
+</text>
+</exercise>
+<exercise>
+<id>10.12</id>
+<text>
+The number 1961 reads the same upside-down as right-side up. Print out 
+all the numbers between 1 and 100000 that read the same upside-down as 
+right-side up.
+</text>
+</exercise>
+<exercise>
+<id>10.13</id>
+<text>
+The number 99 has the property that if we multiply its digits together 
+and then add the sum of its digits to that, we get back to 99. 
+That is, (9 · 9) + (9 + 9) = 99. Write a program to find all of the 
+numbers less than 10000 with this property. (There are only nine of them.)
+</text>
+</exercise>
+<exercise>
+<id>10.14</id>
+<text>
+Write a program to find the smallest positive integer that satisfies 
+the following property: If you take the leftmost digit and move it 
+all the way to the right, the number thus obtained is exactly 3.5 
+times larger than the original number. For instance, if we start 
+with 2958 and move the 2 all the way to the right, we get 9582, 
+which is roughly 3.2 times the original number.
+</text>
+</exercise>
+<exercise>
+<id>10.15</id>
+<text>
+Write a program to determine how many zeroes 1000! ends with.
+</text>
+</exercise>
+<exercise>
+<id>10.16</id>
+<text>
+Write a program that converts a decimal height in feet into feet 
+and inches. For instance, an input of 4.75 feet should become 
+4 feet, 9 inches.
+</text>
+</exercise>
+<exercise>
+<id>10.17</id>
+<text>
+Write a program that repeatedly asks the user to enter a height 
+in the format feet'inches" (like 5'11" or 6'3". The user indicates 
+they are done entering heights by entering done. The program should 
+return a count of how many 4-footers, 5-footers, 6-footers, 
+and 7-footers were entered.
+</text>
+</exercise>
+<exercise>
+<id>10.18</id>
+<text>
+Write a program that repeatedly asks the user to enter a football 
+score in the format winning score-losing score (like 27-13 or 21-3). 
+The user indicates they are done entering scores by entering done. 
+The program should then output the highest score and the lowest 
+score out of all the scores entered.
+</text>
+</exercise>
+<exercise>
+<id>10.19</id>
+<text>
+Write a program that repeatedly asks the user to enter a birthday 
+in the format month/day (like 12/25 or 2/14). The user indicates 
+they are done entering birthdays by entering done. The program 
+should return a count of how many of those birthdays are in February 
+and how many are on the 25th of some month (any month).
+</text>
+</exercise>
+<exercise>
+<id>10.20</id>
+<text>
+Write a program that asks the user to enter a date in the format 
+mm/dd/yy and converts it to a more verbose format. For example, 
+02/04/77 should get converted into February 4, 1977.
+</text>
+</exercise>
+<exercise>
+<id>10.21</id>
+<text>
+Write a program that asks the user to enter a fraction in the 
+form of a string like '1/2' or '8/24'. The program should reduce 
+the fraction to lowest terms and print out the result.
+</text>
+</exercise>
+<exercise>
+<id>10.22</id>
+<text>
+Write a program to find all four solutions to the following problem: 
+If a starfruit is worth $5, a mango is worth $3, and three oranges 
+together cost $1, how many starfruits, mangoes, and oranges, 
+totaling 100, can be bought for $100?
+</text>
+</exercise>
+<exercise>
+<id>10.23</id>
+<text>
+The currency of a strange country has coins worth 7 cents and 11 cents. 
+Write a program to determine the largest purchase price that cannot 
+be paid using these two coins.
+</text>
+</exercise>
+<exercise>
+<id>10.24</id>
+<text>
+Here is an old puzzle you can solve using brute force by using a 
+computer program to check all the possibilities: In the calculation 
+43 + 57 = 207, every digit is precisely one away from its true value. 
+What is the correct calculation?
+</text>
+</exercise>
+<exercise>
+<id>10.25</id>
+<text>
+Write a program that finds all integer solutions to Pell's equation 
+x^2-2y^2=1, where x and y are between 1 and 100.
+</text>
+</exercise>
+<exercise>
+<id>10.26</id>
+<text>
+Write a program that asks the user for a number and prints out all 
+the ways to write the number as difference of two perfect squares, 
+x^2-y^2, where x and y are both between 1 and 1000. Writing a number 
+as a difference of two squares leads to clever techniques for 
+factoring large numbers.
+</text>
+</exercise>
+<exercise>
+<id>10.27</id>
+<text>
+Write a program that simulates all possible rolls of four dice and 
+for each simulated roll, finds the sums of pairs of dice. For instance, 
+if the roll is 5 1 2 4, the sums are 6, 8, 9, 3 ,5, and 6. For each 
+of the possible sums from 2 to 12, find the total number of simulated 
+rolls in which the sum appears and what percentage of the simulated 
+rolls had those sums appear. Output the totals and percentages, nicely 
+formatted, with the percentages formatted to one decimal place. 
+To check your work, you should find that the sum 2 comes up in 171 rolls, 
+which is 13.2% of the rolls.
+</text>
+</exercise>
+<exercise>
+<id>10.28</id>
+<text>
+In a magic square, each row, each column, and both diagonals add up to 
+the same number. A partially filled magic square is shown below. 
+Write a program to check through all the possibilities to 
+fill in the magic square.
+
+5 _ _
+_ 6 2
+3 8 _
+</text>
+</exercise>
+<exercise>
+<id>10.29</id>
+<text>
+The following is useful as part of a program to play Minesweeper. 
+Suppose you have a 5 × 5 list that consists of zeros and M's. 
+Write a program that creates a new 5 × 5 list that has M's in the same 
+place, but the zeroes are replaced by counts of how many M's are in 
+adjacent cells (adjacent either horizontally, vertically, or diagonally). 
+An example is shown below. [Hint: short-circuiting may be helpful for 
+avoiding index-out-of-range errors.]
+
+0 M 0 M 0          1 M 3 M 1
+0 0 M 0 0          1 2 M 2 1
+0 0 0 0 0          2 3 2 1 0
+M M 0 0 0          M M 2 1 1
+0 0 0 M 0          2 2 2 M 1
+</text>
+</exercise>
+<exercise>
+<id>10.30</id>
+<text>
+Pascal's triangle is shown below. On the outside are 1's and each other 
+number is the sum of the two numbers directly above it.
+Write a program to generate Pascal's triangle. Allow the user to specify 
+the number of rows. Be sure that it is nicely formatted, like below.
+
+          1
+        1   1
+      1   2   1
+    1   3   3   1
+  1   4   6   4   1
+1   5  10  10   5   1
+</text>
+</exercise>
+<exercise>
+<id>10.31</id>
+<text>
+Given two dates entered as strings in the form mm/dd/yyyy where the 
+years are between 1901 and 2099, determine how many days apart they are. 
+Here is a bit of information that may be useful: Leap years between 1
+901 and 2099 occur exactly every four years, starting at 1904. February 
+has 28 days, 29 during a leap year. November, April, June, and September 
+each have 30 days. The other months have 31 days.
+</text>
+</exercise>
+<exercise>
+<id>10.32</id>
+<text>
+Monte Carlo simulations can be used to estimate all sorts of things, 
+including probabilities of coin flip and dice events. As an example, 
+to estimate the probability of rolling a pair of sixes with two dice, 
+we could use random integers to simulate the dice and run the simulation 
+thousands of times, counting what percentage of the time a pair of 
+sixes comes up.
+a) Estimate the probability of rolling a Yahtzee in a single roll of 
+five dice. That is estimate the probability that when rolling five 
+dice they all come out to be the same number.
+b) Estimate the probability of rolling a large straight in a single 
+roll of five dice. A large straight is a roll where the dice come 
+ut 1-2-3-4-5 or 2-3-4-5-6 in any order.
+c) Estimate the average longest run of heads or tails when flipping 
+a coin 200 times.
+d) Estimate the average number of coin flips it takes before five 
+heads in a row come up.
+e) Estimate the average number of coin flips it takes before the 
+string s comes up, where s is a string of heads and tails, like HHTTH.
+</text>
+</exercise>
+<exercise>
+<id>11.1</id>
+<text>
+Write a program that repeatedly asks the user to enter product names 
+and prices. Store all of these in a dictionary whose keys are the 
+product names and whose values are the prices. When the user is done 
+entering products and prices, allow them to repeatedly enter a product 
+name and print the corresponding price or a message if the product is 
+not in the dictionary.
+</text>
+</exercise>
+<exercise>
+<id>11.2</id>
+<text>
+Using the dictionary created in the previous problem, allow the user to 
+enter a dollar amount and print out all the products whose price is 
+less than that amount.
+</text>
+</exercise>
+<exercise>
+<id>11.3</id>
+<text>
+For this problem, use the dictionary from the beginning of this chapter 
+whose keys are month names and whose values are the number of days in 
+the corresponding months.
+a) Ask the user to enter a month name and use the dictionary to tell 
+them how many days are in the month.
+b) Print out all of the keys in alphabetical order.
+c) Print out all of the months with 31 days.
+d) Print out the (key-value) pairs sorted by the number of days in each month
+e) Modify the program from part (a) and the dictionary so that the 
+user does not have to know how to spell the month name exactly. 
+That is, all they have to do is spell the first three letters of 
+the month name correctly.
+</text>
+</exercise>
+<exercise>
+<id>11.4</id>
+<text>
+Write a program that uses a dictionary that contains ten user names 
+and passwords. The program should ask the user to enter their username 
+and password. If the username is not in the dictionary, the program 
+should indicate that the person is not a valid user of the system. 
+If the username is in the dictionary, but the user does not enter the 
+right password, the program should say that the password is invalid. 
+If the password is correct, then the program should tell the user that 
+they are now logged in to the system.
+</text>
+</exercise>
+<exercise>
+<id>11.5</id>
+<text>
+Repeatedly ask the user to enter a team name and the how many games 
+the team won and how many they lost. Store this information in a 
+dictionary where the keys are the team names and the values are 
+lists of the form [wins, losses].
+a) Using the dictionary created above, allow the user to enter 
+a team name and print out the team's winning percentage.
+b) Using the dictionary, create a list whose entries are the number 
+of wins of each team.
+c) Using the dictionary, create a list of all those teams that 
+have winning records.
+</text>
+</exercise>
+<exercise>
+<id>11.6</id>
+<text>
+Repeatedly ask the user to enter game scores in a format like 
+team1 score1 - team2 score2. Store this information in a dictionary 
+where the keys are the team names and the values are lists of 
+the form [wins, losses].
+</text>
+</exercise>
+<exercise>
+<id>11.7</id>
+<text>
+Create a 5 × 5 list of numbers. Then write a program that creates 
+a dictionary whose keys are the numbers and whose values are the 
+how many times the number occurs. Then print the three most 
+common numbers.
+</text>
+</exercise>
+<exercise>
+<id>11.8</id>
+<text>
+Using the card dictionary from earlier in this chapter, create a 
+simple card game that deals two players three cards each. The 
+player with the highest card wins. If there is a tie, then 
+compare the second highest card and, if necessary, the third 
+highest. If all three cards have the same value, then the game is a draw.
+</text>
+</exercise>
+<exercise>
+<id>11.8</id>
+<text>
+Using the card dictionary from earlier in the chapter, deal out 
+three cards. Determine the following:
+a) If the three cards form a flush (all of the same suit)
+b) If there is a three-of-a-kind (all of the same value)
+c) If there is a pair, but not three-of-a-kind
+d) If the three cards form a straight (all in a row, like 
+(2, 3, 4) or (10, Jack, Queen))
+</text>
+</exercise>
+<exercise>
+<id>11.9</id>
+<text>
+Using the card dictionary from earlier in the chapter run a Monte Carlo 
+simulation to estimate the probability of being dealt a flush in a five 
+card hand. See this exercise for more about Monte Carlo simulations.
+</text>
+</exercise>
+<exercise>
+<id>11.10</id>
+<text>
+In this section we met the substitution cipher. This cipher replaces 
+every letter with a different letter. For instance every a might be 
+replaced with an e, every b might be replaced with an a, etc. Write 
+a program that asks the user to enter two strings. Then determine if 
+the second string could be an encoded version of the first one with 
+a substitution cipher. For instance, CXYZ is not an encoded version 
+of BOOK because O got mapped to two separate letters. Also, CXXK is 
+not an encoded version of BOOK, because K got mapped to itself. 
+On the other hand, CXXZ would be an encoding of BOOK. This problem 
+can be done with or without a dictionary.
+</text>
+</exercise>
+<exercise>
+<id>11.11</id>
+<text>
+Below are the notes used in music:
+C C# D D# E F F# G G# A A# B
+The notes for the C major chord are C, E, G. A mathematical way to 
+get this is that E is 4 steps past C and G is 7 steps past C. 
+This works for any base. For example, the notes for D major are D, F#, A. 
+We can represent the major chord steps as a list with two elements: [4, 7]. 
+The corresponding lists for some other chord types are shown below:
+
+Minor	        [3,7]	Dominant seventh	[4,7,10]
+Augmented fifth	[4,8]	Minor seventh	        [3,7,10]
+Minor fifth	[4,6]	Major seventh	        [4,7,11]
+Major sixth	[4,7,9]	Diminished seventh	[3,6,10]
+Minor sixth	[3,7,9]		
+Write a program that asks the user for the key and the chord type and 
+prints out the notes of the chord. Use a dictionary whose keys are the 
+(musical) keys and whose values are the lists of steps.
+</text>
+</exercise>
+<exercise>
+<id>11.12</id>
+<text>
+Suppose you are given the following list of strings:
+L = ['aabaabac', 'cabaabca', 'aaabbcba', 'aabacbab', 'acababba']
+Patterns like this show up in many places, including DNA sequencing. 
+The user has a string of their own with only some letters filled in 
+and the rest as asterisks. An example is a**a****. The user would 
+like to know which of the strings in the list fit with their pattern. 
+In the example just given, the matching strings are the first and fourth. 
+One way to solve this problem is to create a dictionary whose keys are 
+the indices in the user's string of the non-asterisk characters and whose 
+values are those characters. Write a program implementing this approach 
+(or some other approach) to find the strings that match a user-entered string.
+</text>
+</exercise>
+<exercise>
+<id>11.13</id>
+<text>
+Dictionaries provide a convenient way to store structured data. 
+Here is an example dictionary:
+
+d=[{'name':'Todd', 'phone':'555-1414', 'email':'todd@mail.net'},
+   {'name':'Helga', 'phone':'555-1618', 'email':'helga@mail.net'},
+   {'name':'Princess', 'phone':'555-3141', 'email':'';},
+   {'name':'LJ', 'phone':'555-2718', 'email':'lj@mail.net'}]
+</text>
+</exercise>
+<exercise>
+<id>11.14</id>
+<text>
+Write a program that reads through any dictionary like this and 
+prints the following:
+
+a) All the users whose phone number ends in an 8
+b) All the users that don't have an email address listed
+</text>
+</exercise>
+<exercise>
+<id>11.15</id>
+<text>
+The following problem is from the string chapter. Try it again, 
+this time using a dictionary whose keys are the names of the time 
+zones and whose values are offsets from the Eastern time zone. 
+Write a program that converts a time from one time zone to another. 
+The user enters the time in the usual American way, such as 3:48pm or 11:26am. 
+The first time zone the user enters is that of the original time and the second 
+is the desired time zone. The possible time zones are Eastern, Central, 
+Mountain, or Pacific.
+Time: 11:48pm
+Starting zone: Pacific
+Ending zone: Eastern
+2:48am
+</text>
+</exercise>
+<exercise>
+<id>11.16</id>
+<text>
+a) Write a program that converts Roman numerals into ordinary numbers. 
+Here are the conversions: M=1000, D=500, C=100, L=50, X=10, V=5 I=1. 
+Don't forget about things like IV being 4 and XL being 40.
+
+b) Write a program that converts ordinary numbers into Roman numerals
+</text>
+</exercise>
+<exercise>
+<id>12.1</id>
+<text>
+You are given a file called class_scores.txt, where each line of the 
+file contains a one-word username and a test score separated by spaces, 
+like below:
+
+GWashington 83
+JAdams 86
+
+Write code that scans through the file, adds 5 points to each test score, 
+and outputs the usernames and new test scores to a new file, scores2.txt.
+</text>
+</exercise>
+<exercise>
+<id>12.2</id>
+<text>
+You are given a file called grades.txt, where each line of the file 
+contains a one-word student username and three test scores separated by 
+spaces, like below:
+
+GWashington 83 77 54
+JAdams 86 69 90
+Write code that scans through the file and determines how many students 
+passed all three tests.
+</text>
+</exercise>
+<exercise>
+<id>12.3</id>
+<text>
+You are given a file called logfile.txt that lists log-on and log-off 
+times for users of a system. A typical line of the file looks like this:
+Van Rossum, 14:22, 14:37
+Each line has three entries separated by commas: a username, a log-on time, 
+and a log-off time. Times are given in 24-hour format. You may assume that 
+all log-ons and log-offs occur within a single workday.
+
+Write a program that scans through the file and prints out all users who 
+were online for at least an hour.
+</text>
+</exercise>
+<exercise>
+<id>12.4</id>
+<text>
+You are given a file called students.txt. A typical line in the file 
+looks like:
+
+walter melon    melon@email.msmary.edu    555-3141
+
+There is a name, an email address, and a phone number, each separated 
+by tabs. Write a program that reads through the file line-by-line, and 
+for each line, capitalizes the first letter of the first and last name 
+and adds the area code 301 to the phone number. Your program should 
+write this to a new file called students2.txt. Here is what the first 
+line of the new file should look like:
+
+Walter Melon    melon@email.msmary.edu    301-555-3141
+</text>
+</exercise>
+<exercise>
+<id>12.5</id>
+<text>
+You are given a file namelist.txt that contains a bunch of names. 
+Some of the names are a first name and a last name separated by spaces, 
+like George Washington, while others have a middle name, 
+like John Quincy Adams. There are no names consisting of just one word 
+or more than three words. Write a program that asks the user to enter 
+initials, like GW or JQA, and prints all the names that match those initials. 
+Note that initials like JA should match both John Adams and John Quincy Adams.
+</text>
+</exercise>
+<exercise>
+<id>12.6</id>
+<text>
+You are given a file namelist.txt that contains a bunch of names. 
+Print out all the names in the list in which the vowels a, e, i, o, 
+and u appear in order (with repeats possible). The first vowel in the 
+name must be a and after the first u, it is okay for there to be other 
+vowels. An example is Ace Elvin Coulson.
+</text>
+</exercise>
+<exercise>
+<id>12.7</id>
+<text>
+You are given a file called baseball.txt. A typical line of the file 
+starts like below.
+
+Ichiro Suzuki     SEA     162     680     74   ...[more stats]
+
+Each entry is separated by a tab, \t. The first entry is the player's 
+name and the second is their team. Following that are 16 statistics. 
+Home runs are the seventh stat and stolen bases are the eleventh. 
+Print out all the players who have at least 20 home runs and at least 
+20 stolen bases.
+</text>
+</exercise>
+<exercise>
+<id>12.8</id>
+<text>
+For this problem, use the file of NCAA basketball scores as described 
+in this section.
+a) Find the average of the points scored over all the games in the file.
+b) Pick your favorite team and scan through the file to determine how 
+many games they won and how many games they lost.
+c) Find the team(s) that lost by 30 or more points the most times
+d) Find all the teams that averaged at least 70 points a game.
+e) Find all the teams that had winning records but were collectively 
+outscored by their opponents. A team is collectively outscored by their 
+opponents if the total number of points the team scored over all their 
+games is less than the total number of points their opponents scored in 
+their games against the team.
+</text>
+</exercise>
+<exercise>
+<id>12.9</id>
+<text>
+Benford's law states that in real data where the values are spread across 
+several orders of magnitude, about 30% of the values will start with the 
+number 1, whereas only about 4.6% of the values will start with the number 9. 
+This is contrary to what we might expect, namely that values starting 
+with 1 and 9 would be equally likely. Using the file expenses.txt which 
+consists of a number of costs from an expense account, determine what 
+percentage start with each of the digits 1 through 9. This technique is 
+used by accountants to detect fraud.
+</text>
+</exercise>
+<exercise>
+<id>12.10</id>
+<text>
+Wordplay -- Use the file wordlist.txt for this problem. Find the following:
+a) All words ending in ime
+b) All words whose second, third, and fourth letters are ave
+c) How many words contain at least one of the letters r, s, t, l, n, e
+d) The percentage of words that contain at least one of the 
+letters r, s, t, l, n, e
+e) All words with no vowels
+f) All words that contain every vowel
+g) Whether there are more ten-letter words or seven-letter words
+h) The longest word in the list
+i) All palindromes
+j) All words that are words in reverse, like rat and tar.
+k) Same as above, but only print one word out of each pair.
+l) All words that contain double letters next each other like 
+aardvark or book, excluding words that end in lly
+m) All words that contain a q that isn't followed by a u
+n) All words that contain zu anywhere in the word
+o) All words that contain ab in multiple places, like habitable
+p) All words with four or more vowels in a row
+q) All words that contain both a z and a w
+r) All words whose first letter is a, third letter is e and fifth letter is i
+s) All two-letter words
+t) All four-letter words that start and end with the same letter
+u) All words that contain at least nine vowels.
+v) All words that contain each of the letters a, b, c, d, e, and f 
+in any order. There may be other letters in the word. Two examples are 
+backfield and feedback.
+w) All words whose first four and last four letters are the same
+x) All words of the form abcd*dcba, where * is arbitrarily long sequence of letters.
+y) All groups of 5 words, like pat pet pit pot put, where each word is 3 
+letters, all words share the same first and last letters, and the middle 
+letter runs through all 5 vowels.
+z) The word that has the most i's.
+</text>
+</exercise>
+<exercise>
+<id>12.11</id>
+<text>
+Write a program to help with word games. The user enters a word and the 
+program uses the wordlist to determine if the user's word is a real word or not.
+</text>
+</exercise>
+<exercise>
+<id>12.12</id>
+<text>
+Suppose we write all the words in the wordlist backwards and then arrange these 
+backwards words alphabetically. Write a program that prints the last word in 
+this modified wordlist.
+</text>
+</exercise>
+<exercise>
+<id>12.13</id>
+<text>
+Print out all combinations of the string 'Python' plus a three letter 
+English word. Capitalize the first letter of the three letter word. 
+Example combinations are 'PythonCat', 'PythonDog', and 'PythonTag'. 
+These are valid combinations because cat, dog, and tag are English words. 
+On the other hand, 'PythonQqz' would not be a valid combination because qqz 
+is not an English word. Use a wordlist to determine which three letter 
+combinations are words.
+</text>
+</exercise>
+<exercise>
+<id>12.14</id>
+<text>
+Write a simple spell-checking program. The user should enter a string and 
+the program should print out a list of all the words it thinks are misspelled. 
+These would be all the words it cannot find in a wordlist.
+</text>
+</exercise>
+<exercise>
+<id>12.15</id>
+<text>
+Crossword cheater: When working on a crossword puzzle, often you will have 
+a word where you know several of the letters, but not all of them. 
+You can write a computer program to help you. For the program, the user 
+should be able to input a word with the letters they know filled in and 
+asterisks for those they don't know. The program should print out a list 
+of all words that fit that description. For example, the input th***ly 
+should return all the words that could work, namely thickly and thirdly.
+</text>
+</exercise>
+<exercise>
+<id>12.16</id>
+<text>
+Ask the user to enter several letters. Then find all the words that can 
+be made with those letters, repeats allowed.
+</text>
+</exercise>
+<exercise>
+<id>12.17</id>
+<text>
+Using the wordlist, produce a dictionary whose keys are the letters a 
+through z and whose values are the percentage of words that use that letter.
+</text>
+</exercise>
+<exercise>
+<id>12.18</id>
+<text>
+Using the wordlist, produce a dictionary whose keys are the letters 
+a through z and whose values are the percentage of total letters in t
+he wordlist that are that letter.
+</text>
+</exercise>
+<exercise>
+<id>12.19</id>
+<text>
+Write a program that asks the user for a word and finds all the 
+smaller words that can be made from the letters of that word. 
+The number of occurrences of a letter in a smaller word can't 
+exceed the number of occurrences of the letter in the user's word.
+</text>
+</exercise>
+<exercise>
+<id>12.20</id>
+<text>
+a) Write a program that reads a file consisting of email addresses, 
+each on its own line. Your program should print out a string consisting 
+of those email addresses separated by semicolons.
+b) Write the same program as above, but the new string should contain 
+only those email addresses that do not end in @prof.college.edu.
+</text>
+</exercise>
+<exercise>
+<id>12.21</id>
+<text>
+The file high_temperatures.txt contains the average high temperatures 
+for each day of the year in a certain city. Each line of the file 
+consists of the date, written in the month/day format, followed by 
+a space and the average high temperature for that date. Find the 
+30-day period over which there is the biggest increase in the 
+average high temperature.
+</text>
+</exercise>
+<exercise>
+<id>12.22</id>
+<text>
+In the string chapter there was an exercise about the game Mad Libs. 
+It asked you to make up a story and leave out some words of the story. 
+Your program should ask the user to enter some words and tell them what 
+types of words to enter. Then print the full story along with the 
+inserted words. Rewrite your program from that exercise to read the 
+story from a file. Reading the story from a file allows people who do 
+not know how to program to use their own stories with the program 
+without having to change the code.
+</text>
+</exercise>
+<exercise>
+<id>12.23</id>
+<text>
+An acronym is an abbreviation that uses the first letter of each word in 
+a phrase. We see them everywhere. For instance, NCAA for 
+National Collegiate Athletic Association or NBC for 
+National Broadcasting Company. Write a program where the user enters an 
+acronym and the program randomly selects words from a wordlist such that 
+the words would fit the acronym. Below is some typical output generated 
+when I ran the program:
+
+Enter acronym: ABC
+['addressed', 'better', 'common']
+
+Enter acronym: BRIAN
+['bank', 'regarding', 'intending', 'army', 'naive']
+
+</text>
+</exercise>
+<exercise>
+<id>12.24</id>
+<text>
+This problem is about a version of the game Jotto. The computer 
+chooses a random five-letter word with no repeat letters. 
+The player gets several turns to try to guess the computer's word. 
+On each turn, the player guesses a five-letter word and is told 
+the number of letters that their guess has in common with the 
+computer's word.
+</text>
+</exercise>
+<exercise>
+<id>12.25</id>
+<text>
+The word part has the interesting property that if you remove its 
+letters one by one, each resulting step is a real word. For instance, 
+part → pat → pa → a. You may remove the letters in any order, 
+and the last (single-letter) word needs to be a real word as well. 
+Find all eight-letter words with this property.
+</text>
+</exercise>
+<exercise>
+<id>12.25</id>
+<text>
+Write a program to cheat at the game Scrabble. The user enters a string. 
+Your program should return a list of all the words that can be created 
+from those seven letters.
+</text>
+</exercise>
+<exercise>
+<id>13.1</id>
+<text>
+Write a function called rectangle that takes two integers m and n as 
+arguments and prints out an m × n box consisting of asterisks. 
+Shown below is the output of rectangle(2,4)
+
+****
+****
+</text>
+</exercise>
+<exercise>
+<id>13.2</id>
+<text>
+a) Write a function called add_excitement that takes a list of strings 
+and adds an exclamation point (!) to the end of each string in the list. 
+The program should modify the original list and not return anything.
+
+b) Write the same function except that it should not modify the original 
+list and should instead return a new list.
+</text>
+</exercise>
+<exercise>
+<id>13.3</id>
+<text>
+Write a function called sum_digits that is given an integer num and 
+returns the sum of the digits of num.
+</text>
+</exercise>
+<exercise>
+<id>13.4</id>
+<text>
+The digital root of a number n is obtained as follows: Add up the 
+digits n to get a new number. Add up the digits of that to get another 
+new number. Keep doing this until you get a number that has only one digit. 
+That number is the digital root. For example, if n=45893, we add up the 
+digits to get 4+5+8+9+3 = 29. We then add up the digits of 29 to get 2+9=11. 
+We then add up the digits of 11 to get 1+1=2. Since 2 has only one digit, 
+2 is our digital root. Write a function that returns the digital root of 
+an integer n. [Note: there is a shortcut, where the digital root is equal 
+to n mod 9, but do not use that here.]
+</text>
+</exercise>
+<exercise>
+<id>13.5</id>
+<text>
+Write a function called first_diff that is given two strings and returns 
+the first location in which the strings differ. If the strings are 
+identical, it should return -1.
+</text>
+</exercise>
+<exercise>
+<id>13.6</id>
+<text>
+Write a function called binom that takes two integers n and k and returns 
+the binomial coefficient n C k. The definition is n C k = n!/(k!(n-k)!).
+</text>
+</exercise>
+<exercise>
+<id>13.7</id>
+<text>
+Write a function that takes an integer n and returns a random integer 
+with exactly n digits. For instance, if n is 3, then 125 and 593 would 
+be valid return values, but 093 would not because that is really 93, 
+which is a two-digit number.
+</text>
+</exercise>
+<exercise>
+<id>13.8</id>
+<text>
+Write a function called number_of_factors that takes an integer and 
+returns how many factors the number has.
+</text>
+</exercise>
+<exercise>
+<id>13.9</id>
+<text>
+Write a function called factors that takes an integer and returns a 
+list of its factors.
+</text>
+</exercise>
+<exercise>
+<id>13.10</id>
+<text>
+Write a function called closest that takes a list of numbers L and a 
+number n and returns the largest element in L that is not larger than n. 
+For instance, if L=[1,6,3,9,11] and n=8, then the function should return 6, 
+because 6 is the closest thing in L to 8 that is not larger than 8. 
+Don't worry about if all of the things in L are smaller than n.
+</text>
+</exercise>
+<exercise>
+<id>13.11</id>
+<text>
+Write a function called matches that takes two strings as arguments and 
+returns how many matches there are between the strings. A match is where 
+the two strings have the same character at the same index. For instance, 
+'python' and 'path' match in the first, third, and fourth characters, 
+so the function should return 3.
+</text>
+</exercise>
+<exercise>
+<id>13.12</id>
+<text>
+Recall that if s is a string, then s.find('a') will find the location of 
+the first a in s. The problem is that it does not find the location of 
+every a. Write a function called findall that given a string and a single 
+character, returns a list containing all of the locations of that character 
+in the string. It should return an empty list if there are no occurrences 
+of the character in the string.
+</text>
+</exercise>
+<exercise>
+<id>13.13</id>
+<text>
+Write a function called change_case that given a string, returns a string 
+with each upper case letter replaced by a lower case letter and vice-versa.
+</text>
+</exercise>
+<exercise>
+<id>13.14</id>
+<text>
+Write a function called is_sorted that is given a list and returns True 
+if the list is sorted and False otherwise.
+</text>
+</exercise>
+<exercise>
+<id>13.15</id>
+<text>
+Write a function called root that is given a number x and an integer 
+n and returns x1/n. In the function definition, 
+set the default value of n to 2.
+</text>
+</exercise>
+<exercise>
+<id>13.16</id>
+<text>
+Write a function called one_away that takes two strings and returns 
+True if the strings are of the same length and differ in exactly one 
+letter, like bike/hike or water/wafer.
+</text>
+</exercise>
+<exercise>
+<id>13.17</id>
+<text>
+a) Write a function called primes that is given a number n and 
+returns a list of the first n primes. Let the default value of n be 100.
+b) Modify the function above so that there is an optional argument 
+called start that allows the list to start at a value other than 2. 
+The function should return the first n primes that are greater than 
+or equal to start. The default value of start should be 2.
+Our number system is called base 10 because we have ten digits: 0, 1, …, 9. 
+Some cultures, including the Mayans and Celts, used a base 20 system. 
+In one version of this system, the 20 digits are represented by the 
+letters A through T. Here is a table showing a few conversions:
+
+10	20	10	20	10	20	10	20
+0	A	8	I	16	Q	39	BT
+1	B	9	J	17	R	40	CA
+2	C	10	K	18	S	41	CB
+3	D	11	L	19	T	60	DA
+4	E	12	M	20	BA	399	TT
+5	F	13	N	21	BB	400	BAA
+6	G	14	O	22	BC	401	BAB
+7	H	15	P	23	BD	402	BAC
+</text>
+</exercise>
+<exercise>
+<id>13.18</id>
+<text>
+Write a function called base20 that converts a base 10 number to 
+base 20. It should return the result as a string of base 20 digits. 
+One way to convert is to find the remainder when the number is 
+divided by 20, then divide the number by 20, and repeat the process 
+until the number is 0. The remainders are the base 20 digits in 
+reverse order, though you have to convert them into their letter equivalents.
+</text>
+</exercise>
+<exercise>
+<id>13.19</id>
+<text>
+Write a function called verbose that, given an integer less than 
+1015, returns the name of the integer in English. As an example, 
+verbose(123456) should return one hundred twenty-three thousand, 
+four hundred fifty-six.
+</text>
+</exercise>
+<exercise>
+<id>13.20</id>
+<text>
+Write a function called merge that takes two already sorted lists 
+of possibly different lengths, and merges them into a single sorted list.
+a) Do this using the sort method.
+b) Do this without using the sort method.
+</text>
+</exercise>
+<exercise>
+<id>13.21</id>
+<text>
+In the chapter on text files, the way we checked to see if a word w 
+was a real word was:
+
+	if w in words:
+
+where words was the list of words generated from a wordlist. 
+This is unfortunately slow, but there is a faster way, called 
+a binary search. To implement a binary search in a function, 
+start by comparing w with the middle entry in words. If they 
+are equal, then you are done and the function should return True. 
+On the other hand, if w comes before the middle entry, then 
+search the first half of the list. If it comes after the middle entry, 
+then search the second half of the list. Then repeat the process 
+on the appropriate half of the list and continue until the word is 
+found or there is nothing left to search, in which case the function 
+short return False. The and  operators can be used to alphabetically 
+compare two strings.
+</text>
+</exercise>
+<exercise>
+<id>13.22</id>
+<text>
+A Tic-tac-toe board can be represented be a 3 × 3 two-dimensional l
+ist, where zeroes stand for empty cells, ones stand for X's and twos 
+stand for O's.
+a) Write a function that is given such a list and randomly chooses 
+a spot in which to place a 2. The spot chosen must currently be a 0 
+and a spot must be chosen.
+b) Write a function that is given such a list and checks to see if 
+someone has won. Return True if there is a winner and False otherwise.
+</text>
+</exercise>
+<exercise>
+<id>13.23</id>
+<text>
+Write a function that is given a 9 × 9 potentially solved Sudoku and 
+returns True if it is solved correctly and False if there is a mistake. 
+The Sudoku is correctly solved if there are no repeated numbers in any 
+row or any column or in any of the nine “blocks.”
+</text>
+</exercise>
+<exercise>
+<id>14.1</id>
+<text>
+Write a class called Investment with fields called principal and interest. 
+The constructor should set the values of those fields. There should be a 
+method called value_after that returns the value of the investment after 
+n years. The formula for this is p(1+i)n, where p is the principal, and i 
+is the interest rate. It should also use the special method __str__ so that 
+printing the object will result in something like below:
+Principal - $1000.00, Interest rate - 5.12%
+</text>
+</exercise>
+<exercise>
+<id>14.2</id>
+<text>
+Write a class called Product. The class should have fields called name, 
+amount, and price, holding the product's name, the number of items of that 
+product in stock, and the regular price of the product. There should be a 
+method get_price that receives the number of items to be bought and returns 
+a the cost of buying that many items, where the regular price is charged 
+for orders of less than 10 items, a 10% discount is applied for orders of 
+between 10 and 99 items, and a 20% discount is applied for orders of 100 
+or more items. There should also be a method called make_purchase that 
+receives the number of items to be bought and decreases amount by that much.
+</text>
+</exercise>
+<exercise>
+<id>14.3</id>
+<text>
+Write a class called Password_manager. The class should have a list called 
+old_passwords that holds all of the user's past passwords. The last item of 
+the list is the user's current password. There should be a method called 
+get_password that returns the current password and a method called 
+set_password that sets the user's password. The set_password method 
+should only change the password if the attempted password is different 
+from all the user's past passwords. Finally, create a method called 
+is_correct that receives a string and returns a boolean True or False 
+depending on whether the string is equal to the current password or not.
+</text>
+</exercise>
+<exercise>
+<id>14.4</id>
+<text>
+Write a class called Time whose only field is a time in seconds. It should 
+have a method called convert_to_minutes that returns a string of minutes and 
+seconds formatted as in the following example: if seconds is 230, the method 
+should return '5:50'. It should also have a method called convert_to_hours 
+that returns a string of hours, minutes, and seconds formatted analogously 
+to the previous method.
+</text>
+</exercise>
+<exercise>
+<id>14.5</id>
+<text>
+Write a class called Wordplay. It should have a field that holds a list of words. 
+The user of the class should pass the list of words they want to use to the class. 
+There should be the following methods:
+words_with_length(length) — returns a list of all the words of length length
+starts_with(s) — returns a list of all the words that start with s
+ends_with(s) — returns a list of all the words that end with s
+palindromes() — returns a list of all the palindromes in the list
+only(L) — returns a list of the words that contain only those letters in L
+avoids(L) — returns a list of the words that contain none of the letters in L
+</text>
+</exercise>
+<exercise>
+<id>14.6</id>
+<text>
+Write a class called Converter. The user will pass a length and a unit when 
+declaring an object from the class—for example, c = Converter(9, 'inches'). 
+The possible units are inches, feet, yards, miles, kilometers, meters, 
+centimeters, and millimeters. For each of these units there should be a 
+method that returns the length converted into those units. For example, 
+using the Converter object created above, the user could call c.feet() 
+and should get 0.75 as the result.
+</text>
+</exercise>
+<exercise>
+<id>14.7</id>
+<text>
+Use the Standard_deck class of this section to create a simplified version 
+of the game War. In this game, there are two players. Each starts with half 
+of a deck. The players each deal the top card from their decks and whoever 
+has the higher card wins the other player's cards and adds them to the bottom 
+of his deck. If there is a tie, the two cards are eliminated from play 
+(this differs from the actual game, but is simpler to program). 
+The game ends when one player runs out of cards.
+</text>
+</exercise>
+<exercise>
+<id>14.8</id>
+<text>
+Write a class that inherits from the Card_group class of this chapter. 
+The class should represent a deck of cards that contains only hearts and 
+spaces, with only the cards 2 through 10 in each suit. Add a method to the 
+class called next2 that returns the top two cards from the deck.
+</text>
+</exercise>
+<exercise>
+<id>14.9</id>
+<text>
+Write a class called Rock_paper_scissors that implements the logic of the 
+game Rock-paper-scissors. For this game the user plays against the computer 
+for a certain number of rounds. Your class should have fields for the how 
+many rounds there will be, the current round number, and the number of 
+wins each player has. There should be methods for getting the computer's 
+choice, finding the winner of a round, and checking to see if someone has 
+one the (entire) game. You may want more methods.
+</text>
+</exercise>
+<exercise>
+<id>14.10</id>
+<text>
+a) Write a class called Connect4 that implements the logic of a Connect4 game. 
+Use the Tic_tac_toe class from this chapter as a starting point.
+b) Use the Connect4 class to create a simple text-based version of the game.
+</text>
+</exercise>
+<exercise>
+<id>14.11</id>
+<text>
+Write a class called Poker_hand that has a field that is a list of Card objects. 
+There should be the following self-explanatory methods:
+has_royal_flush, has_straight_flush, has_four_of_a_kind,
+has_full_house, has_flush, has_straight,
+has_three_of_a_kind, has_two_pair, has_pair
+There should also be a method called best that returns a string indicating 
+what the best hand is that can be made from those cards.
+</text>
+</exercise>
+</exercises>

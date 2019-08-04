@@ -286,4 +286,13 @@ function new_user(){
   }
 }
 
+function lucky_question(){
+  $.ajax({
+	  method: "POST",
+	  url: "php/lucky_question.php"
+  }).done(function( msg ) {
+            $model.view.setCode(msg);
+  });
+}
+
 
