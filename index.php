@@ -154,10 +154,6 @@
 		<li><a href="help/docs.html" target="_new">Docs</a></li>	
 	    </ul>
           </li>
-<!--
-          <li><a class="nav-link" href="#" onClick="Help()"><i class="fa fa-question-circle" aria-hidden="true">
-		</i> About</a></li>
--->
         </ul>
     </div>
   </div>
