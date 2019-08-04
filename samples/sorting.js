@@ -1,0 +1,223 @@
+function select_sample_sorting(){
+var z = new Array();
+
+z[1] = `
+'''
+Bubble sort
+'''
+def bubble_sort(seq):
+    """
+    Implementation of bubble sort.
+    O(n2) and thus highly ineffective.
+    """
+    size = len(seq) -1
+    for num in range(size, 0, -1):
+        for i in range(num):
+            if seq[i] > seq[i+1]:
+                temp = seq[i]
+                seq[i] = seq[i+1]
+                seq[i+1] = temp
+    return seq
+
+def test_bubble_sort(module_name='this module'):
+    seq = [4, 5, 2, 1, 6, 2, 7, 10, 13, 8]
+    assert(bubble_sort(seq) == sorted(seq))
+    print("Tests passed")
+
+if __name__ == '__main__':
+    test_bubble_sort()
+`
+
+z[2] = `
+'''
+Quick sort
+'''
+
+def qs(array):
+    if len(array) < 2:
+        return array
+
+    piv = len(array)//2
+    piv_element = array[piv]
+    new_array = array[:piv] + array[piv+1:]
+
+    left  = [a for a in new_array if a <= piv_element]
+    right = [a for a in new_array if a > piv_element]
+
+    return qs(left) + [array[piv]] + qs(right)
+
+# we can also divide them into two functions
+def partition(seq):
+    pi,seq = seq[0],seq[1:]
+    lo = [x for x in seq if x <= pi]
+    hi = [x for x in seq if x > pi]
+    return lo, pi, hi
+
+def quick_sort_divided(seq):
+    if len(seq) < 2:
+        return seq
+    lo, pi, hi = partition(seq)
+    return quick_sort_divided(lo) + [pi] + quick_sort_divided(hi)
+
+if __name__ == '__main__':
+    seq = [4, 5, 2, 1, 6, 2, 7, 10, 13, 8]
+    assert(quick_sort_divided(seq) == sorted(seq))
+    assert(qs(seq) == sorted(seq))
+    print("Tests passed")
+
+`
+z[3] = `
+'''
+Count sort
+'''
+
+from collections import defaultdict
+
+def count_sort_dict(a):
+    ''' an example of counting sort using default dictionaries '''
+    b, c = [], defaultdict(list)
+    for x in a:
+        c[x].append(x) # we could have used key = lambda x:x
+    for k in range(min(c), max(c) + 1):
+        b.extend(c[k])
+    return b
+
+
+def test_count_sort():
+    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2, 5, 4, 1, 5, 3]
+    assert(count_sort_dict(seq) == sorted(seq))
+    print("Tests passed")
+
+
+if __name__ == '__main__':
+    test_count_sort()
+`
+
+z[4] = `
+'''
+Gnome sort
+'''
+
+def gnome_sort(seq):
+    ''' sort a sequence using the gnome sort alg '''
+    i = 0
+    while i < len(seq):
+        if i == 0 or seq[i-1] <= seq[i]:
+            i += 1
+        else:
+            seq[i], seq[i-1] = seq[i-1], seq[i]
+            i -= 1
+    return seq
+
+
+def test_gnome_sort():
+    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2, 5, 4, 1, 5, 3]
+    assert(gnome_sort(seq) == sorted(seq))
+    print("Tests passed")
+
+
+if __name__ == '__main__':
+    test_gnome_sort()
+
+`
+z[5] = `
+'''
+Insertion sort
+'''
+def insertion_sort(seq):
+    ''' sort a sequence using the insertion sort alg '''
+    for i in range(1, len(seq)):
+        j = i
+        while j > 0 and seq[j-1] > seq[j]:
+            seq[j-1], seq[j] = seq[j], seq[j-1]
+            j -= 1
+    return seq
+
+
+def insertion_sort_rec(seq, i = None):
+    ''' sort a sequence using the recursive insertion sort alg '''
+    if i == None: i = len(seq) -1
+    if i == 0: return i
+    insertion_sort_rec(seq, i-1)
+    j = i
+    while j > 0 and seq[j-i] > seq[j]:
+        seq[j-1], seq[j] = seq[j], seq[j-1]
+        j -= 1
+    return seq
+
+
+def test_insertion_sort():
+    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2, 5, 4, 1, 5, 3]
+    assert(insertion_sort(seq) == sorted(seq))
+    assert(insertion_sort_rec(seq) == sorted(seq))
+    print("Tests passed")
+
+
+if __name__ == '__main__':
+    test_insertion_sort()
+`
+z[6] = `
+'''
+Merge sort
+'''
+
+def merge_sort(array):
+    if len(array) < 2:
+        return array
+
+    mid = len(array)//2
+    left = merge_sort(array[:mid])
+    right = merge_sort(array[mid:])
+
+    res = []
+    i, j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            res.append(left[i])
+            i += 1
+        else:
+            res.append(right[j])
+            j += 1
+
+    if left[i:]:
+       res.extend(left[i:])
+    if right[j:]:
+        res.extend(right[j:])
+    return res
+
+def test_merge_sort():
+    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2, 5, 4, 1, 5, 3]
+    assert(merge_sort(seq) == sorted(seq))
+    print("Tests passed")
+
+if __name__ == '__main__':
+    test_merge_sort()
+`
+z[7] = `
+'''
+Selection sort
+'''
+
+def selection_sort(seq):
+    ''' sort a sequence using the selection sort alg '''
+    for i in range(len(seq) -1, 0, -1):
+        max_j = i
+        for j in range(max_j):
+            if seq[j] > seq[max_j]:
+                max_j = j
+        seq[i], seq[max_j] = seq[max_j], seq[i]
+    return seq
+
+def test_selection_sort():
+    seq = [3, 5, 2, 6, 8, 1, 0, 3, 5, 6, 2]
+    assert(selection_sort(seq) == sorted(seq))
+    print("Tests passed")
+
+if __name__ == '__main__':
+    test_selection_sort()
+`
+var num = prompt("Sample question (1-7)", "");
+$model.view.setCode(z[num]);
+$model.reset();
+$("#open_file").val("");
+}

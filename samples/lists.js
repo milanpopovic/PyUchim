@@ -1,0 +1,345 @@
+function select_sample_lists(){
+var z = new Array();
+
+z[1] = `
+'''
+Zadatak 1.
+Napišite program koji traži od korisnika da unese listu celih brojeva. 
+Program treba da uradi sledeće:
+a) Štampa ukupan broj podataka u listi.
+b) Štampa poslednji podatak u listi.
+c) Štampa listu obrnutim redosledom.
+d) Štampa "Da" ako lista sadrži 5 a "Ne" ako ne sadrži.
+e) Štampa broj petica u listi.
+f) Briše prvi i poslednji podatak iz liste, sortira preostale podatke 
+   i štampa rezultat.
+g) Štampa koliko celih brojeva u listi je manje od 5.
+
+lista=[int(e) for e in input("Unesite listu celih brojeva: ").split(',')]
+print(len(lista)) # a)
+print(lista[-1])  # b)
+print(lista[-1::-1]) # c)
+if 5 in lista:       # d)
+    print("Da")
+else:
+    print("Ne")
+print(lista.count(5)) # e)
+lista.pop(0) # f)
+lista.pop(len(lista)-1) 
+lista.sort()
+print(lista)
+brojac=0   # g)
+for e in lista:
+    if e < 5:
+        brojac=brojac+1
+print(brojac)
+`
+z[2] = `
+'''
+Zadatak 2
+Napišite program koji generiše listu od 20 slučajnih brojeva između 1 i 100, pa:
+
+a) Štampa listu.
+b) Štampa srednju vrednost svih elemenata iz liste.
+c) Štampa najveću i najmanju vrednost iz liste.
+d) Štampa drugu najmanju i drugu najveću vrednost iz liste.
+e) Štampa koliko ima parnih brojeva u listi.
+'''
+
+from random import randint
+l=[]
+for i in range(20):
+    l.append(randint(1,100))
+# a)
+print(l)
+# b)
+print(sum(l)/len(l))
+# c)
+print(max(l),min(l))
+# d)
+max2e=0
+min2e=101
+for e in l:
+    if e > max2e and e < max(l):
+        max2e=e
+    if e < min2e and e > min(l):
+        min2e=e
+print(min2e,max2e)
+# e)
+brojac=0
+for e in l:
+    if e%2==0:
+        brojac=brojac+1
+print(brojac)
+`
+z[3] = `
+'''
+Zadatak 3.
+Počnite sa listom [8,9,10]. Uradite sledeće:
+a) Postavite drugi element (indeks 1) na 17
+b) Dodajte 4, 5, i 6 na kraj liste
+c) Brišite prvi element liste
+d) Sortirajte listu
+e) Duplirajte listu
+f) Ubacite 25 na indeksu 3
+Na kraju treba da dobijete listu [4,5,6,25,10,17,4,5,6,10,17] 
+'''
+
+l=[8,9,10]
+# a)
+l[1]=17
+# b)
+l=l+[4,5,6]
+# c)
+l.pop(0)
+# d) 
+l.sort()
+# e)
+l=l*2
+# f)
+l.insert(3,25)
+
+print(l)
+`
+z[4] = `
+'''
+Zadatak 4.
+Tražite od korsinika da unese listu koja sadrži brojeve između 1 i 12. 
+Zatim zamenite sve brojeve koji su veći od 10 sa brojem 10. 
+'''
+l=[int(e) for e in input("Unesite listu brojeva (1-12): ").split(',')]
+for i in range(len(l)):
+    if l[i] > 10:
+        l[i]=10
+print(l)
+`
+z[5] = `
+'''
+Zadatak 5.
+Tražite od korisnika da unese listu stringova. Kreirajte novu listu 
+koja sadrži iste stringove ali bez prvog slova.
+'''
+nova_lista=[]
+l=input("Unesite listu stringova: ").split(',')
+for s in l:
+    if len(s)>1:
+        nova_lista.append(s[1:])
+    else:
+        nova_lista.append("")
+print(nova_lista)
+`
+z[6] = `
+'''
+Zadatak 6.
+Kreirajte sledeće liste korišćenjem petlji.
+
+a) Listu koj se sastoji od brojeva 0 do 49
+b) Listu koja sadrži kvdrate brojeva od 1 do 50.
+c) Listu [‘a’, ‘bb’, ‘ccc’, ‘dddd’, … ] 
+koja se završava sa 26 kopija slova z.
+'''
+# a)
+l1=[]
+for i in range(0,50):
+    l1.append(i)
+print(l1)
+# b)
+l2=[]
+for i in range(1,51):
+    l2.append(i*i)
+print(l2)
+# c)
+l3=[]
+a="abcdefghijklmnopqrstuvwxyz"
+for i in range(26):
+    l3.append(a[i]*(i+1))
+print(l3)
+`
+z[7] = `
+'''
+Zadatak 7.
+Napišite program koji uzima dve liste L i M, iste dužine, 
+dodaje njihove elemente da kreira novu listu N čiji su elementi 
+sume odgovarajućih elemenata iz L i M. Na primer, ako je 
+L=[3,1,4] i M=[1,5,9], odna će N biti [4,6,13].
+'''
+
+L=list(input("Unesite prvu listu brojeva: "))
+M=list(input("Unesite drugu listu brojeva: "))
+N=[]
+for i in range(len(L)):
+    N.append(L[i]+M[i])
+print(N)
+`
+z[8] = `
+'''
+Zadatak 8.
+Napišite program koji traži od korisnika da unese ceo broj, 
+pa kreira listu koja se sastoji od faktora tog broja.
+'''
+
+l=[]
+n=int(input("Unesite ceo broj: "))
+for i in range(1,n+1):
+    if n%i==0:
+        l.append(i)
+print(l)
+`
+
+z[9] = `
+'''
+Zadatak 9.
+Kada igrate igru u kojoj se koriste dve kockice, valja znati kolike 
+su šanse za pojavljivanje nekog ishoda. Na primer verovatnoća za 
+dobijanje 12 je oko 3%, a verovatnoća za dobijanje 7 je oko 17%. 
+Mogli bi izračunati ovo matematički, ali ne znate verovatnoću. 
+Međutim, znate na napišete program kojim ćete simulirati bacanje dve 
+kockice 10000 puta i izračunati koliki je procenat pojavljivanja 
+ishoda 2, 3, 4, …, 12.
+'''
+
+from random import randint
+bp=[0,0,0,0,0,0,0,0,0,0,0,0,0]
+for i in range(10000):
+    zbir=randint(1,6)+randint(1,6)
+    bp[zbir]=bp[zbir]+1
+for i in range(2,13):
+    print(i,bp[i]/100)
+`
+z[10] = `
+'''
+Zadatak 10.
+Napišite program koji rotira elemente liste tako da se element na 
+prvom indeksu pomera na drugi, drugi na treći, itd., sve do poslednjeg 
+koji se pomera na prvi indeks.
+'''
+
+l=[int(e) for e in input("Unesite listu celih brojeva: ").split(',')]
+l=[l[-1]]+l[0:-1]
+print(l)
+`
+z[11] = `
+'''
+Zadatak 11.
+Korišćenjem for petlje kreirajte listu prikazanu dole, koja se sastoji 
+od jedinica razdvojenih rastućim brojem nula. Poslednje dve jedinice 
+treba da budu razdvojene sa deset nula.
+[1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,1,....]
+'''
+l=[]
+for i in range(11):
+    l=l+[1]+[0]*i
+l.append(1)
+print(l)
+`
+z[12] = `
+'''
+Zadatak 12.
+Napišite program koji generiše 100 slučajnih brojeva koji su ili 0 ili 1. 
+Zatim odredite najduži uzastopni niz nula. Na primer, najduži uzastopni 
+niz nula u listi [1,0,1,1,0,0,0,0,1,0,0] je 4.
+'''
+
+from random import randint
+l=[]
+for i in range(100):
+    l.append(randint(0,1))
+max0=0
+br0=0
+for i in range(100):
+    if l[i]==0:
+        br0=br0+1
+    else:
+        if br0 > max0:
+            max0=br0
+        br0=0
+if br0>max0:
+    max0=br0
+print(l)
+print(max0)
+`
+z[13] = `
+'''
+Zadatak 13.
+Napišite program koji briše višestruka pojavljivanja podataka u listi, 
+tako da se podaci pojavljuju samo jednom. Na primer lista [1,1,2,3,4,3,0,0] 
+će posle takvog brisanja postati [1,2,3,4,0].
+'''
+
+l=[int(
+for e in l:
+    for i in range(1,l.count(e)):
+        l.remove(e)
+print(l)
+`
+z[14] = `
+'''
+Zadatak 14.
+Napišite program koji traži od korsinika da unese dužinu u fitima. 
+Program treba da korisniku pruži mogućnost da bira jednicu u koju će ta 
+dužina biti konvertovana. Jedinice mogu biti inči, jarde, milje, milimetri, 
+samtimetri,metri ili kilometri. Iako ovo može biti urađeno if naredbama, 
+mnogo je kraće ako koristimo liste i for petlje, a takođe je mnogo lakše 
+ako želimo da dodamo nove jedinice za konverziju.
+'''
+
+d=int(input("Unesite duzinu u fitima: "))
+u_koju=input("U koju jedinicu (inc,jard,milja,milimetar, santimetar,metar,kilometar: ")
+
+jedinice=["inc","jard","milja","milimetar","santimetar","metar","kilometar"]
+odnos=[12,0.333333,0.000189394,304.8,30.48,0.3048,0.0003048]
+if jedinice.count(u_koju)>0:
+    indeks=jedinice.index(u_koju)
+    print("To je ",d*odnos[indeks],u_koju)
+else:
+    print("Nepoznata jedinica")
+`
+z[15] = `
+'''
+Zadatak 15.
+Postoji neprobojna šifra pod nazivom „jednokratni ključ“.
+Način na koji ona radi je da pomerate svako slovo poruke za slučajan broj 
+između 1 i 26, sa preklapanjem azbuke ako je potrebno. Na primer ako je slovo 
+koje treba šifrirati y a slučajni pomak 5, tada je novo slovo d. Svako slovo 
+dobija svoj pomak, pa nam je potrebno onoliko slučajnih pomaka koliko ima slova 
+u poruci. Kao primer recimo da je korisnik uneo reč secret . Program treba da 
+generiše 6 slučajnih brojeva između 1 i 26. Pretpostavimo da su generisani 
+brojevi 1, 3, 2, 10, 8, i 2. Šifrovana poruka će biti thebmv.
+a) Napišite program koji traži od korisnika da unese poruku, pa tu poruku šifrira 
+korišćenjem gornjeg metoda. Najpre konverujte string u mala slova. Svaki blanko 
+znak i znak interpunkcije treba da ostane nepromenjen. Na primer "Secret!!!" 
+postaje "thebmv!!!" korišćenjem gornjih pomaka.
+
+b) Napišite program koji dešifruje poruke šifrovane na gornji načina.
+
+Razlog zašto se ovaj metod zove „jednokratni ključ“ je zato što se slučajni pomaci 
+koriste samo jedanput. Šifra bi mogla biti lako razbijena ako bi se isti pomaci 
+koristili u više poruka. Čak štaviše, ovaj metod je potpuno siguran samo ako su 
+slučajni brojevi stvarno slučajni što nije slučaj sa randint funkcijom koja daje 
+takozvane pseudo slučajne brojeve. Za potrebe kriptografije postoje drugi pouzdaniji 
+načini generisanja slučajnih brojeva.
+'''
+from random import randint
+poruka=input("Unesite poruku: ")
+# a) Siriranja
+kljuc=[]
+azbuka="abcdefghijklmnopqrstuvwxyz"
+sifrovana_poruka=""
+for i in range(len(poruka)):  
+    pomak=randint(1,26)
+    kljuc=kljuc+[pomak]
+    sifrovana_poruka=sifrovana_poruka+azbuka[(azbuka.index(poruka[i])+pomak)%26]
+print(sifrovana_poruka)
+
+# b) Desifrovanje
+original=""
+for i in range(len(sifrovana_poruka)):
+    original=original+azbuka[(azbuka.index(sifrovana_poruka[i])-kljuc[i]+26)%26]
+print(original)
+`
+
+var num = prompt("Sample question (1-15)", "");
+$model.view.setCode(z[num]);
+$model.reset();
+$("#open_file").val("");
+}

@@ -1,0 +1,365 @@
+html {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  /*margin-bottom: 40px;*/
+  /*padding-bottom: 40px;*/
+  height: 100%;
+  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+  line-height: normal;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#headerRow {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #006699 !important;
+}
+#homeTab {
+  font-family: 'Kanit', sans-serif;
+  float: center;
+}
+#homeTab a {
+  color: #006699 !important;
+}
+#homeTab a:hover {
+  text-decoration: none;
+}
+
+#collabSession {
+  padding-left: 10px;
+  position: absolute;
+  vertical-align: middle;
+  line-height: 26px;
+}
+
+#collabUsers {
+  padding-right: 10px;
+  position: absolute;
+  right: 0px;
+  z-index: 100;
+}
+
+.collabContainer {
+  display: inline-block;
+}
+.collab {
+  position: absolute;
+  z-index: 100;
+  background-color: #e3e3e3;
+  border-style: solid;
+  border-color: #006699;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#listUsers {
+  overflow: auto;
+  list-style-type: none;
+}
+#listUsers li {
+  float: left;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.user {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 26px;
+  width: 26px;
+  height: 26px;
+  cursor: default;
+}
+
+#bodyWrapper {
+  min-height: 400px;
+  min-width: 560px;
+}
+
+#localfile {
+  display: none;
+}
+
+.btn-default {
+  border-color: #333 !important;
+}
+
+.btn-danger {
+  background-color: #DB71AA !important;
+  border-color: #006923 !important;
+}
+
+.btn-danger:hover {
+  background-color: #BD4A85 !important;
+}
+
+.btn-warning {
+  background-color: #008B3C !important;
+  border-color: #006923 !important;
+}
+
+.btn-warning:hover {
+  background-color: #006923 !important;
+}
+
+.btn-info {
+  background-color: #805793 !important;
+  border-color: #5F3871 !important;
+}
+
+.btn-info:hover {
+  background-color: #5F3871 !important;
+}
+
+.dropdown {
+  display: none;
+}
+
+.pythonFrame {
+  width: 100%;
+  border-style: none !important;
+}
+
+#codePanelBackground {
+  padding-top: 0px !important;
+}
+
+#outputPanel {
+  padding-top: 5px !important;
+  padding-bottom: 20px !important;
+}
+
+.guiFrameWrapper > .panel-body {
+  padding: 10px !important;
+}
+
+.guiFrameWrapper > .panel-heading {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+
+.icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.icon-small {
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.icon-toolbar {
+  fill: #fff;
+}
+.icon-window {
+  fill: #000;
+}
+
+/* App-view setup styles
+---------------------------------------------------------------------------- */
+
+#codeContainer > .cs-panel > .panel-body
+{
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  padding-right: 5px;
+  overflow: hidden;
+}
+
+#codeContainer > .cs-panel > .panel-heading {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+#outputContainer
+{
+  padding-left: 6px;
+}
+
+#outputContainer > .cs-panel > .panel-body
+{
+  overflow: auto;
+}
+
+#outputContainer > .cs-panel > .panel-heading {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+#mainBody
+{
+  clear: both;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row-no-gutter
+{
+  float: none;
+  padding-left: 13px;
+}
+
+.row-no-gutter [class*='col-']:not(:first-child),
+.row-no-gutter [class*='col-']:not(:last-child) 
+{
+  padding-right: 0;
+  padding-left: 0;
+  height: 100%;
+}
+
+#btnToolbarLandscape
+{
+  display: none;  
+  padding-right: 0px;
+}
+
+#btnToolbarLandscape .btn
+{
+  width: 100%;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+#btnToolbarPortrait
+{
+  margin-top: 20px;
+  display: none;
+}
+
+#btnToolbarPortrait .btn
+{
+  margin-bottom: 5px;
+}
+
+.popout-frame
+{
+  z-index: 5000;
+  position: absolute;
+  left: 75px;
+  top: 75px;
+  min-width: 200px;
+  min-height: 100px; 
+}
+
+.nav-pills > li
+{
+  border: 1px solid #006699;
+  border-radius: 5px;
+  padding: 0px !important;
+  height: 100% !important;
+  margin: 3px;
+}
+
+.nav-pills > li > a
+{
+    /* adjust padding for height*/
+    /*padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;*/
+    padding-top: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+
+    height: 100% !important;
+}
+
+#minimizedFrames
+{
+  display: none;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 10px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*overflow: auto;*/
+}
+
+.modeless
+{
+  display: inline-block !important;
+  top: 20px !important;
+  left: 50px !important;
+  right: 5px !important;
+  bottom: 5px !important;
+  position: absolute !important;
+}
+
+.modal-dialog
+{
+    display: inline-block !important;
+}
+
+/* CodeMirror and Output styles
+---------------------------------------------------------------------------- */
+
+#console pre
+{
+  /*font-size: 11px;*/
+  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+  background-color: white;
+  border-style: none;
+  padding: 0px !important;
+  overflow: visible !important;
+}
+
+.cm-s-default
+{
+  font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important;
+  font-size: 13px;
+}
+
+.errorline 
+{
+    background: #ffa0a0 !important;
+}
+
+.activeline
+{
+    background: #a4d4ec !important;
+}
+
+.guiFrame {
+  clear: both;
+  /*width: 100%;*/
+}
+
+.guiFrameWrapper {
+  /*width: 100%;*/
+  display: none;
+}
+
+#splitbar
+{
+float:left;
+position: absolute;
+left: -5px;
+height:0px;
+width:12px;
+background:#cccccc;
+border:1px solid #337ab7;
+overflow: hidden;
+}
+
+#splitbar div
+{
+height:20px;
+width:8px;
+position:relative;
+top:190px;
+overflow:hidden;
+}

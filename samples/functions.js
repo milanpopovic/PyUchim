@@ -1,0 +1,190 @@
+function select_sample_functions(){
+var z = new Array();
+
+z[1] = `
+'''
+Write a Python function to calculate the factorial of a 
+number (a non-negative integer). 
+The function accepts the number as an argument.
+'''
+# iterative solution
+def factorial_iterative(n):
+    fact = 1
+    for i in range(2,n+1):
+        fact = i*fact
+    return fact
+
+# recursive solution
+def factorial_recursive(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial_recursive(n-1)
+
+def test_binary_search(module_name='this module'):
+    assert(factorial_iterative(5) == 120)
+    assert(factorial_recursive(5) == 120)
+
+    s = 'Tests in {name} have {con}!'
+    print(s.format(name=module_name, con='passed'))
+
+if __name__ == '__main__':
+    test_binary_search()
+`
+
+z[2] = `
+'''
+Generator
+'''
+# A simple generator for Fibonacci Numbers 
+def fib(limit): 
+      
+    # Initialize first two Fibonacci Numbers  
+    a, b = 0, 1
+  
+    # One by one yield next Fibonacci Number 
+    while a < limit: 
+        yield a 
+        a, b = b, a + b 
+  
+# Create a generator object 
+x = fib(5) 
+  
+# Iterating over the generator object using next 
+print(x.__next__()); # In Python 3, __next__() 
+print(x.__next__()); 
+print(x.__next__()); 
+print(x.__next__()); 
+print(x.__next__()); 
+  
+# Iterating over the generator object using for loop. 
+
+print("Using for in loop") 
+for i in fib(5):  
+    print(i) 
+`
+z[3] = `
+'''
+ Python program to illustrate *args for variable number of arguments 
+'''
+def myFun(*argv):  
+    for arg in argv:  
+        print (arg) 
+    
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks')  
+
+'''
+ Python program to illustrate  *args with first extra argument 
+'''
+def myFun(arg1, *argv): 
+    print ("First argument :", arg1) 
+    for arg in argv: 
+        print("Next argument through *argv :", arg) 
+  
+myFun('Hello', 'Welcome', 'to', 'GeeksforGeeks') 
+
+'''
+ Python program to illustrate *kargs for variable number 
+ of keyword arguments 
+'''
+  
+def myFun(**kwargs):  
+    for key, value in kwargs.items(): 
+        print ("%s == %s" %(key, value)) 
+  
+myFun(first ='Geeks', mid ='for', last='Geeks')     
+
+'''
+ Python program to illustrate  **kargs for variable number 
+ of keyword arguments with one extra argument. 
+'''
+  
+def myFun(arg1, **kwargs):  
+    for key, value in kwargs.items(): 
+        print ("%s == %s" %(key, value)) 
+  
+myFun("Hi", first ='Geeks', mid ='for', last='Geeks')     
+
+'''
+ Using *args and **kwargs to call a function
+'''
+def myFun(arg1, arg2, arg3): 
+    print("arg1:", arg1) 
+    print("arg2:", arg2) 
+    print("arg3:", arg3) 
+      
+# Now we can use *args or **kwargs to pass arguments to this function :  
+args = ("Geeks", "for", "Geeks") 
+myFun(*args) 
+  
+kwargs = {"arg1" : "Geeks", "arg2" : "for", "arg3" : "Geeks"} 
+myFun(**kwargs) 
+`
+z[4] = `
+'''
+ A Python program to demonstrate that a function  can be defined inside 
+ another function and a function can be passed as parameter. 
+'''  
+# Adds a welcome message to the string 
+def messageWithWelcome(str): 
+  
+    # Nested function 
+    def addWelcome(): 
+        return "Welcome to "
+  
+    # Return concatenation of addWelcome() 
+    # and str. 
+    return  addWelcome() + str
+  
+# To get site name to which welcome is added 
+def site(site_name): 
+    return site_name 
+
+print (messageWithWelcome(site("GeeksforGeeks")) )
+
+'''
+ Adds a welcome message to the string  returned by fun(). Takes fun() as 
+ parameter and returns welcome(). 
+'''
+def decorate_message(fun): 
+  
+    # Nested function 
+    def addWelcome(site_name): 
+        return "Welcome to " + fun(site_name) 
+  
+    # Decorator returns a function 
+    return addWelcome 
+  
+@decorate_message
+def site(site_name): 
+    return site_name; 
+  
+# This call is equivalent to call to decorate_message() with function 
+# site("GeeksforGeeks") as parameter 
+
+print ( site("GeeksforGeeks") )
+  
+'''
+ A Python example to demonstrate that decorators can be 
+useful attach data 
+'''  
+# A decorator function to attach data to func 
+def attach_data(func): 
+       func.data = 3
+       return func 
+  
+@attach_data
+def add (x, y): 
+       return x + y 
+
+# This call is equivalent to attach_data() with add() as parameter 
+
+print(add(2, 3)) 
+  
+print(add.data) 
+`
+var num = prompt("Sample question (1-4)", "");
+$model.view.setCode(z[num]);
+$model.reset();
+$("#open_file").val("");
+}
