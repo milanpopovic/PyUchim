@@ -213,7 +213,8 @@ function comment()
     text1 = "#"+text;
     text1 = text1.replace(/\n/g,"\n#")
     
-     $model.view.setCode(source.replace(text,text1))
+    $model.view.setCode(source.replace(text,text1))
+    $("#codeContainer").keyup()
 
 }
 
@@ -238,7 +239,7 @@ function uncomment()
     var pos = res.lastIndexOf('\n');
     res = res.substring(0,pos) + res.substring(pos+1)
     $model.view.setCode(source.replace(text,res))
-
+    $("#codeContainer").keyup()
 }
 
 function sharing(){
