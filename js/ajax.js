@@ -195,10 +195,6 @@ function sleep(milliseconds) {
   }
 }
 
-function Help(){
-  window.open("help/help.htm","Help");
-}
-
 function signin(){
   $("#signupModal").trigger('reset');
   $("#signupModal").modal('show');

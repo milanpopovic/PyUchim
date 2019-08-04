@@ -144,8 +144,20 @@
           <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
           <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true">
 		</i> SignUp</a></li>
+          <li class="dropdown">
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user" aria-hidden="true"></i> Help
+		<span class="caret"></span></a>
+	    <ul class="dropdown-menu" aria-labelledby="about-us">
+    		<li><a href="help/about.html" target="_new" >About</a></li>
+                <li role="separator" class="divider"></li>
+		<li><a href="help/docs.html" target="_new">Docs</a></li>	
+	    </ul>
+          </li>
+<!--
           <li><a class="nav-link" href="#" onClick="Help()"><i class="fa fa-question-circle" aria-hidden="true">
 		</i> About</a></li>
+-->
         </ul>
     </div>
   </div>
