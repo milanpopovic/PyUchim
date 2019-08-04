@@ -171,27 +171,25 @@
                           <div class="cs-panel panel panel-primary">
                              <div class="panel-heading"><i class="fa fa-code" aria-hidden="true"></i> Python Code 
                                <input type="text" id="open_file" size="30" readonly="readonly" style="color: black;"/>
-                               <button type="button" class="btn btn-primary" onClick="comment()" data-toggle="tooltip" data-placement="right"
+                               <span class="btn btn-primary" onClick="comment()" data-toggle="tooltip" data-placement="right"
                                 title="" data-original-title="Comment selection."> 
-                                <span class="hidden-xs hidden-sm hidden-md"><i class="fa fa-hashtag"></i></span>
-                	       </button> 
-                               <button type="button" class="btn btn-primary" onClick="uncomment()" data-toggle="tooltip" data-placement="right"  
+                                <i class="fa fa-hashtag"></i>
+                	       </span> 
+                               <span class="btn btn-primary" onClick="uncomment()" data-toggle="tooltip" data-placement="right"  
                                 title="" data-original-title="Uncomment selection."> 
-                                <span class="hidden-xs hidden-sm hidden-md"><i class="fa fa-minus-square"></i></span>
-                	       </button> 
+                                <i class="fa fa-minus-square"></i>
+                	       </span> 
                                <span class="btn btn-primary">
                                   <input type="checkbox" name="chk-share" id="chk-share" data-toggle="tooltip" data-placement="right"  
                                title="" data-original-title="Share Python code with Mentor (on/off)">
                                </span>
-                               <button type="button" class="btn btn-primary runBtn" data-toggle="tooltip" data-placement="right" title="" 
-				data-original-title="Execute the Python code from the beginning."> 
-                                <span class="hidden-xs hidden-sm hidden-md">
-				<i class="fa fa-play" aria-hidden="true"></i></span>
-                	       </button> 
-                               <button type="button" class="btn btn-primary resetBtn" data-toggle="tooltip" data-placement="right" 
-                                   title="Stop execution and clear all output." >
-                                   <span class="hidden-xs hidden-sm hidden-md"><i class="fa fa-stop-circle"></i></span>
-                               </button>
+                               <span class="btn btn-primary runBtn" data-toggle="tooltip" data-placement="right" 
+                                title="" data-original-title="Execute the Python code from the beginning.">
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                               </span>
+            		       <span class="btn btn-primary resetBtn" data-toggle="tooltip" data-placement="right" 
+                                   title="Stop execution and clear all output." ><i class="fa fa-stop-circle"></i>
+                               </span>
 			     </div>
                              <div id="codePanelBackground" class="panel-body" style="background-color: rgb(255, 255, 255);">
                                 <form action="#" method="post" enctype="multipart/form-data" id="codeform">
