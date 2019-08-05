@@ -82,8 +82,10 @@ for i in range(101):
 simpleplot.plot_lines('Sin graph', 400, 300, 'x', 'y',[dataset])
 `
 
-var num = prompt("Sample question (1-4)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

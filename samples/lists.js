@@ -14,7 +14,7 @@ e) Štampa broj petica u listi.
 f) Briše prvi i poslednji podatak iz liste, sortira preostale podatke 
    i štampa rezultat.
 g) Štampa koliko celih brojeva u listi je manje od 5.
-
+'''
 lista=[int(e) for e in input("Unesite listu celih brojeva: ").split(',')]
 print(len(lista)) # a)
 print(lista[-1])  # b)
@@ -338,8 +338,10 @@ for i in range(len(sifrovana_poruka)):
 print(original)
 `
 
-var num = prompt("Sample question (1-15)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

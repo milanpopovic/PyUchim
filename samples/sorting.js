@@ -216,8 +216,10 @@ def test_selection_sort():
 if __name__ == '__main__':
     test_selection_sort()
 `
-var num = prompt("Sample question (1-7)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

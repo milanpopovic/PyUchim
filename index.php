@@ -75,12 +75,12 @@
 
 	  <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               <i class="fa fa-code" aria-hidden="true"></i> Exercises
+               <i class="fa fa-code" aria-hidden="true"></i> Examples
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
 		<li><a class="dropdown-item" href="#" onClick="select_sample_io()">Input/Output</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_sample_if_statement()">If statement</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_sample_for_loops()">For loops</a></li>
+                <li><a class="dropdown-item" href="#" onClick="select_sample_for_loops()">For loops</a></li>
+		<li><a class="dropdown-item" href="#" onClick="select_sample_if_statement()">If statement</a></li>	
 		<li><a class="dropdown-item" href="#" onClick="select_sample_while_loops()">While loops</a></li>
 		<li><a class="dropdown-item" href="#" onClick="select_sample_try_except()">Try...except</a></li>
                 <li role="separator" class="divider"></li>
@@ -102,8 +102,9 @@
                 <i class="fa fa-question-circle-o" aria-hidden="true"></i>  Challenges
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random choice</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from list</a></li>
+		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
+		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
 	    </ul>
 	  </li>

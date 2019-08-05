@@ -134,8 +134,10 @@ procenat=int(input("Unesite procenat bakšiša: "))
 baksis=iznos*procenat/100
 print("Bakšiš",baksis,"Ukupno sa bakšišom",iznos+baksis)
 `
-var num = prompt("Sample question (1-9)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

@@ -413,13 +413,13 @@ Glavnica - 1000.00, Kamatna stopa - 5.12%
 
 
 function random_exam_question() {
-        num = Math.floor((Math.random() * 64))-1;
-        $model.view.setCode("'''"+"\n"+q[num]+"\n'''");
+        num = Math.floor((Math.random() * 64))+1;
+        $model.view.setCode("'''Zadatak "+num.toString()+".\n"+q[num]+"\n'''");
         $model.reset();
 }
 
 function select_exam_question(){
        var num = prompt("Question number(1-64)", "");
-       $model.view.setCode("'''"+"\n"+q[num]+"\n'''");
+       $model.view.setCode("'''Zadatak "+num.toString()+".\n"+q[num]+"\n'''");
        $model.reset();
 }

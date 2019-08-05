@@ -154,8 +154,10 @@ def some_function(delay):
 some_function(3) 
 `
 
-var num = prompt("Sample question (1-3)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

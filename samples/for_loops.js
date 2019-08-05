@@ -240,9 +240,10 @@ for i in range(visina//2+1,visina):
     print(" "*(visina-i),"*"," "*(2*i-1),"*",sep="")
 `
 
-
-var num = prompt("Sample question (1-15)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

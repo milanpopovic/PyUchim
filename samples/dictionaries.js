@@ -319,8 +319,10 @@ for j in range(len(d)):
         print("Korisnik bez email adrese:", d[j]["ime"])
 `
 
-var num = prompt("Sample question (1-10)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }

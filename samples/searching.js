@@ -82,8 +82,10 @@ if __name__ == '__main__':
     test_binary_search()
 `
 
-var num = prompt("Sample question (1-2)", "");
-$model.view.setCode(z[num]);
+prog = ''
+for (var i=1; i < z.length; i++)
+  prog = prog+z[i];
+$model.view.setCode(prog);
 $model.reset();
 $("#open_file").val("");
 }
