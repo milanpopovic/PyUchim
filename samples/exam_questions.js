@@ -423,3 +423,27 @@ function select_exam_question(){
        $model.view.setCode("'''Zadatak "+num.toString()+".\n"+q[num]+"\n'''");
        $model.reset();
 }
+
+function takeExam(){
+       e=""
+       n = Math.floor(Math.random() * 14)+1
+       e+="'''Zadatak 1"+".\n"+q[n]+"\n'''";
+       n = 15 + Math.floor(Math.random() * 15)
+       e+="'''Zadatak 2"+".\n"+q[n]+"\n'''";
+       n = 30 + Math.floor(Math.random() * 15)
+       e+="'''Zadatak 3"+".\n"+q[n]+"\n'''";
+       n = 45 + Math.floor(Math.random() * 11)
+       e+="'''Zadatak 4"+".\n"+q[n]+"\n'''";
+       n = 56 + Math.floor(Math.random() * 9)
+       e+="'''Zadatak 5"+".\n"+q[n]+"\n'''";
+       $model.view.setCode(e);
+       $model.reset();
+       var today = new Date();
+       var dd = String(today.getDate()).padStart(2, '0');
+       var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+       var yyyy = today.getFullYear();
+
+       today = dd + '.' + mm + '.' + yyyy;
+       $("#open_file").val("Exam-taken:"+today);
+       save_file();
+}

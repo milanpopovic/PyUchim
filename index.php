@@ -105,6 +105,8 @@
 		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
 		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
                 <li role="separator" class="divider"></li>
+                <li><a class="dropdown-item" href="#" onClick="takeExam()">Take exam</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
 	    </ul>
 	  </li>
