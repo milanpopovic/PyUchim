@@ -110,6 +110,26 @@
 	  </li>
           <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-book" aria-hidden="true"></i> Books
+		<span class="caret"></span></a>
+	    <ul class="dropdown-menu" aria-labelledby="about-us">
+		<li><a class="dropdown-item" href="http://mef-lab.com/osnove-2018/book/index.html" target="_new">
+                     <small>Lecture notes</small></a></li>
+                <li role="separator" class="divider"></li>
+		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/python_book.html" target="_new">
+                     <small>Python - Practical introduction </small></a></li>
+		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/Python_Quick_Reference_Guide_Heinold.pdf" 
+                     target="_new"><small>Python Quck reference</small></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="dropdown-item" href="https://docs.python.org/3/tutorial/index.html" target="_new">
+                    <small>Official Python tutorial</small></a></li>   
+                <li role="separator" class="divider"></li>
+                <li><a class="dropdown-item" href="http://www.codeskulptor.org/demos.html#tabs-Hall-of-Fame" target="_new">
+                    <small>Demo games</small></a></li>   
+	    </ul>
+	  </li>
+          <li class="dropdown">
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                 <i class="fa fa-user" aria-hidden="true"></i> Mentor
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
@@ -119,26 +139,6 @@
 		<li><a href="skype:milan.popovic?call">Call Mentor via Skype</a></li>	
 	    </ul>
           </li>
-          <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-book" aria-hidden="true"></i> Books
-		<span class="caret"></span></a>
-	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="http://mef-lab.com/osnove-2018/book/index.html" target="_new">
-                     <small>Lecture notes</small></a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/python_book.html" target="_new">
-                     <small>Practical introduction</small></a></li>
-		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/Python_Quick_Reference_Guide_Heinold.pdf" 
-                     target="_new"><small>Quck reference</small></a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="https://docs.python.org/3/tutorial/index.html" target="_new">
-                    <small>Official Python tutorial</small></a></li>   
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="http://www.codeskulptor.org/demos.html#tabs-Hall-of-Fame" target="_new">
-                    <small>Demo games</small></a></li>   
-	    </ul>
-	  </li>
 	</ul> 
         <ul class="nav navbar-nav navbar-right">
           <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
