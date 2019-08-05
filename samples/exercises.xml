@@ -2085,7 +2085,7 @@ highest. If all three cards have the same value, then the game is a draw.
 </text>
 </exercise>
 <exercise>
-<id>11.8</id>
+<id>11.9</id>
 <text>
 Using the card dictionary from earlier in the chapter, deal out 
 three cards. Determine the following:
@@ -2097,7 +2097,7 @@ d) If the three cards form a straight (all in a row, like
 </text>
 </exercise>
 <exercise>
-<id>11.9</id>
+<id>11.10</id>
 <text>
 Using the card dictionary from earlier in the chapter run a Monte Carlo 
 simulation to estimate the probability of being dealt a flush in a five 
@@ -2105,7 +2105,7 @@ card hand. See this exercise for more about Monte Carlo simulations.
 </text>
 </exercise>
 <exercise>
-<id>11.10</id>
+<id>11.11</id>
 <text>
 In this section we met the substitution cipher. This cipher replaces 
 every letter with a different letter. For instance every a might be 
@@ -2120,7 +2120,7 @@ can be done with or without a dictionary.
 </text>
 </exercise>
 <exercise>
-<id>11.11</id>
+<id>11.12</id>
 <text>
 Below are the notes used in music:
 C C# D D# E F F# G G# A A# B
@@ -2141,7 +2141,7 @@ prints out the notes of the chord. Use a dictionary whose keys are the
 </text>
 </exercise>
 <exercise>
-<id>11.12</id>
+<id>11.13</id>
 <text>
 Suppose you are given the following list of strings:
 L = ['aabaabac', 'cabaabca', 'aaabbcba', 'aabacbab', 'acababba']
@@ -2157,7 +2157,7 @@ values are those characters. Write a program implementing this approach
 </text>
 </exercise>
 <exercise>
-<id>11.13</id>
+<id>11.14</id>
 <text>
 Dictionaries provide a convenient way to store structured data. 
 Here is an example dictionary:
@@ -2166,11 +2166,7 @@ d=[{'name':'Todd', 'phone':'555-1414', 'email':'todd@mail.net'},
    {'name':'Helga', 'phone':'555-1618', 'email':'helga@mail.net'},
    {'name':'Princess', 'phone':'555-3141', 'email':'';},
    {'name':'LJ', 'phone':'555-2718', 'email':'lj@mail.net'}]
-</text>
-</exercise>
-<exercise>
-<id>11.14</id>
-<text>
+
 Write a program that reads through any dictionary like this and 
 prints the following:
 
