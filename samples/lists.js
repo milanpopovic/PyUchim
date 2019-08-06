@@ -15,7 +15,7 @@ f) Briše prvi i poslednji podatak iz liste, sortira preostale podatke
    i štampa rezultat.
 g) Štampa koliko celih brojeva u listi je manje od 5.
 '''
-lista=[int(e) for e in input("Unesite listu celih brojeva: ").split(',')]
+lista=[int(e) for e in input("Unesite niz celih brojeva odvojenih zapetom").split(',')]
 print(len(lista)) # a)
 print(lista[-1])  # b)
 print(lista[-1::-1]) # c)
@@ -107,7 +107,7 @@ Zadatak 4.
 Tražite od korsinika da unese listu koja sadrži brojeve između 1 i 12. 
 Zatim zamenite sve brojeve koji su veći od 10 sa brojem 10. 
 '''
-l=[int(e) for e in input("Unesite listu brojeva (1-12): ").split(',')]
+l=[int(e) for e in input("Unesite niz celih brojeva u rasponu (1-12) odvojenih zapetom: ").split(',')]
 for i in range(len(l)):
     if l[i] > 10:
         l[i]=10
@@ -120,7 +120,7 @@ Tražite od korisnika da unese listu stringova. Kreirajte novu listu
 koja sadrži iste stringove ali bez prvog slova.
 '''
 nova_lista=[]
-l=input("Unesite listu stringova: ").split(',')
+l=input("Unesite niz stringova odvojenih zapetom").split(',')
 for s in l:
     if len(s)>1:
         nova_lista.append(s[1:])
@@ -164,8 +164,8 @@ sume odgovarajućih elemenata iz L i M. Na primer, ako je
 L=[3,1,4] i M=[1,5,9], odna će N biti [4,6,13].
 '''
 
-L=list(input("Unesite prvu listu brojeva: "))
-M=list(input("Unesite drugu listu brojeva: "))
+L=list(input("Unesite prvi niz celih brojeva odvojenih zapetom"))
+M=list(input("Unesite drugi niz celih brojeva odvojenih zapetom"))
 N=[]
 for i in range(len(L)):
     N.append(L[i]+M[i])
@@ -214,7 +214,7 @@ prvom indeksu pomera na drugi, drugi na treći, itd., sve do poslednjeg
 koji se pomera na prvi indeks.
 '''
 
-l=[int(e) for e in input("Unesite listu celih brojeva: ").split(',')]
+l=[int(e) for e in input("Unesite niz celih brojeva odvojenih zapetom").split(',')]
 l=[l[-1]]+l[0:-1]
 print(l)
 `
@@ -266,7 +266,7 @@ tako da se podaci pojavljuju samo jednom. Na primer lista [1,1,2,3,4,3,0,0]
 će posle takvog brisanja postati [1,2,3,4,0].
 '''
 
-l=[int(
+l=[int(e) for e in input("Unesite niz celih brojeva odvojenih zapetom").split(',')]
 for e in l:
     for i in range(1,l.count(e)):
         l.remove(e)

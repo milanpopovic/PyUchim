@@ -47,8 +47,8 @@ function logout(){
 }
 
 function open_file(){
-    projekat = $('#open_project').text()
-    if(projekat == ""){
+    project = $('#open_project').text();
+    if(project == ""){
         myAlert("alert-warning","You must be logged in.");
         return;
     }
@@ -56,10 +56,9 @@ function open_file(){
     $.ajax({
       method: "POST",
       url: urlpath,
-      data: { otvori_projekat: projekat }
+      data: { otvori_projekat: project }
     }).done(function( msg ) {
         if(msg.length <= 1){
-                myAlert("alert-warning","Your folder is empty.");
              	return;
         }
         else{

@@ -23,7 +23,7 @@ while 1:
     p=input("Unesite naziv proizvoda: ")
     if p == "kraj": break
     if p in proizvodi:
-        print(c)
+        print(p,"košta",proizvodi[p])
     else:
         print("Nemamo takav proizvod.")
 `
@@ -146,8 +146,8 @@ covek_v =[e['vrednost'] for e in covek]
 komp_v  =[e['vrednost'] for e in komp]
 covek_v.sort(reverse=True)
 komp_v.sort(reverse=True)
-print("Vase karte:",[(k['vrednost'],k['boja']) for k in covek],
-      "\n","Kompjuter:",[(k['vrednost'],k['boja']) for k in komp])
+print("Vase karte:",[(k['vrednost'],k['boja']) for k in covek])
+print("Kompjuter:",[(k['vrednost'],k['boja']) for k in komp])
 for i in range(len(covek_v)):
     if covek_v[i] in komp_v:
         del covek_v[i]

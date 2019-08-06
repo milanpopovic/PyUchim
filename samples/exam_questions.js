@@ -425,10 +425,12 @@ function select_exam_question(){
 }
 
 function takeExam(){
-       if ($("#open_project").val() == ""){
+       project = $("#open_project").text();
+       if ( project == ""){
              myAlert("alert-warning","You must be logged in.");
              return;
        }
+       
        e=""
        n = Math.floor(Math.random() * 14)+1
        e+="'''Zadatak 1"+".\n"+q[n]+"\n'''";
