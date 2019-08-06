@@ -162,7 +162,7 @@
     </div>
   </div>
 </nav>
-
+<div id='alertMessage'></div>
 <!-- CodeSkulptor panels -->
 <div id="bodyWrapper">
     <div id="mainBody">

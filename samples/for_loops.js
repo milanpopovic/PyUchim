@@ -210,7 +210,6 @@ Omogućite korisniku da specificira visinu dijamanta.
   ***
    *
 '''
-
 visina=int(input("Unesite visinu dijamanta: "))
 for i in range(1,visina//2+1):
     print(" "*(visina//2-i+1),"*"*(2*i-1),sep="")
@@ -230,15 +229,16 @@ Omogućite korisniku da specificira koliko će slovo biti veliko.
  *     *
 *       *
 '''
+velicina = int(input('Velicina slova A: '))
+print(' '*(2*velicina-2),'*',sep='')
+for i in range(2,velicina):
+    print(' '*(2*velicina-i-1),'*',' '*(2*i-3),'*',sep='')
+print(' '*(velicina-1),'*'*(2*velicina-1),sep='')
+for i in range(velicina,2*velicina-1):
+    print(' '*(2*velicina-i-2),'*',' '*(2*i-1),'*',sep='')
 
-visina=int(input("Unesite visinu slova A: "))
-print(" "*(visina-1),"*")
-for i in range(1,visina//2):
-    print(" "*(visina-i),"*"," "*(2*i-1),"*",sep="")
-print(" "*(visina//2),"*"*visina)
-for i in range(visina//2+1,visina):
-    print(" "*(visina-i),"*"," "*(2*i-1),"*",sep="")
 `
+
 
 prog = ''
 for (var i=1; i < z.length; i++)

@@ -49,7 +49,7 @@ function logout(){
 function open_file(){
     projekat = $('#open_project').text()
     if(projekat == ""){
-        alert('You must login first.')
+        myAlert("alert-warning","You must be logged in.");
         return;
     }
     var urlpath = appurl+'/php/open_file.php'
@@ -59,7 +59,7 @@ function open_file(){
       data: { otvori_projekat: projekat }
     }).done(function( msg ) {
         if(msg.length <= 1){
-                alert('Your folder is empty.')
+                myAlert("alert-warning","Your folder is empty.");
              	return;
         }
         else{
@@ -127,7 +127,7 @@ function delete_file(){
 function save_file_as(){  
     var projekat = $('#open_project').text();
     if(projekat == ""){
-        alert('You must login first.')
+        myAlert("alert-warning","You must be logged in.");
         return;
     }
     var fajl = prompt("Naziv programa","")
@@ -155,7 +155,7 @@ function new_file(){
 function save_new_file(name){
     var valid = /^(\w)+(\.?)(\w{0,})$/;
     if(!valid.test(name)) {
-        alert("Invalid code name: "+name);
+        myAlert("alert-warning","Invalid code name: "+name);
         return;
     }
     $('#open_file').val(name);
@@ -167,7 +167,7 @@ function save_new_file(name){
 function save_file(flag){
     var projekat = $('#open_project').text();
     if(projekat == ""){
-        alert('You must login first.')
+        myAlert("alert-warning","You must be logged in.");
         return;
     }
     
@@ -243,7 +243,7 @@ function uncomment()
 }
 
 function sharing(){
-   alert($("#chk-share").val())
+   myAlert("alert-warning",$("#chk-share").val());
 }
 
 function new_user(){
@@ -277,12 +277,12 @@ function new_user(){
   if (!error){
     $.post( "./php/new_user.php", {studentID: studentID, lastName: lastName,firstName: firstName, email: email,password: password })
     .done(function( response ) {
-      alert(response );
+      myAlert("alert-warning",response);
       $("#signupModal").modal('hide');
     });
   }
   else{
-    alert(error_message );
+    myAlert("alert-warning",error_message);
   }
 }
 
@@ -293,6 +293,14 @@ function lucky_question(){
   }).done(function( msg ) {
             $model.view.setCode(msg);
   });
+}
+
+function myAlert(alertType,alertMessage){
+  var alertDiv = '<div class="alert '+alertType+' alert-dismissible " role="alert">';
+  alertDiv += alertMessage;
+  alertDiv += '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+  alertDiv += '<span aria-hidden="true">&times;</span></button></div>';
+  $("#alertMessage").html(alertDiv);
 }
 
 
