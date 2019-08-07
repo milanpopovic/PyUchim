@@ -410,7 +410,8 @@ metoda __str__ takva da štampanje objekta rezultira sledećim izgledom:
 
 Glavnica - 1000.00, Kamatna stopa - 5.12% 
 `
-
+var $exam_started="";
+var $exam_stopped="";
 
 function random_exam_question() {
         num = Math.floor((Math.random() * 64))+1;
@@ -424,7 +425,7 @@ function select_exam_question(){
        $model.reset();
 }
 
-function takeExam(){
+function practiceExam(){
        project = $("#open_project").text();
        if ( project == ""){
              myAlert("alert-warning","You must be logged in.");
@@ -433,15 +434,15 @@ function takeExam(){
        
        e=""
        n = Math.floor(Math.random() * 14)+1
-       e+="'''Zadatak 1"+".\n"+q[n]+"\n'''";
+       e+="'''\nZadatak 1"+".\n"+q[n]+"'''\nOvde unesite resenje";
        n = 15 + Math.floor(Math.random() * 15)
-       e+="'''Zadatak 2"+".\n"+q[n]+"\n'''";
+       e+="\n'''\nZadatak 2"+".\n"+q[n]+"'''\nOvde unesite resenje";
        n = 30 + Math.floor(Math.random() * 15)
-       e+="'''Zadatak 3"+".\n"+q[n]+"\n'''";
+       e+="\n'''\nZadatak 3"+".\n"+q[n]+"'''\nOvde unesite resenje";
        n = 45 + Math.floor(Math.random() * 11)
-       e+="'''Zadatak 4"+".\n"+q[n]+"\n'''";
+       e+="\n'''\nZadatak 4"+".\n"+q[n]+"'''\nOvde unesite resenje";
        n = 56 + Math.floor(Math.random() * 9)
-       e+="'''Zadatak 5"+".\n"+q[n]+"\n'''";
+       e+="\n'''\nZadatak 5"+".\n"+q[n]+"'''\nOvde unesite resenje";
        $model.view.setCode(e);
        $model.reset();
        var today = new Date();
@@ -452,4 +453,118 @@ function takeExam(){
        today = dd + '.' + mm + '.' + yyyy;
        $("#open_file").val("Exam-taken:"+today);
        save_file();
+}
+
+function stopExam(){
+    $exam_stopped = new Date();
+   	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	var yyyy = today.getFullYear();
+	today = dd + '.' + mm + '.' + yyyy;
+	$("#open_file").val("Exam:"+today);
+	save_exam();
+    $exam_started = "";
+}
+
+function save_exam(){
+    var projekat = $('#open_project').text();
+    if(projekat == ""){
+        myAlert("alert-warning","You must be logged in.");
+        return;
+    }
+    var fajl = $('#open_file').val();
+    
+    sadrzaj = "'''\nExam started:"+$exam_started+"\n"+"Exam stopped:"+$exam_stopped+"\n'''\n"+$model.view.getCode();
+    var urlpath = appurl+'/php/save_file.php'
+ 
+    $.ajax({
+	  method: "POST",
+	  url: urlpath,
+	  data: { otvori_projekat: projekat, file: fajl, content: sadrzaj  },
+    }).done(function( msg ) {
+            myAlert("alert-warning","Exam sacuvan.")
+            var $exam_started="";
+			var $exam_stopped="";
+      });
+
+}
+function file_exists(project,file){
+    var res = "";
+    $.ajax({
+        type: "post",
+        url: 'php/file_exists.php',
+        data: { 'project': project, 'file': file  },
+        success: function(data) {
+          if(data == 'yes'){
+            
+            myAlert("alert-warning","Exam already taken!")
+          }
+          else{
+            $("#open_file").val(file);
+          }
+        }
+    });
+}
+function startExam(){
+       if ($exam_started != ""){
+         myAlert("alert-warning","Exam already started!")
+         return;
+       }
+       var today = new Date();
+	   var dd = String(today.getDate()).padStart(2, '0');
+	   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	   var yyyy = today.getFullYear();
+	   var today = dd + '.' + mm + '.' + yyyy;
+       var file_name = "Exam:"+today;
+       project = $("#open_project").text();
+       file_exists(project,file_name);
+       $.ajax({
+	  	method: "POST",
+	  	url: "php/read_exam_parameters.php"
+    	}).done(function( msg ) {
+           if (msg.startsWith("Error")){
+               myAlert("alert-warning",msg);
+               return;
+           }
+
+		   project = $("#open_project").text();
+		   if ( project == ""){
+		         myAlert("alert-warning","You must be logged in.");
+		         return;
+		   }
+  
+           var par = JSON.parse(msg); 
+           if( par.open != 1){
+               myAlert("alert-warning","It is not exam time.");
+               return;
+           }
+           $exam_started = new Date();
+		   e=""
+           arr = [];
+           for (var i=par.from_task;i<=par.to_task;i++){
+               arr.push(i);
+           }
+           
+           var s = sample(arr,par.no_of_tasks);
+           s.sort(function(a, b){return a-b})
+           for (var i=0; i < s.length;i++) {
+		   		e+="'''\nZadatak "+(i+1).toString()+".\n"+q[s[i]]+"'''\nOvde unesite resenje\n";
+		   }
+		   $model.view.setCode(e);
+		   $model.reset();
+        });
+}
+
+function sample(array,size) {
+  const results = [],
+    sampled = {};
+  while(results.length<size && results.length<array.length) {
+    const index = Math.trunc(Math.random() * array.length);
+    if(!sampled[index]) {
+      results.push(array[index]);
+      sampled[index] = true;
+    }
+  }
+  return results;
 }

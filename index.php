@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="CodeSkulptor3/bootstrap.css">
     <link rel="shortcut icon" href="CodeSkulptor3/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <script src="https://kit.fontawesome.com/292f64c027.js"></script>
     <script src="CodeSkulptor3/jquery.js"></script>
     <script src="CodeSkulptor3/jquery-ui.js"></script>
     <script src="CodeSkulptor3/bootstrap.js"></script>
@@ -105,14 +104,14 @@
 		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
 		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="takeExam()">Take exam</a></li>
+                <li><a class="dropdown-item" href="#" onClick="practiceExam()">Practice random exam</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
 	    </ul>
 	  </li>
-          <li class="dropdown">
+      <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-book" aria-hidden="true"></i> Books
+                <i class="fas fa-book" aria-hidden="true"></i> Books
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
 		<li><a class="dropdown-item" href="http://mef-lab.com/osnove-2018/book/index.html" target="_new">
@@ -140,11 +139,21 @@
                 <li role="separator" class="divider"></li>
 		<li><a href="skype:milan.popovic?call">Call Mentor via Skype</a></li>	
 	    </ul>
-          </li>
+       </li>
+       
 	</ul> 
         <ul class="nav navbar-nav navbar-right">
+
+          <li class="dropdown">
+	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-award"></i> Exam <span class="caret"></span></a>
+	    		<ul class="dropdown-menu" aria-labelledby="about-us">
+          			<li id="start-exam"><a class="dropdown-item" href="#" onClick="startExam()"> Start exam</a></li>
+                    <li id="stop-exam"><a class="dropdown-item" href="#" onClick="stopExam()"> Stop exam</a></li>
+                </ul>
+          </li>
           <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-          <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+          <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a></li>
           <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
           <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true">
 		</i> SignUp</a></li>

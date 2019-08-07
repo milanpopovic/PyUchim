@@ -11,15 +11,14 @@
     <title>PyUchim mentor's page</title> 
     <link rel="stylesheet" type="text/css" href="../CodeSkulptor3/bootstrap.css">
     <link rel="shortcut icon" href="../CodeSkulptor3/favicon.ico">
-    <script src="../CodeSkulptor3/jquery-ui.js"></script>
-    <script src="../CodeSkulptor3/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="themes/redmond/jquery-ui.custom.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/ui.jqgrid.css" />
     <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
     <script src="js/i18n/grid.locale-en.js" type="text/javascript"></script>
     <script src="js/jquery.jqGrid.min.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="../CodeSkulptor3/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/292f64c027.js"></script>
+    
 <script>
 function changePassword(){ 
     var rowid = $("#student").jqGrid('getGridParam', 'selrow');
@@ -39,6 +38,26 @@ function changePassword(){
       });
     }
 }
+
+function sendMail(){
+  	var rowid = $("#student").jqGrid('getGridParam', 'selrow');
+    if(rowid == null){
+        alert("No user selected.")
+        return
+    }
+    email = jQuery("#student").jqGrid('getCell', rowid, 'email');
+    window.location.href = "mailto:"+email;
+}
+function userLogin(){
+    var rowid = $("#student").jqGrid('getGridParam', 'selrow');
+    if(rowid == null){
+        alert("No user selected.")
+        return
+    }
+    email = jQuery("#student").jqGrid('getCell', rowid, 'email');
+    password = jQuery("#student").jqGrid('getCell', rowid, 'password');
+    window.open("../login/prof-login-exec.php?email="+email+"&id="+password);
+}
 </script>
 </head>
 <body>
@@ -48,10 +67,13 @@ function changePassword(){
           <a class="navbar-brand" href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>PyUchim Mentor's page</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	<ul class="nav navbar-nav">
-           <li><a class="nav-link" href="../setup.php" target="_blank">PyUchim setup</a></li>
-  	   <li><a class="nav-link" href="#" onClick="changePassword()">Change password</a></li>
-        </ul>
+		<ul class="nav navbar-nav">
+		   <li><a class="nav-link" href="#" onClick="sendMail();"><i class="far fa-envelope"></i> Send mail</a></li>
+           <li><a class="nav-link" href="#" onClick="userLogin()"><i class="fas fa-sign-in-alt"></i> User login</a></li>
+	  	   <li><a class="nav-link" href="#" onClick="changePassword()"><i class="fas fa-unlock-alt"></i> Change password</a></li>
+           <li><a class="nav-link" href="#" onClick="window.open('exam_setup.html');"><i class="fas fa-cog"></i> Exam setup</a></li> 
+           <li><a class="nav-link" href="../setup.php" target="_blank"><i class="fas fa-cog"></i> PyUchim setup</a></li> 
+		</ul>
     </div>
    </div>
 </nav>
@@ -117,10 +139,12 @@ jQuery(function(){
   $(".ui-search-toolbar").hide();
   //jQuery("#student").jqGrid('filterToolbar',{stringResult: true,searchOnEnter : false});
 });
+
 </script>
 <table id="student"></table> 
 <div id="StudentPager"></div>
 <div class="col-sm-0"></div>
 </div>
+
 </body>
 </html>

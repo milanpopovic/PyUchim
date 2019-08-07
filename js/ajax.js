@@ -110,6 +110,10 @@ function load_file(){
 
 function delete_file(){
     var fajl = $('#open_file').val();
+    if(fajl.startsWith("Exam")){
+       myAlert("alert-warning","Cannot delete exam file.");
+       return;
+    }
     if(fajl == "") return
     var projekat = $('#open_project').text();
     var urlpath = appurl+'/php/remove_file.php'
@@ -129,7 +133,11 @@ function save_file_as(){
         myAlert("alert-warning","You must be logged in.");
         return;
     }
-    var fajl = prompt("Naziv programa","")
+    var fajl = prompt("Naziv programa","");
+    if(fajl.startsWith("Exam")){
+       myAlert("alert-warning","Cannot change exam file.");
+       return;
+    }
     if(fajl == "") return
     $('#open_file').val(fajl);
     sadrzaj = $model.view.getCode();
@@ -171,7 +179,10 @@ function save_file(flag){
     }
     
     var fajl = $('#open_file').val();
-    //fajl=fajl.replace(" ",""); // no space in file name
+    if(fajl.startsWith("Exam")){
+       myAlert("alert-warning","Cannot change exam file.");
+       return;
+    }
     if(fajl == "") {
        save_file_as();
        return;

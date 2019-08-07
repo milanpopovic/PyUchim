@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" ;charset="utf-8">
+    <title>Exam setup</title>
+
+    <link rel="stylesheet" type="text/css" href="../CodeSkulptor3/bootstrap.css">
+    <link rel="shortcut icon" href="../CodeSkulptor3/favicon.ico">
+    <script src="https://kit.fontawesome.com/292f64c027.js"></script>
+    <script src="../CodeSkulptor3/jquery.js"></script>
+    <script src="../CodeSkulptor3/jquery-ui.js"></script>
+    <script src="../CodeSkulptor3/bootstrap.js"></script>
+
+</head>
+<body>
+<div class="row">
+  <center><h1>Exam setup</h1></center>
+  <div id="active" class="col-xs-3">
+  </div>
+  <div id="active" class="col-xs-6">
+	<form id="examForm" name="examForm" method="post" action= "./../php/setup_exam.php">
+		  <div class="form-group">
+			<label for="exam-open">Exam open</label>
+			<input class="form-control" id="exam-open" name="exam-open" placeholder="(0/1)">
+		  </div>
+		  <div class="form-group">
+			<label for="no-of-tasks">Number of tasks in exam</label>
+			<input  class="form-control" id="no-of-tasks" name='no-of-tasks' placeholder="Number of tasks">
+		  </div>
+		  <div class="form-group">
+			<label for="from-task">From task number</label>
+			<input  class="form-control" id="from-task" name='from-task' placeholder="From task">
+		  </div>
+		  <div class="form-group">
+			<label for="to-task">To task number</label>
+			<input  class="form-control" id="to-task" name='to-task' placeholder="To task">
+		  </div>
+		  <button type="submit" class="btn btn-default">Submit</button>
+	</form>
+   </div>
+   <div id="active" class="col-xs-3">
+   </div>
+<script>
+    var frm = $('#examForm');
+
+    frm.submit(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            success: function (data) {
+                console.log('Submission was successful.');
+                console.log(data);
+                window.close();
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>
+</body>
+</html>
