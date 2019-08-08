@@ -46,7 +46,6 @@
 <body style="overflow-y: hidden;">
 
 <!-- Menu -->
-
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -55,123 +54,112 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
 	  <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <i class="fa fa-file-code-o" aria-hidden="true"></i> My Code<span class="caret"></span></a>
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-file-code-o" aria-hidden="true"></i> My Code<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="#" onClick="new_file()">New</a></li>
-		<li><a class="dropdown-item" href="#" onClick="open_file()">Open</a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="#" onClick="save_file(true)">Save</a></li>
-		<li><a class="dropdown-item" href="#" onClick="save_file_as()">Save as ..</a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="#" onClick="close_file()">Close</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item loadLocalBtn" href="#">Load local file</a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="#" onClick="delete_file(true)">Delete</a></li>
+			<li><a class="dropdown-item" href="#" onClick="new_file()">New</a></li>
+			<li><a class="dropdown-item" href="#" onClick="open_file()">Open</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a class="dropdown-item" href="#" onClick="save_file(true)">Save</a></li>
+			<li><a class="dropdown-item" href="#" onClick="save_file_as()">Save as ..</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a class="dropdown-item" href="#" onClick="close_file()">Close</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item loadLocalBtn" href="#">Load local file</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a class="dropdown-item" href="#" onClick="delete_file(true)">Delete</a></li>
 	    </ul>
 	  </li>
 
 	  <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               <i class="fa fa-code" aria-hidden="true"></i> Examples
-		<span class="caret"></span></a>
+            <i class="fa fa-code" aria-hidden="true"></i> Examples<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="#" onClick="select_sample_io()">Input/Output</a></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_for_loops()">For loops</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_sample_if_statement()">If statement</a></li>	
-		<li><a class="dropdown-item" href="#" onClick="select_sample_while_loops()">While loops</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_sample_try_except()">Try...except</a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="#" onClick="select_sample_lists()">Lists</a></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_dictionaries()">Dictionaries</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_functions()">Functions</a></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_classes()">Classes</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_simple_plot()">Simple plot</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_searching()">Search algorithms</a></li>
-                <li><a class="dropdown-item" href="#" onClick="select_sample_sorting()">Sort algorithms</a></li>
-
-	    </ul>
+			<li><a class="dropdown-item" href="#" onClick="select_sample_io()">Input/Output</a></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_for_loops()">For loops</a></li>
+			<li><a class="dropdown-item" href="#" onClick="select_sample_if_statement()">If statement</a></li>	
+			<li><a class="dropdown-item" href="#" onClick="select_sample_while_loops()">While loops</a></li>
+			<li><a class="dropdown-item" href="#" onClick="select_sample_try_except()">Try...except</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a class="dropdown-item" href="#" onClick="select_sample_lists()">Lists</a></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_dictionaries()">Dictionaries</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_functions()">Functions</a></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_classes()">Classes</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_simple_plot()">Simple plot</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_searching()">Search algorithms</a></li>
+		    <li><a class="dropdown-item" href="#" onClick="select_sample_sorting()">Sort algorithms</a></li>
+		</ul>
 	  </li>
 	  <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-question-circle-o" aria-hidden="true"></i>  Challenges
+            <i class="fa fa-question-circle-o" aria-hidden="true"></i>  Challenges
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
-		<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="practiceExam()">Practice random exam</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
+			<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
+			<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="#" onClick="practiceExam()">Practice exam</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
 	    </ul>
 	  </li>
       <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-book" aria-hidden="true"></i> Books
-		<span class="caret"></span></a>
+             <i class="fas fa-book" aria-hidden="true"></i> Books<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a class="dropdown-item" href="http://mef-lab.com/osnove-2018/book/index.html" target="_new">
-                     <small>Lecture notes</small></a></li>
-                <li role="separator" class="divider"></li>
-		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/python_book.html" target="_new">
-                     <small>Python - Practical introduction </small></a></li>
-		<li><a class="dropdown-item" href="https://www.brianheinold.net/python/Python_Quick_Reference_Guide_Heinold.pdf" 
-                     target="_new"><small>Python Quck reference</small></a></li>
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="https://docs.python.org/3/tutorial/index.html" target="_new">
-                    <small>Official Python tutorial</small></a></li>   
-                <li role="separator" class="divider"></li>
-                <li><a class="dropdown-item" href="http://www.codeskulptor.org/demos.html#tabs-Hall-of-Fame" target="_new">
-                    <small>Demo games</small></a></li>   
+			<li><a class="dropdown-item" href="http://mef-lab.com/osnove-2018/book/index.html" target="_new">Lecture notes</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a class="dropdown-item" href="https://www.brianheinold.net/python/python_book.html" target="_new">
+		         Practical introduction</a></li>
+			<li><a class="dropdown-item" href="https://www.brianheinold.net/python/Python_Quick_Reference_Guide_Heinold.pdf" target="_new">
+		        Quck reference</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="https://docs.python.org/3/tutorial/index.html" target="_new">Python tutorial</a></li>   
+		    <li role="separator" class="divider"></li>
+		    <li><a class="dropdown-item" href="http://www.codeskulptor.org/demos.html#tabs-Hall-of-Fame" target="_new">Demo games</a></li>   
 	    </ul>
 	  </li>
-          <li class="dropdown">
+      <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user" aria-hidden="true"></i> Mentor
-		<span class="caret"></span></a>
+            <i class="fa fa-user" aria-hidden="true"></i> Mentor<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
-		<li><a href="mentor/mentor.php" target="_new" >
-                     Open Mentor's page</a></li>
-                <li role="separator" class="divider"></li>
-		<li><a href="skype:milan.popovic?call">Call Mentor via Skype</a></li>	
+			<li><a href="mentor/mentor.php" target="_new" >Open Mentor's page</a></li>
+		    <li role="separator" class="divider"></li>
+			<li><a href="skype:milan.popovic?call">Call Mentor via Skype</a></li>	
 	    </ul>
-       </li>
+      </li>
        
 	</ul> 
-        <ul class="nav navbar-nav navbar-right">
-
-          <li class="dropdown">
-	    		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-award"></i> Exam <span class="caret"></span></a>
-	    		<ul class="dropdown-menu" aria-labelledby="about-us">
-          			<li id="start-exam"><a class="dropdown-item" href="#" onClick="startExam()"> Start exam</a></li>
-                    <li id="stop-exam"><a class="dropdown-item" href="#" onClick="stopExam()"> Stop exam</a></li>
-                </ul>
-          </li>
-          <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-          <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a></li>
-          <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
-          <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true">
-		</i> SignUp</a></li>
-          <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-user" aria-hidden="true"></i> Help
-		<span class="caret"></span></a>
-	    <ul class="dropdown-menu" aria-labelledby="about-us">
-    		<li><a href="help/about.html" target="_new" >About</a></li>
+    <ul class="nav navbar-nav navbar-right">
+    	<li class="dropdown">
+	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-award"></i> Exam <span class="caret"></span></a>
+	        <ul class="dropdown-menu" aria-labelledby="about-us">
+          		<li id="start-exam"><a class="dropdown-item" href="#" onClick="startExam()"> Start exam</a></li>
+                <li id="stop-exam"><a class="dropdown-item" href="#" onClick="stopExam()"> Stop exam</a></li>
+            </ul>
+        </li>
+        <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+        <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a></li>
+        <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
+        <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</a></li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user" aria-hidden="true"></i> Help<span class="caret"></span></a>
+	    	<ul class="dropdown-menu" aria-labelledby="about-us">
+    			<li><a href="help/about.html" target="_new" >About</a></li>
                 <li role="separator" class="divider"></li>
-		<li><a href="help/docs.html" target="_new">Docs</a></li>	
-	    </ul>
-          </li>
-        </ul>
-    </div>
+				<li><a href="help/docs.html" target="_new">Docs</a></li>	
+	    	</ul>
+        </li>
+    </ul>
+   </div>
   </div>
 </nav>
 <div id='alertMessage'></div>
+
 <!-- CodeSkulptor panels -->
 <div id="bodyWrapper">
     <div id="mainBody">
@@ -192,14 +180,14 @@
                                 title="" data-original-title="Uncomment selection."> 
                                 <i class="fa fa-minus-square"></i>
                 	       </span> 
-                               <span class="btn btn-primary">
+                           <span class="btn btn-primary">
                                   <input type="checkbox" name="chk-share" id="chk-share" data-toggle="tooltip" data-placement="right"  
                                title="" data-original-title="Share Python code with Mentor (on/off)">
                                </span>
                                <span class="btn btn-primary runBtn" data-toggle="tooltip" data-placement="right" 
                                 title="" data-original-title="Execute the Python code from the beginning.">
                                 <i class="fa fa-play" aria-hidden="true"></i>
-                               </span>
+                           </span>
             		       <span class="btn btn-primary resetBtn" data-toggle="tooltip" data-placement="right" 
                                    title="Stop execution and clear all output." ><i class="fa fa-stop-circle"></i>
                                </span>
@@ -324,12 +312,12 @@
 </div>
 <?php
 if ($project !== ".") {
-     	echo '<script>$("#open_project").text("'.stripslashes($project).'")</script>'; 
-     	echo '<script>$("#login").hide();$("#logout").show();$("#menu-signin").hide();</script>'; 
-     }
-     else{
-     	echo '<script>$("#login").show();$("#menu-signin").show();$("#logout").hide()</script>'; 
-     }
+     echo '<script>$("#open_project").text("'.stripslashes($project).'")</script>'; 
+     echo '<script>$("#login").hide();$("#logout").show();$("#menu-signin").hide();</script>'; 
+}
+else{
+   	echo '<script>$("#login").show();$("#menu-signin").show();$("#logout").hide()</script>'; 
+}
 ?>
 </body>
 </html>

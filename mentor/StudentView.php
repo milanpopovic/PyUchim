@@ -72,7 +72,8 @@ function userLogin(){
            <li><a class="nav-link" href="#" onClick="userLogin()"><i class="fas fa-sign-in-alt"></i> User login</a></li>
 	  	   <li><a class="nav-link" href="#" onClick="changePassword()"><i class="fas fa-unlock-alt"></i> Change password</a></li>
            <li><a class="nav-link" href="#" onClick="window.open('exam_setup.html');"><i class="fas fa-cog"></i> Exam setup</a></li> 
-           <li><a class="nav-link" href="../setup.php" target="_blank"><i class="fas fa-cog"></i> PyUchim setup</a></li> 
+           <li><a class="nav-link" href="../setup.php" target="_blank"><i class="fas fa-cog"></i> PyUchim setup</a></li>
+           <li><a class="nav-link" href="../login/log.txt" target="_blank"><i class="fas fa-eye"></i> PyUchim logfile</a></li>  
 		</ul>
     </div>
    </div>

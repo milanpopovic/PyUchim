@@ -1,5 +1,4 @@
 var appurl = '.';
-
 $( document ).ready(function() {
     var $myVar;
     $("#chk-share").change(function() {
@@ -40,10 +39,7 @@ function logout(){
       url: "./login/logout.php",
       data: { project: "" }
     }).done(function( msg ) {
-        //alert(msg)
- 
      });
-
 }
 
 function open_file(){

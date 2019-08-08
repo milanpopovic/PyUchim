@@ -410,8 +410,8 @@ metoda __str__ takva da štampanje objekta rezultira sledećim izgledom:
 
 Glavnica - 1000.00, Kamatna stopa - 5.12% 
 `
-var $exam_started="";
-var $exam_stopped="";
+var $exam_started = "";
+var $exam_stopped = "";
 
 function random_exam_question() {
         num = Math.floor((Math.random() * 64))+1;
@@ -426,12 +426,7 @@ function select_exam_question(){
 }
 
 function practiceExam(){
-       project = $("#open_project").text();
-       if ( project == ""){
-             myAlert("alert-warning","You must be logged in.");
-             return;
-       }
-       
+       project = $("#open_project").text();     
        e=""
        n = Math.floor(Math.random() * 14)+1
        e+="'''\nZadatak 1"+".\n"+q[n]+"'''\nOvde unesite resenje";
@@ -449,56 +444,54 @@ function practiceExam(){
        var dd = String(today.getDate()).padStart(2, '0');
        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
        var yyyy = today.getFullYear();
-
-       today = dd + '.' + mm + '.' + yyyy;
-       $("#open_file").val("Exam-taken:"+today);
-       save_file();
 }
 
 function stopExam(){
+    if($exam_started == "" || $("#open_file").val() == ""){
+        myAlert("alert-warning","Exam did not start.");
+        $exam_started = "";
+        return;
+    }
     $exam_stopped = new Date();
-   	var today = new Date();
-	var dd = String(today.getDate()).padStart(2, '0');
-	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-	var yyyy = today.getFullYear();
-	today = dd + '.' + mm + '.' + yyyy;
-	$("#open_file").val("Exam:"+today);
-	save_exam();
+	save_exam(false);
     $exam_started = "";
 }
 
-function save_exam(){
+function save_exam(mute){
     var projekat = $('#open_project').text();
     if(projekat == ""){
         myAlert("alert-warning","You must be logged in.");
         return;
     }
     var fajl = $('#open_file').val();
-    
+    if($exam_started == ""){
+        myAlert("alert-warning","Exam did not start.");
+        return;
+    }
     sadrzaj = "'''\nExam started:"+$exam_started+"\n"+"Exam stopped:"+$exam_stopped+"\n'''\n"+$model.view.getCode();
     var urlpath = appurl+'/php/save_file.php'
- 
+    if(mute) fajl = fajl+"(Copy)";
     $.ajax({
 	  method: "POST",
 	  url: urlpath,
 	  data: { otvori_projekat: projekat, file: fajl, content: sadrzaj  },
     }).done(function( msg ) {
-            myAlert("alert-warning","Exam sacuvan.")
+            if(!mute) myAlert("alert-warning","Exam sacuvan.")
             var $exam_started="";
 			var $exam_stopped="";
       });
 
 }
 function file_exists(project,file){
-    var res = "";
     $.ajax({
         type: "post",
         url: 'php/file_exists.php',
         data: { 'project': project, 'file': file  },
         success: function(data) {
           if(data == 'yes'){
-            
             myAlert("alert-warning","Exam already taken!")
+            $exam_started = "";
+            $("#open_file").val("");
           }
           else{
             $("#open_file").val(file);
@@ -507,10 +500,7 @@ function file_exists(project,file){
     });
 }
 function startExam(){
-       if ($exam_started != ""){
-         myAlert("alert-warning","Exam already started!")
-         return;
-       }
+       
        var today = new Date();
 	   var dd = String(today.getDate()).padStart(2, '0');
 	   var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -519,6 +509,10 @@ function startExam(){
        var file_name = "Exam:"+today;
        project = $("#open_project").text();
        file_exists(project,file_name);
+       if ($exam_started != ""){
+         myAlert("alert-warning","Exam already taken!")
+         return;
+       }
        $.ajax({
 	  	method: "POST",
 	  	url: "php/read_exam_parameters.php"
@@ -553,6 +547,7 @@ function startExam(){
 		   }
 		   $model.view.setCode(e);
 		   $model.reset();
+           save_exam(true);
         });
 }
 

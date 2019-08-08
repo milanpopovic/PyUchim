@@ -359,9 +359,11 @@ while broj_jedinica < 12:
         broj_jedinica=broj_jedinica+1
 pprint(l)
 `
-z[16] = `
-Zadatak 16.
+z[16] = 
+`
 '''
+Zadatak 16.
+
 Kreirajte slučajnu listu od 9 × 9 elemenata koja sadrži brojeve od 1 do 9 
 tako da se brojevi ne ponavljaju ni u jednom redu ili koloni.
 '''

@@ -63,13 +63,15 @@
 			$member = mysqli_fetch_assoc($result);
 			$login = $member['email'];
 			if($member['status'] != '1'){
-                   		header("location: login-failed.php?error=You are not authorized to use this app.");
-                	}
+                header("location: login-failed.php?error=You are not authorized to use this app.");
+            }
 			$_SESSION['SESS_FIRST_NAME'] = $member['firstName'];
 			$_SESSION['SESS_LAST_NAME'] = $member['lastName'];
 			session_write_close();
+            date_default_timezone_set("Europe/Belgrade");
+            file_put_contents("log.txt",date('d-m-Y h:i:s A')." ".$_SERVER['REMOTE_ADDR']." ".$login."\n", FILE_APPEND);
 			header("location: ../index.php");
-                        exit;
+            exit;
 		}else {
 			//Login failed
 			header("location: login-failed.php?error=Wrong email or password");
