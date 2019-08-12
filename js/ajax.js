@@ -206,47 +206,6 @@ function signin(){
   $("#signupModal").modal('show');
 }
 
-function comment()
-{
-    source =  $model.view.getCode();
-
-    var text = "";
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-    text1 = "#"+text;
-    text1 = text1.replace(/\n/g,"\n#")
-    
-    $model.view.setCode(source.replace(text,text1))
-    $("#codeContainer").keyup()
-
-}
-
-function uncomment()
-{
-    source =  $model.view.getCode();
-
-
-    var text = "";
-    if (window.getSelection) {
-        text = window.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-  
-    text1=text.split("\n")
-    res=""
-    for (l in text1){
-  
-        res +=text1[l].substr(1)+"\n"
-    }
-    var pos = res.lastIndexOf('\n');
-    res = res.substring(0,pos) + res.substring(pos+1)
-    $model.view.setCode(source.replace(text,res))
-    $("#codeContainer").keyup()
-}
 
 function sharing(){
    myAlert("alert-warning",$("#chk-share").val());
@@ -298,6 +257,8 @@ function lucky_question(){
 	  url: "php/lucky_question.php"
   }).done(function( msg ) {
             $model.view.setCode(msg);
+            $model.reset();
+            $("#open_file").val("");
   });
 }
 
@@ -307,6 +268,18 @@ function myAlert(alertType,alertMessage){
   alertDiv += '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
   alertDiv += '<span aria-hidden="true">&times;</span></button></div>';
   $("#alertMessage").html(alertDiv);
+}
+
+function fontSizeUp(){
+
+        jQuery(".CodeMirror").css('font-size','+=1');
+        jQuery("#console pre").css('font-size','+=1');
+}
+function fontSizeDown(){
+
+		jQuery(".CodeMirror").css('font-size','-=1');
+        jQuery("#console pre").css('font-size','-=1');
+
 }
 
 

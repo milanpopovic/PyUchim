@@ -417,12 +417,14 @@ function random_exam_question() {
         num = Math.floor((Math.random() * 64))+1;
         $model.view.setCode("'''Zadatak "+num.toString()+".\n"+q[num]+"\n'''");
         $model.reset();
+        $("#open_file").val("");
 }
 
 function select_exam_question(){
        var num = prompt("Question number(1-64)", "");
        $model.view.setCode("'''Zadatak "+num.toString()+".\n"+q[num]+"\n'''");
        $model.reset();
+       $("#open_file").val("");
 }
 
 function practiceExam(){
@@ -440,10 +442,7 @@ function practiceExam(){
        e+="\n'''\nZadatak 5"+".\n"+q[n]+"'''\nOvde unesite resenje";
        $model.view.setCode(e);
        $model.reset();
-       var today = new Date();
-       var dd = String(today.getDate()).padStart(2, '0');
-       var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-       var yyyy = today.getFullYear();
+       $("#open_file").val("");
 }
 
 function stopExam(){

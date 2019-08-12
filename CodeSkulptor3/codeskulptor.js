@@ -12029,7 +12029,9 @@ const CSView = (function ($, window) {
                 matchBrackets: true,
                 extraKeys: {"Ctrl-Q": function(cm) { view.folder(cm, cm.getCursor().line); },
                             "Ctrl-K": comment,
-                            "Shift-Ctrl-K": uncomment}
+                            "Shift-Ctrl-K": uncomment,
+                            "Ctrl-A": fontSizeUp,
+                            "Shift-Ctrl-A": fontSizeDown}
             });
 
         // Setup Firepad
@@ -13099,7 +13101,8 @@ const CSView = (function ($, window) {
         var numFrames = $('.dropdown[style*="display: inline"] .dropdown-menu li[style*="display: inline-block"]').length;
 
         if (!numFrames) {
-            $('.dropdown').hide();
+            //alert("hide")
+            $('.dropdown-1').hide();
         } else {
             $('.numFrames').html(numFrames);
         }

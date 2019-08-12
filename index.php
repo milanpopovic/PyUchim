@@ -6,7 +6,6 @@
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" ;charset="utf-8">
     <title>PyUchim</title>
-
     <link rel="stylesheet" type="text/css" href="CodeSkulptor3/bootstrap.css">
     <link rel="shortcut icon" href="CodeSkulptor3/favicon.ico">
     <script src="https://kit.fontawesome.com/292f64c027.js"></script>
@@ -35,12 +34,6 @@
     <script src="samples/functions.js?<?php echo filemtime('samples/functions.js'); ?>"></script>
     <script src="samples/classes.js?<?php echo filemtime('samples/classes.js'); ?>"></script>
 
-    <!--<link rel="stylesheet" type="text/css" href="CodeSkulptor3/css.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="CodeSkulptor3/basics.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="CodeSkulptor3/footers.css">-->
-    <!--<script type="text/javascript" charset="UTF-8" src="CodeSkulptor3/common.js"></script>-->
-    <!--<script type="text/javascript" charset="UTF-8" src="CodeSkulptor3/util.js"></script>-->
-    
 </head>
 
 <body style="overflow-y: hidden;">
@@ -52,6 +45,7 @@
           <a class="navbar-brand" href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i> PyUchim</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
 	<ul class="nav navbar-nav">
 	  <li class="dropdown">
 	        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -65,7 +59,7 @@
 		    <li role="separator" class="divider"></li>
 			<li><a class="dropdown-item" href="#" onClick="close_file()">Close</a></li>
 		    <li role="separator" class="divider"></li>
-		    <li><a class="dropdown-item loadLocalBtn" href="#">Load local file</a></li>
+		    <li><a class="dropdown-item loadLocalBtn" href="#">Open local file</a></li>
 		    <li role="separator" class="divider"></li>
 			<li><a class="dropdown-item" href="#" onClick="delete_file(true)">Delete</a></li>
 	    </ul>
@@ -115,7 +109,7 @@
 			<li><a class="dropdown-item" href="https://www.brianheinold.net/python/python_book.html" target="_new">
 		         Practical introduction</a></li>
 			<li><a class="dropdown-item" href="https://www.brianheinold.net/python/Python_Quick_Reference_Guide_Heinold.pdf" target="_new">
-		        Quck reference</a></li>
+		        Quick reference</a></li>
 		    <li role="separator" class="divider"></li>
 		    <li><a class="dropdown-item" href="https://docs.python.org/3/tutorial/index.html" target="_new">Python tutorial</a></li>   
 		    <li role="separator" class="divider"></li>
@@ -131,19 +125,18 @@
 			<li><a href="skype:milan.popovic?call">Call Mentor via Skype</a></li>	
 	    </ul>
       </li>
-       
-	</ul> 
-    <ul class="nav navbar-nav navbar-right">
-    	<li class="dropdown">
+      <li class="dropdown">
 	    	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-award"></i> Exam <span class="caret"></span></a>
 	        <ul class="dropdown-menu" aria-labelledby="about-us">
           		<li id="start-exam"><a class="dropdown-item" href="#" onClick="startExam()"> Start exam</a></li>
                 <li id="stop-exam"><a class="dropdown-item" href="#" onClick="stopExam()"> Stop exam</a></li>
             </ul>
-        </li>
+      </li> 
+	</ul> 
+    <ul class="nav navbar-nav navbar-right">
         <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-        <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-in" aria-hidden="true"></i> Logout</a></li>
+        <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>      
         <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
         <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -151,7 +144,7 @@
 	    	<ul class="dropdown-menu" aria-labelledby="about-us">
     			<li><a href="help/about.html" target="_new" >About</a></li>
                 <li role="separator" class="divider"></li>
-				<li><a href="help/docs.html" target="_new">Docs</a></li>	
+				<li><a href="help/docs.html" target="_new">Instructions</a></li>	
 	    	</ul>
         </li>
     </ul>
@@ -171,30 +164,22 @@
                       <div id="codeContainer" class="col-xs-6" style="width: 50%;">
                           <div class="cs-panel panel panel-primary">
                              <div class="panel-heading"><i class="fa fa-code" aria-hidden="true"></i> Python Code 
-                               <input type="text" id="open_file" size="30" readonly="readonly" style="color: black;"/>
-                               <span class="btn btn-primary" onClick="comment()" data-toggle="tooltip" data-placement="right"
-                                title="" data-original-title="Comment selection."> 
-                                <i class="fa fa-hashtag"></i>
-                	       </span> 
-                               <span class="btn btn-primary" onClick="uncomment()" data-toggle="tooltip" data-placement="right"  
-                                title="" data-original-title="Uncomment selection."> 
-                                <i class="fa fa-minus-square"></i>
-                	       </span> 
-                           <span class="btn btn-primary">
-                                  <input type="checkbox" name="chk-share" id="chk-share" data-toggle="tooltip" data-placement="right"  
-                               title="" data-original-title="Share Python code with Mentor (on/off)">
-                               </span>
-                               <span class="btn btn-primary runBtn" data-toggle="tooltip" data-placement="right" 
-                                title="" data-original-title="Execute the Python code from the beginning.">
-                                <i class="fa fa-play" aria-hidden="true"></i>
-                           </span>
-            		       <span class="btn btn-primary resetBtn" data-toggle="tooltip" data-placement="right" 
+                               	<input type="text" id="open_file" size="30" readonly="readonly" style="color: black;"/>
+                           		<span class="btn btn-primary">
+                                	<input type="checkbox" name="chk-share" id="chk-share" data-toggle="tooltip" data-placement="right"  
+                               		title="" data-original-title="Share Python code with Mentor (on/off)">
+                               	</span>
+                               	<span class="btn btn-primary runBtn" data-toggle="tooltip" data-placement="right" 
+                                	title="" data-original-title="Execute the Python code from the beginning.">
+                                	<i class="fa fa-play" aria-hidden="true"></i>
+                           		</span>
+            		       		<span class="btn btn-primary resetBtn" data-toggle="tooltip" data-placement="right" 
                                    title="Stop execution and clear all output." ><i class="fa fa-stop-circle"></i>
                                </span>
-			     </div>
+			     			 </div>
                              <div id="codePanelBackground" class="panel-body" style="background-color: rgb(255, 255, 255);">
                                 <form action="#" method="post" enctype="multipart/form-data" id="codeform">
-                                    <textarea id="code" name="file" style="display: none;">ggg</textarea>
+                                    <textarea id="code" name="file" style="display: none;"></textarea>
                                 </form>
                               </div>
                            </div>
@@ -206,7 +191,18 @@
                         <div class="cs-panel panel panel-primary">
                             <div class="panel-heading"><i class="fa fa-print" aria-hidden="true"></i> 
                               <small><button class="btn btn-primary" disabled>Output</button></small>
+							  <span class="dropdown dropdown-1">
+				      			<a class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" 
+									data-toggle="dropdown" aria-expanded="true">
+				            		<small><span class="badge numFrames"></span></small>
+				            		<span class="hidden-xs"><small>Show plot</small></span>
+				      			</a>
+				      <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
+				        
+				      </ul>
+				    </span>
                             </div>
+		 			
                             <div id="outputPanel" class="panel-body" style="height: 483px;">
                                 <div id="console"></div>
                             </div>
@@ -319,5 +315,9 @@ else{
    	echo '<script>$("#login").show();$("#menu-signin").show();$("#logout").hide()</script>'; 
 }
 ?>
+<style>
+.CodeMirror, #console pre{
+   font-size: 14px;
+}
 </body>
 </html>
