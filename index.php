@@ -20,7 +20,7 @@
     <script src="CodeSkulptor3/codeskulptor.js?<?php echo filemtime('CodeSkulptor3/codeskulptor.js'); ?>"></script>
 
     <script src="js/ajax.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1NTC7WEZr1okhozz_iWD12x-CbOH5HtM"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js></script>
     
     <script src="projects/challenges/exam_questions.js?<?php echo filemtime('challenges/exam_questions.js'); ?>"></script>
 
