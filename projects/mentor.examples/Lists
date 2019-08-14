@@ -1,9 +1,5 @@
-function select_sample_lists(){
-var z = new Array();
-
-z[1] = `
 '''
-Zadatak 1.
+Primer 1.
 Napišite program koji traži od korisnika da unese listu celih brojeva. 
 Program treba da uradi sledeće:
 a) Štampa ukupan broj podataka u listi.
@@ -33,10 +29,9 @@ for e in lista:
     if e < 5:
         brojac=brojac+1
 print(brojac)
-`
-z[2] = `
+
 '''
-Zadatak 2
+Primer 2
 Napišite program koji generiše listu od 20 slučajnih brojeva između 1 i 100, pa:
 
 a) Štampa listu.
@@ -71,10 +66,9 @@ for e in l:
     if e%2==0:
         brojac=brojac+1
 print(brojac)
-`
-z[3] = `
+
 '''
-Zadatak 3.
+Primer 3.
 Počnite sa listom [8,9,10]. Uradite sledeće:
 a) Postavite drugi element (indeks 1) na 17
 b) Dodajte 4, 5, i 6 na kraj liste
@@ -100,10 +94,9 @@ l=l*2
 l.insert(3,25)
 
 print(l)
-`
-z[4] = `
+
 '''
-Zadatak 4.
+Primer 4.
 Tražite od korsinika da unese listu koja sadrži brojeve između 1 i 12. 
 Zatim zamenite sve brojeve koji su veći od 10 sa brojem 10. 
 '''
@@ -112,10 +105,9 @@ for i in range(len(l)):
     if l[i] > 10:
         l[i]=10
 print(l)
-`
-z[5] = `
+
 '''
-Zadatak 5.
+Primer 5.
 Tražite od korisnika da unese listu stringova. Kreirajte novu listu 
 koja sadrži iste stringove ali bez prvog slova.
 '''
@@ -127,10 +119,9 @@ for s in l:
     else:
         nova_lista.append("")
 print(nova_lista)
-`
-z[6] = `
+
 '''
-Zadatak 6.
+Primer 6.
 Kreirajte sledeće liste korišćenjem petlji.
 
 a) Listu koj se sastoji od brojeva 0 do 49
@@ -154,10 +145,9 @@ a="abcdefghijklmnopqrstuvwxyz"
 for i in range(26):
     l3.append(a[i]*(i+1))
 print(l3)
-`
-z[7] = `
+
 '''
-Zadatak 7.
+Primer 7.
 Napišite program koji uzima dve liste L i M, iste dužine, 
 dodaje njihove elemente da kreira novu listu N čiji su elementi 
 sume odgovarajućih elemenata iz L i M. Na primer, ako je 
@@ -170,10 +160,9 @@ N=[]
 for i in range(len(L)):
     N.append(L[i]+M[i])
 print(N)
-`
-z[8] = `
+
 '''
-Zadatak 8.
+Primer 8.
 Napišite program koji traži od korisnika da unese ceo broj, 
 pa kreira listu koja se sastoji od faktora tog broja.
 '''
@@ -184,11 +173,9 @@ for i in range(1,n+1):
     if n%i==0:
         l.append(i)
 print(l)
-`
 
-z[9] = `
 '''
-Zadatak 9.
+Primer 9.
 Kada igrate igru u kojoj se koriste dve kockice, valja znati kolike 
 su šanse za pojavljivanje nekog ishoda. Na primer verovatnoća za 
 dobijanje 12 je oko 3%, a verovatnoća za dobijanje 7 je oko 17%. 
@@ -205,10 +192,9 @@ for i in range(10000):
     bp[zbir]=bp[zbir]+1
 for i in range(2,13):
     print(i,bp[i]/100)
-`
-z[10] = `
+
 '''
-Zadatak 10.
+Primer 10.
 Napišite program koji rotira elemente liste tako da se element na 
 prvom indeksu pomera na drugi, drugi na treći, itd., sve do poslednjeg 
 koji se pomera na prvi indeks.
@@ -217,10 +203,9 @@ koji se pomera na prvi indeks.
 l=[int(e) for e in input("Unesite niz celih brojeva odvojenih zapetom").split(',')]
 l=[l[-1]]+l[0:-1]
 print(l)
-`
-z[11] = `
+
 '''
-Zadatak 11.
+Primer 11.
 Korišćenjem for petlje kreirajte listu prikazanu dole, koja se sastoji 
 od jedinica razdvojenih rastućim brojem nula. Poslednje dve jedinice 
 treba da budu razdvojene sa deset nula.
@@ -231,10 +216,9 @@ for i in range(11):
     l=l+[1]+[0]*i
 l.append(1)
 print(l)
-`
-z[12] = `
+
 '''
-Zadatak 12.
+Primer 12.
 Napišite program koji generiše 100 slučajnih brojeva koji su ili 0 ili 1. 
 Zatim odredite najduži uzastopni niz nula. Na primer, najduži uzastopni 
 niz nula u listi [1,0,1,1,0,0,0,0,1,0,0] je 4.
@@ -257,10 +241,9 @@ if br0>max0:
     max0=br0
 print(l)
 print(max0)
-`
-z[13] = `
+
 '''
-Zadatak 13.
+Primer 13.
 Napišite program koji briše višestruka pojavljivanja podataka u listi, 
 tako da se podaci pojavljuju samo jednom. Na primer lista [1,1,2,3,4,3,0,0] 
 će posle takvog brisanja postati [1,2,3,4,0].
@@ -271,10 +254,9 @@ for e in l:
     for i in range(1,l.count(e)):
         l.remove(e)
 print(l)
-`
-z[14] = `
+
 '''
-Zadatak 14.
+Primer 14.
 Napišite program koji traži od korsinika da unese dužinu u fitima. 
 Program treba da korisniku pruži mogućnost da bira jednicu u koju će ta 
 dužina biti konvertovana. Jedinice mogu biti inči, jarde, milje, milimetri, 
@@ -293,10 +275,9 @@ if jedinice.count(u_koju)>0:
     print("To je ",d*odnos[indeks],u_koju)
 else:
     print("Nepoznata jedinica")
-`
-z[15] = `
+
 '''
-Zadatak 15.
+Primer 15.
 Postoji neprobojna šifra pod nazivom „jednokratni ključ“.
 Način na koji ona radi je da pomerate svako slovo poruke za slučajan broj 
 između 1 i 26, sa preklapanjem azbuke ako je potrebno. Na primer ako je slovo 
@@ -336,12 +317,4 @@ original=""
 for i in range(len(sifrovana_poruka)):
     original=original+azbuka[(azbuka.index(sifrovana_poruka[i])-kljuc[i]+26)%26]
 print(original)
-`
 
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}

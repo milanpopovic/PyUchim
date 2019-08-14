@@ -1,9 +1,5 @@
-﻿function select_sample_while_loops(){
-var z = new Array();
-
-z[1] = `
-'''
-Zadatak 1.
+﻿'''
+Primer 1.
 Donji kod štampa brojeve od 1 do 50. Napišite ekvivalentan program 
 koji koristi while petlju.
 for i in range(1,51):
@@ -13,10 +9,9 @@ i=1
 while i <=50:
     print(i)
     i=i+1
-`
-z[2] = `
+
 '''
-Zadatak 2.
+Primer 2.
 a) Napišite program koji koristi while petlju da štampa slova iz stringa, 
 jedno slovo u liniji.
 
@@ -33,10 +28,9 @@ i=0
 while i < len(s):
     print(s[i])
     i=i+2
-`
-z[3] = `
+
 '''
-Zadatak 3.
+Primer 3.
 Dobar program proverava da li je korisnik uneo ispravan podatak. 
 Napišite program koji traži od korisnika da unese težinu u kilogramima 
 pa je konvertuje u funte (1 kg = 2.2 funte) . Kad god korisnik unese 
@@ -50,10 +44,9 @@ while tezina < 0:
     print("Neispravan podatak!")
     tezina = float(input("Unesite tezinu u kg: "))
 print("Težina u funtama:",2.2*tezina)
-`
-z[4] = `
+
 '''
-Zadatak 4.
+Primer 4.
 Napišite program koji traži od korisnika da unese lozinku (password). 
 Ako unese ispravnu lozinku program mu saopštava da se ulogovao u sistem. 
 U suprotnom program traži da ponovo unese lozinu. Korisnik ima samo pet 
@@ -71,10 +64,9 @@ if broj_pokusaja == 5:
     print("Izbačeni ste iz sistema!")
 else:
     print("Ulogovani ste u sistem")
-`
-z[5] = `
+
 '''
-Zadatak 5.
+Primer 5.
 Napišite program koji omogućava korisniku da unese unapred nepoznat 
 broj rezultata na nekom kolokvijumu. Korisnik signalizira da je završio 
 kada unese negativan broj. Štampajte koliko je bilo desetki 
@@ -93,10 +85,9 @@ while poeni>=0:
     poeni = int(input("Broj poena:"))
 print("Broj destki:",broj_desetki)
 print("Prosek:",zbir_poena/broj_testova)
-`
-z[6] = `
+
 '''
-Zadatak 6.
+Primer 6.
 Setite se da za dati string s, s.index("x") vraća indeks prvog 
 pojavljivanja slova x u s, ali vraća grešku ako nema slova x u 
 stringu s.
@@ -129,10 +120,9 @@ for z in s:
         i=i+1
 if i == len(s):
     print("Slovo ",slovo,"niju u stringu",s)
-`    
-z[7] = `
+
 '''
-Zadatak 7.
+Primer 7.
 Najveći zajednički delioc (NZD) dva data broja je najveći broj 
 kojim su deljiva oba data broja. Na primer NZD(18,42) je 6 zato 
 što je 6 najveći broj sa kojim su deljivi i 18 i 42. 
@@ -165,10 +155,9 @@ print(a)
 while b:
     a, b = b, a%b
 print(a)
-`
-z[8] = `
+
 '''
-Zadatak 8.
+Primer 8.
 Jedan metod za izračunavanje kvadratnog korena broja 5, 
 koji je star 4000- godina, može se opisati ovako
 Počnite sa nekim pokušajem recimo 1. Zatim izračunamo:
@@ -200,10 +189,9 @@ x=1
 while abs(x - (x + a/x)/2) > 1e-10:
     x=(x+a/x)/2
 print(x)
-`
-z[9] = `
+
 '''
-Zadatak 9.
+Primer 9.
 Napišite program koji ima listu od deset reči, takvih da neke reči imaju 
 ponovljena slova a neke nemaju. Napišite program koji iz takve liste 
 slučajno bira reč koja nema ponovljenih slova.
@@ -219,10 +207,9 @@ while True:
     else:
         break
 print(rec)
-`
-z[10] = `
+
 '''
-Zadatak 10.
+Primer 10.
 Napišite program koji startuje sa 5 × 5 listom nula i slučajno menja tačno 
 10 od tih nula u jedinice.
 '''
@@ -237,10 +224,9 @@ while broj_jedinica < 10:
         lista[i][j] = 1
         broj_jedinica=broj_jedinica+1
 print(lista)
-`
-z[11] = `
+
 '''
-Zadatak 11.
+Primer 11.
 Napišite program u kojem imate listz od sedam brojeva koji mogu biti 0 ili 1. 
 Pronađite prvu nulu u listi i zamenite je sa jedinicom. 
 Ako u listi nema nula štampajte poruku koja to kaže.
@@ -258,10 +244,9 @@ if 0 not in l:
 else:
     l[l.index(0)]=1
     print(l)
-`
-z[12] = `
+
 '''
-Zadatak 12.
+Primer 12.
 U jednom prethodnom zadatku smo pisali program za igranje igre 
 Kamen-Papir-Makaze protiv kompjutera. U tom programu smo imali 
 5 rundi igre posle čega smo proglašavali pobednika. Sada želimo 
@@ -292,10 +277,9 @@ if skor_covek == 3:
     print("Čestitam. Pobedili ste.")
 else:
     print("Žao mi je. Pobedio je kompjuter.")
-`
-z[13] = `
+
 '''
-Zadatak 13.
+Primer 13.
 Napišite program za igranje sledeće igre. Igrač počinje sa sumom od $100. 
 U svakoj rundi igre baca se novčić a igrač pokušava da pogodi ishod bacanja. 
 Igrač dobija $9 ako pogodi a gubi $10 za svaki promašaj. 
@@ -313,10 +297,9 @@ while suma < 200 and suma > 0:
         suma=suma - 10
     print(suma)
 print("Na kraju igre imate:",suma)
-`
-z[14] = `
+
 '''
-Zadatak 14.
+Primer 14.
 Napišite program za igranje sledeće igre. Imamo listu sa nekoliko naziva 
 zemalja iz koje program slučajno bira jednu zemlju. Igrač treba da pogodi 
 sva slova iz naziva zemlje, tako što proba slovo po slovo. Pre svakog novog 
@@ -339,10 +322,9 @@ while pogodjeno != zamisljena_zemlja:
             if s==zamisljena_zemlja[i]:
                 pogodjeno=pogodjeno[:i]+s+pogodjeno[i+1:]
 print(pogodjeno)
-`
-z[15] = `
+
 '''    
-Zadatak 15.
+Primer 15.
 Kreirajte 6 × 6 listu koja ima 12 jedinica na slučajno odabranim mestima. 
 Ostali elementi liste su nule.
 '''
@@ -358,11 +340,9 @@ while broj_jedinica < 12:
         l[i][j]=1
         broj_jedinica=broj_jedinica+1
 pprint(l)
-`
-z[16] = 
-`
+
 '''
-Zadatak 16.
+Primer 16.
 
 Kreirajte slučajnu listu od 9 × 9 elemenata koja sadrži brojeve od 1 do 9 
 tako da se brojevi ne ponavljaju ni u jednom redu ili koloni.
@@ -383,11 +363,4 @@ while broj_promena<10:
         lista[i][:],lista[j][:]=lista[j][:],lista[i][:]
         broj_promena=broj_promena+1
 pprint(lista)
-`
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}
+

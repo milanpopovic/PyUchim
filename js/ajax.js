@@ -24,6 +24,7 @@ $( document ).ready(function() {
 });
 
 function login(){
+   $("#loginModal").trigger('reset');
   $("#loginModal").modal('show');
 }
 function logout(){
@@ -58,15 +59,31 @@ function open_file(){
              	return;
         }
         else{
+           $("#path").val("projects");
            addCombo(msg);        
         }
     });
 }
 
+function open_examples(){
+    var urlpath = appurl+'/php/open_examples.php'
+    $.ajax({
+      method: "POST",
+      url: urlpath,
+    }).done(function( msg ) {
+        if(msg.length <= 1){
+             	return;
+        }
+        else{
+           $("#path").val("projects/mentor.examples");
+           addCombo(msg);        
+        }
+    });
+}
 
-function open_file_name(file){
+function open_file_name(file,path){
     $('#open_file').val(file);
-    load_file();
+    load_file(path);
     $('#OpenProgramModal').modal('hide');
 }
 
@@ -85,14 +102,14 @@ function addCombo(options) {
     $("#OpenProgramModal").modal('show');
 }
 
-function load_file(){
+function load_file(path){
     var fajl = $('#open_file').val();
     var projekat = $('#open_project').text();
     var urlpath = appurl+'/php/load_file.php';
       $.ajax({
 	    method: "POST",
 	    url: urlpath,
-	    data: { otvori_projekat: projekat, filename: fajl }
+	    data: { 'path': path, otvori_projekat: projekat, filename: fajl }
       }).done(function( msg ) {
             if ($model.view.getCode() !== msg){
                 $model.view.setCode(msg);
@@ -201,7 +218,7 @@ function sleep(milliseconds) {
   }
 }
 
-function signin(){
+function signup(){
   $("#signupModal").trigger('reset');
   $("#signupModal").modal('show');
 }

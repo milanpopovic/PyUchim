@@ -15,24 +15,14 @@
     <script src="CodeSkulptor3/Chart.js"></script>
     <script src="CodeSkulptor3/skulpt.js"></script>
     <script src="CodeSkulptor3/skulpt-stdlib.js"></script>
+  
     <script src="CodeSkulptor3/vendor.js"></script>
     <script src="CodeSkulptor3/codeskulptor.js?<?php echo filemtime('CodeSkulptor3/codeskulptor.js'); ?>"></script>
 
-    <script src="js/ajax.js?<?php echo filemtime('js/ajax.js'); ?>"></script>
+    <script src="js/ajax.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1NTC7WEZr1okhozz_iWD12x-CbOH5HtM"></script>
     
-    <script src="samples/exam_questions.js?<?php echo filemtime('samples/exam_questions.js'); ?>"></script>
-    <script src="samples/input_output.js?<?php echo filemtime('samples/input_output.js'); ?>"></script>
-    <script src="samples/for_loops.js?<?php echo filemtime('samples/for_loops.js'); ?>"></script>
-    <script src="samples/if_statement.js?<?php echo filemtime('samples/if_statement.js'); ?>"></script>
-    <script src="samples/while_loops.js?<?php echo filemtime('samples/while_loops.js'); ?>"></script>
-    <script src="samples/try_except.js?<?php echo filemtime('samples/try_except.js'); ?>"></script>
-    <script src="samples/lists.js?<?php echo filemtime('samples/lists.js'); ?>"></script>
-    <script src="samples/dictionaries.js?<?php echo filemtime('samples/dictionaries.js'); ?>"></script>
-    <script src="samples/simple_plot.js?<?php echo filemtime('samples/simple_plot.js'); ?>"></script>
-    <script src="samples/sorting.js?<?php echo filemtime('samples/sorting.js'); ?>"></script>
-    <script src="samples/searching.js?<?php echo filemtime('samples/searching.js'); ?>"></script>
-    <script src="samples/functions.js?<?php echo filemtime('samples/functions.js'); ?>"></script>
-    <script src="samples/classes.js?<?php echo filemtime('samples/classes.js'); ?>"></script>
+    <script src="projects/challenges/exam_questions.js?<?php echo filemtime('challenges/exam_questions.js'); ?>"></script>
 
 </head>
 
@@ -64,40 +54,21 @@
 			<li><a class="dropdown-item" href="#" onClick="delete_file(true)">Delete</a></li>
 	    </ul>
 	  </li>
-
-	  <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-code" aria-hidden="true"></i> Examples<span class="caret"></span></a>
-	    <ul class="dropdown-menu" aria-labelledby="about-us">
-			<li><a class="dropdown-item" href="#" onClick="select_sample_io()">Input/Output</a></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_for_loops()">For loops</a></li>
-			<li><a class="dropdown-item" href="#" onClick="select_sample_if_statement()">If statement</a></li>	
-			<li><a class="dropdown-item" href="#" onClick="select_sample_while_loops()">While loops</a></li>
-			<li><a class="dropdown-item" href="#" onClick="select_sample_try_except()">Try...except</a></li>
-		    <li role="separator" class="divider"></li>
-			<li><a class="dropdown-item" href="#" onClick="select_sample_lists()">Lists</a></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_dictionaries()">Dictionaries</a></li>
-		    <li role="separator" class="divider"></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_functions()">Functions</a></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_classes()">Classes</a></li>
-		    <li role="separator" class="divider"></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_simple_plot()">Simple plot</a></li>
-		    <li role="separator" class="divider"></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_searching()">Search algorithms</a></li>
-		    <li><a class="dropdown-item" href="#" onClick="select_sample_sorting()">Sort algorithms</a></li>
-		</ul>
-	  </li>
+      <li><a href="#" onClick="open_examples()"><i class="fa fa-code" aria-hidden="true"></i> Examples</a></li>
+	  
 	  <li class="dropdown">
 	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-question-circle-o" aria-hidden="true"></i>  Challenges
 		<span class="caret"></span></a>
 	    <ul class="dropdown-menu" aria-labelledby="about-us">
+            <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
+            <li role="separator" class="divider"></li>
 			<li><a class="dropdown-item" href="#" onClick="random_exam_question()">Random from exam</a></li>
 			<li><a class="dropdown-item" href="#" onClick="select_exam_question()">Select from exam</a></li>
 		    <li role="separator" class="divider"></li>
 		    <li><a class="dropdown-item" href="#" onClick="practiceExam()">Practice exam</a></li>
-		    <li role="separator" class="divider"></li>
-		    <li><a class="dropdown-item" href="#" onClick="lucky_question()">I feel lucky!</a></li>
+		    
+		    
 	    </ul>
 	  </li>
       <li class="dropdown">
@@ -135,10 +106,10 @@
       </li> 
 	</ul> 
     <ul class="nav navbar-nav navbar-right">
-        <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-        <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>      
+        <li id="login"><a href="#" onClick="login()"><i class="fa fa-sign-in" aria-hidden="true"></i> SignIn</a></li>
+        <li id="logout"><a href="#" onClick="logout()"><i class="fa fa-sign-out" aria-hidden="true"></i> SignOut</a></li>      
         <li><a class="nav-link" href="#" id ="open_project" ></a></li> 
-        <li><a class="nav-link" href="javascript: signin()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</a></li>
+        <li><a class="nav-link" href="javascript: signup()" id="menu-signin"><i class="fa fa-user-plus" aria-hidden="true"></i> SignUp</a></li>
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-user" aria-hidden="true"></i> Help<span class="caret"></span></a>
 	    	<ul class="dropdown-menu" aria-labelledby="about-us">
@@ -163,6 +134,7 @@
                  <div class="row row-no-gutter">
                       <div id="codeContainer" class="col-xs-6" style="width: 50%;">
                           <div class="cs-panel panel panel-primary">
+
                              <div class="panel-heading"><i class="fa fa-code" aria-hidden="true"></i> Python Code 
                                	<input type="text" id="open_file" size="30" readonly="readonly" style="color: black;"/>
                            		<span class="btn btn-primary">
@@ -177,8 +149,8 @@
                                    title="Stop execution and clear all output." ><i class="fa fa-stop-circle"></i>
                                </span>
 			     			 </div>
-                             <div id="codePanelBackground" class="panel-body" style="background-color: rgb(255, 255, 255);">
-                                <form action="#" method="post" enctype="multipart/form-data" id="codeform">
+                             <div id="codePanelBackground1" class="panel-body" style="background-color: rgb(255, 255, 255);">
+                                <form action="#" method="post" enctype="multipart/form-data" id="codeform1">
                                     <textarea id="code" name="file" style="display: none;"></textarea>
                                 </form>
                               </div>
@@ -214,6 +186,15 @@
     </div> <!-- /mainBody -->
 </div> <!-- /bodyWrapper -->
 
+<div id="codePanelBackground" class="panel-body">
+	<form action="" method="post" enctype="multipart/form-data" id="codeform">
+	  <input type="hidden" name="key" id="keyid" />                                  
+	  <input type="hidden" name="Content-Type" value="text/x-python" />                                  
+	  <input type="hidden" name="GoogleAccessId" id="googleid" />                                  
+	  <input type="hidden" name="Policy" id="policy" />                                 
+	  <input type="hidden" name="Signature" id="signature" />                                  
+	</form>                                                               
+</div>
 <!-- OPen program Modal -->
 <div class="modal fade" id="OpenProgramModal" tabindex="-1" role="dialog" aria-labelledby="OpenProgramModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -221,11 +202,12 @@
       <div class="modal-header">
         <h5 class="modal-title" id="OpenProgramModalLabel">Open file</h5>
       </div>
-      <div class="modal-body">      
-	<select name="combo" id="combo" class="form-control"></select>
+      <div class="modal-body">    
+            <input id="path" hidden value="">  
+			<select name="combo" id="combo" class="form-control"></select>
       </div>
       <div class="modal-footer">
-        <button class="btn btn-success btn-lg float-left" onclick="open_file_name($('#combo option:selected').text())">Submit</button>
+        <button class="btn btn-success btn-lg float-left" onclick="open_file_name($('#combo option:selected').text(),$('#path').val())">Submit</button>
         <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
       </div>
     </div>

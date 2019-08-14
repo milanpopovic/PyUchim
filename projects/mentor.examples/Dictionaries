@@ -1,9 +1,6 @@
-function select_sample_dictionaries(){
-var z = new Array();
 
-z[1] = `
 '''
-Zadatak 1
+Primer 1
 Napišite program koji uzastopno traži od korisnika da unese 
 proizvod i njegovu cenu. Smestite sve unete vrednosti u rečnik 
 čiji je ključ naziv proizvoda a vrednost cena proizvoda. 
@@ -26,11 +23,9 @@ while 1:
         print(p,"košta",proizvodi[p])
     else:
         print("Nemamo takav proizvod.")
-`
 
-z[2] = `
 '''
-Zadatak 2
+Primer 2
 Napišite program koji koristi rečnik u kojem se nalazi deset 
 imana korisnika i njihovih pasvorda. Program treba da traži 
 od korisnika da unesu ime i pasvord. Ako ime nije u rečniku 
@@ -50,10 +45,9 @@ elif korisnici[ime] != password:
     print("Pogresan password")
 else:
     print("Ulogovani ste u sistem")
-`
-z[3] = `
+
 '''
-Zadatak 3
+Primer 3
 Tražite uzastopno od korisnika da unese ime tima kao i koliko 
 je utakmica tim dobio i izgubio. Smestite ove informacije u rečnik 
 u kojem će ključ biti ime tima a vrednost lista u formi 
@@ -85,11 +79,9 @@ print(lista)
 # c)
 lista=[k for k in tabela if tabela[k][0] > tabela[k][1]]
 print(lista)
-`
 
-z[4] = `
 '''
-Zadatak 4
+Primer 4
 Uzastopno trašite od korisnika da unese rezultate utakmica dva 
 tima u formi tim1 golova1 - tim2 golova2. 
 Smestite ove informacije u rečnik kod kojeg je kljuc naziv tima 
@@ -117,10 +109,9 @@ while 1:
         tabela[tim1][1]+=1
         tabela[tim2][0]+=1
 print(tabela)     
-`
-z[5] = `
+
 '''
-Zadatak 5
+Primer 5
 Korišćenjem rečnika za špil karata kreirajte jednu prostu igru u 
 kojoj dvojica igrača dobijaju po tri karte. 
 Igrač sa najačom kartom pobeđuje. Ako oba igrača imaju istu najaču 
@@ -158,11 +149,9 @@ elif covek_v[0] > komp_v[0]:
     print("Pobedili ste")
 else:
     print("izgubili ste")
-`
 
-z[6] = `
 '''
-Zadatak 6
+Primer 6
 Korišćenjem rečnika za špil karata , 
 podelite tri karte. Odredite sledeće:
 a) Da li su sve tri karte iste boje (fleš).
@@ -200,10 +189,9 @@ if v[0]==v[1]-1 and v[1]==v[2]-1:
     print("Linija")
 else:
     print("Nije linija")
-`
-z[7] = `
+
 '''
-Zadatak 7
+Primer 7
 Korišćenjem rečnika za špil karata i Monte Karlo simulacije 
 procenite verovatnoću da se dobije fleš kada se podeli pet karata.
 '''
@@ -219,11 +207,9 @@ for i in range(100000):   # ponavljamo delenje 100000 puta
     if pet[0]['boja']==pet[1]['boja']==pet[2]['boja']==pet[3]['boja']==pet[4]['boja']:
         brojac+=1
 print("Verovatnoca da se podeli fles: ",brojac/1000,"%")
-`
 
-z[8] = `
 '''
-Zadatak 8
+Primer 8
 U nekom od ranijih poglavlja sreli smo se sa šifriranjem teksta. 
 Kod šifriranja se svako slovo teksta zamenjuje sa nekim drugim slovom. 
 Na primer svako a zamenjujemo sa e, svako b sa a itd. 
@@ -253,10 +239,9 @@ if flag==1:
     print("Ne moze")
 else:
     print("Moze")
-`
-z[9] = `
+
 '''
-Zadatak 9
+Primer 9
 Pretpostavimo da vam je data sledeća lista stringova
 L = ['aabaabac', 'cabaabca', 'aaabbcba', 'aabacbab', 'acababba']
 Ovakvi nizovi se pojavljuju na raznim mestima uključujući DNA kodove. 
@@ -285,10 +270,9 @@ for rec in L:
             break
     if flag==0:
         print("Odgovara:",rec)
-`
-z[10] = `
+
 '''
-Zadatak 10
+Primer 10
 Rečnici predstavljaju pogodan način za smeštanje (pamćenje) 
 struktuiranih podataka. Evo jednog takvog primera: 
 
@@ -317,12 +301,4 @@ for i in range(len(d)):
 for j in range(len(d)):
     if d[j]["email"] == "":
         print("Korisnik bez email adrese:", d[j]["ime"])
-`
 
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}

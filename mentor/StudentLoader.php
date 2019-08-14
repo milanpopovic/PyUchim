@@ -89,7 +89,7 @@ $result = mysqli_query($con,$SQL ) or die("Couldn t execute query.".mysqli_error
 $i=0; 
 while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) { 
      $responce->rows[$i]['Id']=$row['Id'];
-	$responce->rows[$i]["cell"]=array($row['Id'],$row['studentID'],$row['lastName'],$row['firstName'],$row['email'],$row['password'],$row['status']); 	
+	$responce->rows[$i]["cell"]=array($row['Id'],$row['studentID'],$row['firstName'],$row['lastName'],$row['email'],$row['password'],$row['status']); 	
      $i++; 
 }
 mysqli_close($con);

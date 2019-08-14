@@ -1,8 +1,6 @@
-function select_sample_searching(){
-var z = new Array();
 
-z[1] = `
 '''
+Example 1
 Sequential search
 '''
 def sequential_search(seq, n):
@@ -31,10 +29,9 @@ Case	            Best Case	    Worst Case	    Average Case
 item is present         1               n               n/2
 item is not present     n	            n               n
 """
-`
 
-z[2] = `
 '''
+Example 2
 Binary search
 '''
 
@@ -80,12 +77,5 @@ def test_binary_search(module_name='this module'):
 
 if __name__ == '__main__':
     test_binary_search()
-`
+n_file").val("");
 
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}

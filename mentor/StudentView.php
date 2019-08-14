@@ -71,7 +71,7 @@ function userLogin(){
 		   <li><a class="nav-link" href="#" onClick="sendMail();"><i class="far fa-envelope"></i> Send mail</a></li>
            <li><a class="nav-link" href="#" onClick="userLogin()"><i class="fas fa-sign-in-alt"></i> User login</a></li>
 	  	   <li><a class="nav-link" href="#" onClick="changePassword()"><i class="fas fa-unlock-alt"></i> Change password</a></li>
-           <li><a class="nav-link" href="#" onClick="window.open('exam_setup.html');"><i class="fas fa-cog"></i> Exam setup</a></li> 
+           <li><a class="nav-link" href="#" onClick="window.open('exam_setup.html');"><i class="fas fa-cog"></i> Exam setup</a></li>
            <li><a class="nav-link" href="../setup.php" target="_blank"><i class="fas fa-cog"></i> PyUchim setup</a></li>
            <li><a class="nav-link" href="../login/log.txt" target="_blank"><i class="fas fa-eye"></i> PyUchim logfile</a></li>  
 		</ul>
@@ -87,11 +87,11 @@ jQuery(function(){
   jQuery("#student").jqGrid({ 
     url:"StudentLoader.php", 
     datatype: "json", 
-    colNames:['Id','Student ID','Last name','First name','Email','Password','Status'], 
+    colNames:['Id','Student ID','First name','Last name','Email','Password','Status'], 
     colModel:[{name:'Id',index:'Id',width:100,editable:true,hidden:true,editrules:{edithidden:false}},
     {name:'studentID',index:'studentID',width:100,editable:true,hidden:false,editrules:{edithidden:true}},
-    {name:'lastName',index:'lastName',width:100,editable:true,hidden:false,editrules:{edithidden:true}},
     {name:'firstName',index:'firstName',width:100,editable:true,hidden:false,editrules:{edithidden:true}},
+    {name:'lastName',index:'lastName',width:100,editable:true,hidden:false,editrules:{edithidden:true}},
     {name:'email',index:'email',width:200,editable:true,hidden:false,editrules:{edithidden:true}},
     {name:'password',index:'password',width:100,editable:false,hidden:true,editrules:{edithidden:false}},
     {name:'status',index:'status',width:50,editable:true,hidden:false,editrules:{edithidden:true}}],

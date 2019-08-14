@@ -1,8 +1,5 @@
-function select_sample_if_statement(){
-var z = new Array();
-z[1] = `
 '''
-Zadatak 1.
+Primer 1.
 Napisati program koji traži od korisnika da unese dužinu u 
 santimetrima. Ako korisnik unese negativnu dužinu program 
 treba da mu saopštu da je uneo neispravnu vrednost. 
@@ -15,10 +12,9 @@ if duzina < 0:
     print("Uneli ste neispravnu vrednost.")
 else:
     print("Dužina u inčima:",duzina/2.54)
-`
-z[2] = `
+
 '''
-Zadatak 2.
+Primer 2.
 Tražite od korisnika da unese temperaturu. Zatim ga pitajte u 
 kojim jednicama je temperatura, Celzijus ili Farenhajt. 
 Program treba da konvertuje temperaturu u drugu jedinicu.
@@ -31,10 +27,9 @@ if jed == 1:
     print("Temperatura u Farenhajtima:", 9/5*temp+32)
 else:
     print("Temperatura u Celzijusima:",5/9*(temp-32))
-`
-z[3] = `
+
 '''
-Zadatak 3.
+Primer 3.
 Tražite od korisnika da unese temperaturu u Celzijusima. 
 Program treba da štampa poruku u zavisnosti od unete temperature 
 prema sledećim pravilima:
@@ -65,10 +60,9 @@ elif temp==100:
     print("Tacka kljucanja")
 elif temp>100:
     print("Iznad tacke kljucanja")
-`
-z[4] = `
+
 '''
-Zadatak 4.
+Primer 4.
 Generišite jedan slučajan broj između 1 i 10. Tražite od korisnika da 
 pogodi broj i štampajte odgovarajuću poruku ako je pogodio broj ili ako nije.
 '''
@@ -80,10 +74,9 @@ if pokusaj == broj:
     print("Pogodili ste!")
 else:
     print("Niste pogodili.")
-`
-z[5] = `
+
 '''
-Zadatak 5.
+Primer 5.
 Prodavnica naplaćuje $12 jedinici proizvoda ako kupujete manje 
 od deset proizvoda. Ako kupujete između 10 i 99 proizvoda, 
 cena je $10 po proizvodu. Ako kupujete 100 ili više od 100 
@@ -99,10 +92,9 @@ elif 10<=koliko<=99:
     print("To ce vas kostati:",koliko*10,"$")
 elif koliko>=100:
     print("To ce vas kostati:",koliko*7,"$")
-`
-z[6] = `
+
 '''
-Zadatak 6.
+Primer 6.
 Napišite program koji traži od korisnika da unese dva broja i štampa 
 "Blizu" ako su oni udaljeni manje od 0.001 međusobno, 
 dok u suprotnom štama "Nisu blizu".
@@ -114,10 +106,9 @@ if abs(a-b)<0.001:
     print("Blizu")
 else:
     print("Nisu blizu")
-`
-z[7] = `
+
 '''
-Zadatak 7.
+Primer 7.
 Godina je prestupna ako je deljiva sa 4, izuzev godina koje su deljive 
 sa 100 a nisu deljive sa 400. Napisati program koji traži od korisnika 
 da unese godinu i štampa da li je ona prestupna ili ne.
@@ -128,10 +119,9 @@ if (godina%4==0 and godina%100 != 0) or godina%400 == 0:
     print("Prestupna")
 else:
     print("Nije prestupna")
-`
-z[8] = `
+
 '''
-Zadatak 8.
+Primer 8.
 Napišite program koji traži od korisnika neki broj pa štampa sve delioce 
 tog broja. 
 [Pomoć: operator % se koristi da se odredi da li je broj deljiv sa nečim.]
@@ -141,10 +131,9 @@ broj=int(input("Unesite broj: "))
 for i in range(1,broj+1):
     if broj%i==0:
         print(i)
-`
-z[9] = `
+
 '''
-Zadatak 9.
+Primer 9.
 Napišite program tako da se deca mogu igrati sa operacijom množenja. 
 Program treba da igračima zadaje 10 pitanja iz množenja celih brojeva. 
 Posle svakog odgovora program treba da im saopši da li su 
@@ -169,10 +158,9 @@ for i in range(10):
         print(pokusaj,"Tačno!")
     else:
         print(pokusaj," Pogrešno. Tačan odgovor je ",x*y,".",sep="")
-`                 
-z[10] = `
+
 '''
-Zadatak 10.
+Primer 10.
 Napišite program koji traži od korisnika da unese vreme na satu 
 između 1 i 12, zatim traži da unesu am ili pm koliko sati unapred 
 treba ići. Štampati koliko će sati biti kada ptotekne uneto vreme 
@@ -194,11 +182,9 @@ if vreme > 12:
 print("Novo vreme:",vreme,end=" ")
 if doba == 1: print("am")
 else: print("pm")
-`
-    
-z[11] = `
+
 '''
-Zadatak 11.
+Primer 11.
 Posuda sa bonbonima sadrži nepoznat broj bonbona i ako pogodite 
 koliko bonbona ima u njoj osvajate sve bonbone. Vi pitate osobu 
 čija je posuda sledeća pitanja: Ako se broj bonbona podeli ravnomerno 
@@ -212,10 +198,9 @@ bonbona ima u posudi.
 for i in range(1,200):
     if i%5==2 and i%6==3 and i%7==2:
         print(i)
-`
-z[12] = `
+
 '''
-Zadatak 12.
+Primer 12.
 Napišite program koji omogućava korisniku da protiv računara igra 
 igru kamen-papir-makaze. Treba da bude pet rundi i posle pet rundi 
 program treba da štampa ko je pobedio a ko izgubio ili je nerešeno.
@@ -237,11 +222,4 @@ elif bm > bc:
     print("Vi ste pobedili",bm,":",bc)
 else:
     print("Nerešeno",bm,":",bc)
-`
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}
+

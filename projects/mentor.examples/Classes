@@ -1,8 +1,5 @@
-function select_sample_classes(){
-var z = new Array();
-
-z[1] = `
 '''
+ Example 1
  Simple class
 '''
 class car(): 
@@ -28,10 +25,8 @@ ferrari.show()  # same output as car.show(ferrari)
 # call, python sends the instances also with 
 # that method call like car.show(audi) 
 
-`
-
-z[2] = `
 '''
+Example 2
 Class & Instance Attributes in Python
 '''
 # Class attributes 
@@ -69,10 +64,9 @@ e1 = emp()
 #print ("Dictionary form :", vars(e1)) 
 print (dir(e1))  
 
-`
-z[3] = `
 '''
- Class as decorator
+Example 3
+Class as decorator
 '''
 # Python program showing 
 # use of __call__() method 
@@ -90,7 +84,6 @@ class MyDecorator:
   
         # We can also add some code 
         # after function call. 
-  
   
 # adding decorator to the class  
 @MyDecorator
@@ -141,7 +134,6 @@ class Timer:
         print("Execution took {} seconds".format(end_time-start_time)) 
         return result 
   
-  
 # adding a decorator to the class 
 @Timer
 def some_function(delay): 
@@ -152,7 +144,6 @@ def some_function(delay):
     sleep(delay) 
   
 some_function(3) 
-`
 
 prog = ''
 for (var i=1; i < z.length; i++)

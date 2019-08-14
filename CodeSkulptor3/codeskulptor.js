@@ -11736,10 +11736,10 @@ var controller = __webpack_require__(29);
 $(function () {
     // Use subdomain as key to pick correct csconf and gsconf?
 
-    // var location = window.location;
-    // var protocol = location.protocol;
-    // var domain = location.hostname;
-    // var subdomain = domain.split('.')[0];
+     var location = window.location;
+     var protocol = location.protocol;
+     var domain = location.hostname;
+     var subdomain = domain.split('.')[0];
 
     window.CodeSkulptor = csconf;
     window.CodeSkulptor.controller = new controller(gsconf, csconf, fbconf);
@@ -11791,13 +11791,13 @@ const Controller = function (googleconf, options, firebaseconf) {
                              googleconf.writeBucket,
                              opts.python3);
     
-    //var url = googleconf.baseURL.format(googleconf.writeBucket);
+    var url = googleconf.baseURL.format(googleconf.writeBucket);
 
     // Setup save form
-    //$("#codeform")[0].action = url;
-    //$("#googleid")[0].value = googleconf.googleid;
-    //$("#policy")[0].value = googleconf.policy;
-    //$("#signature")[0].value = googleconf.signature;
+    $("#codeform")[0].action = url;
+    $("#googleid")[0].value = googleconf.googleid;
+    $("#policy")[0].value = googleconf.policy;
+    $("#signature")[0].value = googleconf.signature;
 
     // Needed so adapters can call functions with the proper context
     var proxy = function (fn, context) {

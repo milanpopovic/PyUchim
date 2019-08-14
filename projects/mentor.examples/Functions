@@ -1,8 +1,5 @@
-function select_sample_functions(){
-var z = new Array();
-
-z[1] = `
 '''
+Example 1
 Write a Python function to calculate the factorial of a 
 number (a non-negative integer). 
 The function accepts the number as an argument.
@@ -30,10 +27,9 @@ def test_binary_search(module_name='this module'):
 
 if __name__ == '__main__':
     test_binary_search()
-`
 
-z[2] = `
 '''
+Example 2
 Generator
 '''
 # A simple generator for Fibonacci Numbers 
@@ -62,10 +58,10 @@ print(x.__next__());
 print("Using for in loop") 
 for i in fib(5):  
     print(i) 
-`
-z[3] = `
+
 '''
- Python program to illustrate *args for variable number of arguments 
+Example 3
+Python program to illustrate *args for variable number of arguments 
 '''
 def myFun(*argv):  
     for arg in argv:  
@@ -119,11 +115,11 @@ myFun(*args)
   
 kwargs = {"arg1" : "Geeks", "arg2" : "for", "arg3" : "Geeks"} 
 myFun(**kwargs) 
-`
-z[4] = `
+
 '''
- A Python program to demonstrate that a function  can be defined inside 
- another function and a function can be passed as parameter. 
+Example 4
+A Python program to demonstrate that a function  can be defined inside 
+another function and a function can be passed as parameter. 
 '''  
 # Adds a welcome message to the string 
 def messageWithWelcome(str): 
@@ -180,13 +176,6 @@ def add (x, y):
 # This call is equivalent to attach_data() with add() as parameter 
 
 print(add(2, 3)) 
-  
 print(add.data) 
-`
-prog = ''
-for (var i=1; i < z.length; i++)
-  prog = prog+z[i];
-$model.view.setCode(prog);
-$model.reset();
-$("#open_file").val("");
-}
+
+
